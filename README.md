@@ -9,11 +9,6 @@ A comprehensive collection of professional resume formats showcasing my experien
 - **`Gurinder_Singh_Resume_Beautiful.html`** - Visually rich design with animations and gradients
 - **`Gurinder_Singh_Resume-Claude.html`** - Professional layout with structured sections
 
-### PDF Versions
-- **`Gurinder_Singh_Resume_Modern_LinkedIn.pdf`** - Modern design PDF export
-- **`Gurinder_Singh_Resume_Beautiful_LinkedIn.pdf`** - Beautiful design PDF export
-- **`Gurinder_Singh_Resume_Claude_LinkedIn.pdf`** - Claude design PDF export
-
 ### Markdown Version
 - **`Gurinder_Singh_Resume_Unified.md`** - Master resume content in Markdown format
 
@@ -23,7 +18,7 @@ A comprehensive collection of professional resume formats showcasing my experien
 - **QR Code Portfolio Links** - Direct links to portfolio via QR codes
 - **Responsive Design** - Mobile-friendly layouts
 - **ATS Optimized** - Keyword optimized for Applicant Tracking Systems
-- **Multiple Export Formats** - HTML, PDF, and Markdown versions
+- **GitHub Pages Hosting** - Live web versions accessible anywhere
 
 ## 👨‍💻 About Me
 
