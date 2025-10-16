@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurinder Singh - Staff iOS & AI/ML Engineer</title>
+    <style>
+        /* General Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        /* Container and Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        /* Header Styling */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex: 1;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #667eea; /* Changed border color for contrast */
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .header-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px; /* Reduced margin */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header-info .tagline {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 10px; /* Reduced margin */
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-info a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .qr-section {
+            text-align: center;
+            padding: 15px; /* Reduced padding */
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .qr-section img {
+            width: 100px; /* Adjusted size for better fit */
+            height: 100px;
+            margin-bottom: 5px;
+        }
+        
+        .qr-section p {
+            font-size: 0.8em; /* Adjusted size */
+            color: #333;
+            font-weight: 600;
+        }
+        
+        /* Content Sections */
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .summary {
+            font-size: 1.05em;
+            color: #444;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Metrics Grid */
+        .metrics-grid {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            background: #f0f4f8;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            color: #444;
+            margin-top: 5px;
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min-width */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .skill-category {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        .skill-category p {
+            color: #555;
+            font-size: 0.95em;
+        }
+        
+        /* Experience Styling */
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .experience-title {
+            font-size: 1.3em;
+            color: #1e3c72;
+            font-weight: 700;
+        }
+        
+        .experience-company {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .experience-date {
+            color: #666;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        
+        .experience-description {
+            margin-top: 10px;
+        }
+        
+        .experience-description ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .experience-description li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .subsection {
+            margin-top: 25px;
+        }
+        
+        .subsection h3 {
+            color: #2a5298;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .achievement-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+        }
+        
+        .achievement-title {
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+        
+        /* Hackathon Styling */
+        .hackathon-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .hackathon-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .hackathon-name {
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 1.1em;
+        }
+        
+        .hackathon-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        /* Keyword Tags */
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .keyword-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        /* Media Queries for Responsiveness and Print */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-left {
+                flex-direction: column;
+            }
+            
+            .header-info h1 {
+                font-size: 1.8em;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .metrics-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <img src="me-paragliding.jpeg" alt="Gurinder Singh" class="profile-img">
+                <div class="header-info">
+                    <h1>Gurinder Singh</h1>
+                    <div class="tagline">Staff iOS & Applied AI/ML Engineer | LLM Agents · RAG Pipelines · Mobile · Automation</div>
+                    <div class="contact-info">
+                        <a href="https://guriboy-6fupko.manus.space/" target="_blank">🌐 Portfolio</a>
+                        <a href="https://linkedin.com/in/gurinder-singh-a30a1a48" target="_blank">🔗 LinkedIn</a>
+                        <a href="mailto:gsingh622@yahoo.com">✉️ gsingh622@yahoo.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="qr-section">
+                <div id="qrcode"></div>
+                <p>Scan for Portfolio</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">✨ Vision Statement & Summary</h2>
+                <p class="summary">
+                    Product-first engineer with 10+ years of experience, specializing in scaling **iOS systems** and driving impact through **Applied AI/ML**. Successfully shipped **patent-backed** features, architected cross-platform infrastructure (Live Activities, Pay With Venmo), and led the evolution to **agentic AI workflows** at PayPal/Venmo. Proven ability to translate complex ML models (LoRA/SDXL) into production-ready, **$400M+ revenue-impacting** user experiences.
+                </p>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <div class="metric-value">92M+</div>
+                        <div class="metric-label">Users Impacted</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-value">$400M+</div>
+                        <div class="metric-label">Partner Integrations</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-value">28+</div>
+                        <div class="metric-label">Hackathons Attended</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-value">10%+</div>
+                        <div class="metric-label">Productivity Gain (AI)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">🧩 Core Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>AI/ML Stack</h3>
+                        <p><strong>LLM Agents, RAG Pipelines,</strong> LlamaIndex, Supabase, ChromaDB, Pinecone, Core ML, MLX, **LoRA/QLoRA**</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages & Frameworks</h3>
+                        <p><strong>Swift, SwiftUI, Python,</strong> TypeScript, Next.js, FastAPI, Vapor (Server-Side Swift)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Mobile Systems</h3>
+                        <p><strong>ActivityKit, WidgetKit, Dynamic Island,</strong> SwiftData, Realm, Combine, UIKit, Objective-C, Flutter</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud & Infra</h3>
+                        <p>Supabase Edge Functions, Docker, RunPod, **DataDog (Observability)**, AWS, Cloudflare Tunnels</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">🚀 Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Staff iOS Engineer → Applied AI/ML Engineer</div>
+                            <div class="experience-company">PayPal / Venmo</div>
+                        </div>
+                        <div class="experience-date">2020 – Present</div>
+                    </div>
+                    <div class="experience-description">
+                        
+                        <div class="subsection">
+                            <h3>🤖 AI/ML Evolution & Technical Innovation (2023–Present)</h3>
+                            
+                            <div class="achievement-item">
+                                <div class="achievement-title">Mercury – AI-Powered Agentic E-Commerce Platform (Hackathon-born)</div>
+                                <ul>
+                                    <li>Built the company's first applied **agentic AI platform** for autonomous merchant onboarding and product enhancement.</li>
+                                    <li>Pioneered AI image generation with custom **SDXL LoRA models** producing professional imagery in $\sim30$ seconds, **saving merchants $100–$500 per product**.</li>
+                                    <li>Achieved **58.5 GPU hours training, 23% loss reduction**, and implemented **MCP (Model Context Protocol)** for seamless AI agent orchestration.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="achievement-item">
+                                <div class="achievement-title">AI/ML Implementation & Automation</div>
+                                <ul>
+                                    <li>Developed **AI-powered crash detection system** using LangChain + DeepLake, now **adopted org-wide**.</li>
+                                    <li>Created **10%+ productivity improvements** via AI-powered internal automation tools.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>💡 iOS Engineering Excellence & Business Impact</h3>
+                            
+                            <div class="achievement-item">
+                                <div class="achievement-title">Innovation & Patents</div>
+                                <ul>
+                                    <li>**QRC Widget Patent (2022):** Filed **"Interface Widget Tool for Automatic QR Code Generation"**; first team to use SwiftUI for iOS widgets, **reducing user friction by 66%**.</li>
+                                    <li>Architected **Dynamic Island / Live Activities** infrastructure including server-side Swift implementation.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="achievement-item">
+                                <div class="achievement-title">Major Product Launches & Partnerships</div>
+                                <ul>
+                                    <li>**Amex Partnership (2020):** Built payment-splitting integration for **$400M partnership deal**.</li>
+                                    <li>**Pay With Venmo Checkout:** Key stakeholder driving growth through merchant integrations and **server-side Swift callbacks**.</li>
+                                    <li>**QRC Touch-Free Payments:** Led the initiative winning **$60M CVS contract**.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Previous Career History</div>
+                            <div class="experience-company">Google Stadia, Morgan Stanley, Parabit Systems, Gedeon GRC</div>
+                        </div>
+                        <div class="experience-date">2017 – 2020</div>
+                    </div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>**Google Stadia (iOS Dev/Consultant):** Supported mobile SDKs; leveraged iOS expertise for native plugins and crash report debugging (Flutter/Dart).</li>
+                            <li>**Morgan Stanley (iOS Dev/Consultant):** Enhanced Hybrid Banking apps, developing features like **biometric authentication** and migrating codebase from Objective-C to Swift.</li>
+                            <li>**Parabit Systems (Mobile Dev/R&D):** Built internal BLE tool for wireless firmware upgrades using Swift and **AWS Serverless (NodeJS/Lambda)**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">👥 Technical Leadership & Team Building</h2>
+                
+                <div class="subsection">
+                    <h3>Impact & Mentorship</h3>
+                    <ul>
+                        <li>Transformed from **IC $\rightarrow$ Technical Leader**, empowering team autonomy and innovation velocity.</li>
+                        <li>Hosted **technical workshops** on SwiftUI, State Machines, DataDog automation, and **AI/ML image generation**.</li>
+                        <li>Onboarded and mentored senior engineers, building growth plans and advocating for advancement.</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Cross-Functional & Cultural Impact</h3>
+                    <ul>
+                        <li>Broke down silos across iOS, Android, Backend, SRE, and Product teams; served as **liaison** on complex integrations (Amex, Amazon, CVS).</li>
+                        <li>**Interfaith ERG Chapter Lead** (Sikh community): Organized events and created educational content, elevating brand visibility.</li>
+                        <li>Received **Multiple PayPal Props Awards** (Paragon, Phenom, Powerhouse) for customer obsession and innovation mindset.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">🏆 Hackathon & Innovation Achievements</h2>
+                <p class="summary" style="margin-bottom: 20px;">
+                    Avid hackathon enthusiast with **28+ hackathons** across **6+ countries** as participant, mentor, and judge. 
+                </p>
+                
+                <div class="subsection">
+                    <h3>Featured Achievements</h3>
+                    
+                    <div class="hackathon-item">
+                        <div class="hackathon-header">
+                            <div class="hackathon-name">🇬🇧 MLH @ Bloomberg London (2017)</div>
+                            <div class="hackathon-badge">🥇 1st Place</div>
+                        </div>
+                        <p>**Automated Search & Rescue System** (Drone + DJI SDK). Featured in **BBC documentary**.</p>
+                    </div>
+                    
+                    <div class="hackathon-item">
+                        <div class="hackathon-header">
+                            <div class="hackathon-name">🇺🇸 Devcamp NYC (2016) / Google NYC</div>
+                            <div class="hackathon-badge">🥇 1st Place</div>
+                        </div>
+                        <p>**Talent Management App** for modeling agencies.</p>
+                    </div>
+
+                    <div class="hackathon-item">
+                        <div class="hackathon-header">
+                            <div class="hackathon-name">🇨🇭 HackZurich (4x Attended)</div>
+                            <div class="hackathon-badge">🏆 Finalist</div>
+                        </div>
+                        <p>**AR Car Buying Tool** featured in Credit Suisse interview.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">🎓 Education</h2>
+                <div class="education-item">
+                    <div class="education-school">New York City College of Technology, Brooklyn</div>
+                    <div class="education-degree">BS in Computer Systems (Deferred)</div>
+                    <div class="experience-date">2012 – 2016</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">🧠 Keywords (ATS / Search Optimization)</h2>
+                <div class="keywords">
+                    <span class="keyword-tag">AI Engineer</span>
+                    <span class="keyword-tag">iOS Staff Engineer</span>
+                    <span class="keyword-tag">LLM Agents</span>
+                    <span class="keyword-tag">RAG Pipelines</span>
+                    <span class="keyword-tag">SwiftUI</span>
+                    <span class="keyword-tag">Core ML</span>
+                    <span class="keyword-tag">MLX</span>
+                    <span class="keyword-tag">Stable Diffusion</span>
+                    <span class="keyword-tag">Automation</span>
+                    <span class="keyword-tag">DataDog</span>
+                    <span class="keyword-tag">FastAPI</span>
+                    <span class="keyword-tag">Next.js</span>
+                    <span class="keyword-tag">LoRA</span>
+                    <span class="keyword-tag">MCP</span>
+                    <span class="keyword-tag">Applied AI</span>
+                    <span class="keyword-tag">Patent</span>
+                    <span class="keyword-tag">Hackathon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            QRCode.toCanvas(document.getElementById('qrcode'), 'https://guriboy-6fupko.manus.space/', {
+                width: 100,
+                margin: 2,
+                color: {
+                    dark: '#1e3c72',
+                    light: '#ffffff'
+                }
+            }, function (error) {
+                if (error) console.error(error);
+                console.log('QR code generated successfully!');
+            });
+        });
+    </script>
+</body>
+</html>
