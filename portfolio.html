@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurinder Singh - Resume Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.3);
+            margin-bottom: 30px;
+            object-fit: cover;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .links a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .links a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .resume-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .resume-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .resume-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: white;
+        }
+        
+        .resume-card p {
+            opacity: 0.9;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        
+        .resume-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .btn-primary:hover {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: rgba(255,255,255,0.5);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: white;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://media.licdn.com/dms/image/v2/C5603AQHKQ1T3RVPIlg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1633565130301?e=1763596800&v=beta&t=LCBS55_RRBgu9taMBva5f243QQJYudBZAhvrr5fw4SY" alt="Gurinder Singh" class="profile-img">
+            <h1>Gurinder Singh</h1>
+            <p>Staff iOS & AI/ML Engineer</p>
+            <div class="links">
+                <a href="https://guriboy-6fupko.manus.space/" target="_blank">🌐 Portfolio</a>
+                <a href="https://linkedin.com/in/gurinder-singh-a30a1a48" target="_blank">🔗 LinkedIn</a>
+                <a href="mailto:gsingh622@yahoo.com">✉️ Email</a>
+            </div>
+        </div>
+        
+        <div class="resume-grid">
+            <div class="resume-card">
+                <h3>🎨 Beautiful Resume</h3>
+                <p>Visually rich design with animations, gradients, and modern styling. Perfect for creative and tech roles.</p>
+                <div class="resume-actions">
+                    <a href="Gurinder_Singh_Resume_Beautiful.html" class="btn btn-primary">View HTML</a>
+                    <a href="Gurinder_Singh_Resume_Beautiful_LinkedIn.pdf" class="btn btn-secondary">Download PDF</a>
+                </div>
+            </div>
+            
+            <div class="resume-card">
+                <h3>✨ Modern Resume</h3>
+                <p>Clean, minimalist design with excellent typography and professional layout. ATS-friendly format.</p>
+                <div class="resume-actions">
+                    <a href="Gurinder_Singh_Resume_Modern.html" class="btn btn-primary">View HTML</a>
+                    <a href="Gurinder_Singh_Resume_Modern_LinkedIn.pdf" class="btn btn-secondary">Download PDF</a>
+                </div>
+            </div>
+            
+            <div class="resume-card">
+                <h3>📄 Classic Resume</h3>
+                <p>Traditional professional format with structured sections and clean typography. Corporate-friendly design.</p>
+                <div class="resume-actions">
+                    <a href="Gurinder_Singh_Resume-Claude.html" class="btn btn-primary">View HTML</a>
+                    <a href="Gurinder_Singh_Resume_Claude_LinkedIn.pdf" class="btn btn-secondary">Download PDF</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Building legendary apps at the intersection of iOS & AI 🚀</p>
+        </div>
+    </div>
+</body>
+</html>

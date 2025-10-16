@@ -39,6 +39,8 @@ Staff iOS & AI/ML Engineer with over a decade of experience scaling applications
 
 ## 🔗 Links
 
+- **Live Resume**: [https://ripnrip.github.io/Gurinder-Singh-Resume/](https://ripnrip.github.io/Gurinder-Singh-Resume/) *(GitHub Pages)*
+- **Resume Portfolio**: [https://ripnrip.github.io/Gurinder-Singh-Resume/portfolio.html](https://ripnrip.github.io/Gurinder-Singh-Resume/portfolio.html)
 - **Portfolio**: [https://guriboy-6fupko.manus.space/](https://guriboy-6fupko.manus.space/)
 - **LinkedIn**: [https://linkedin.com/in/gurinder-singh-a30a1a48](https://linkedin.com/in/gurinder-singh-a30a1a48)
 - **Email**: gsingh622@yahoo.com
