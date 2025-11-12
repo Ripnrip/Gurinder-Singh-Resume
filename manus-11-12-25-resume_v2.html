@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurinder Singh - Staff iOS & AI/ML Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+        :root {
+            --primary-color: #008080; /* Teal */
+            --secondary-color: #004D4D;
+            --text-color: #333;
+            --bg-color: #fff;
+            --container-bg: #f5f5f5;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--container-bg);
+            color: var(--text-color);
+            font-size: 10pt;
+        }
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            margin: 2rem auto;
+            padding: 0.75in;
+            background-color: var(--bg-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1.5rem;
+            border: 3px solid var(--primary-color);
+        }
+
+        .header-left h1 {
+            font-size: 28pt;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .header-left .title {
+            font-size: 14pt;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .contact-info {
+            text-align: right;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 9pt;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+            width: 16px;
+            text-align: center;
+        }
+
+        .qr-code {
+            width: 80px;
+            height: 80px;
+            margin-top: 1rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 16pt;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        .summary p {
+            font-size: 10.5pt;
+            line-height: 1.7;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .skill-category-title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-category-title i {
+            margin-right: 0.75rem;
+            color: var(--primary-color);
+        }
+
+        .skill-list {
+            font-size: 9.5pt;
+            line-height: 1.8;
+        }
+
+        .job {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.25rem;
+        }
+
+        .job-title {
+            font-size: 12pt;
+            font-weight: 700;
+        }
+
+        .job-company {
+            font-size: 11pt;
+            font-weight: 500;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .job-company i {
+            margin-right: 0.5rem;
+        }
+
+        .job-period {
+            font-size: 9pt;
+            font-weight: 500;
+            color: #777;
+        }
+
+        .job ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 1rem;
+        }
+
+        .job li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .job li::before {
+            content: "\25B8";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--primary-color);
+            font-size: 8pt;
+        }
+
+        .detailed-skills-section {
+            columns: 2;
+            gap: 2rem;
+        }
+
+        .detailed-skill-category {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header-left">
+                <img src="me_ghibli.png" alt="Gurinder Singh" class="profile-img">
+                <div>
+                    <h1>Gurinder Singh</h1>
+                    <div class="title">Staff iOS & AI/ML Engineer</div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="https://guriboy-6fupko.manus.space"><i class="fas fa-globe"></i>guriboy-6fupko.manus.space</a>
+                <a href="https://www.linkedin.com/in/gurinder-singh-gs/"><i class="fab fa-linkedin"></i>linkedin.com/in/gurinder-singh-gs</a>
+                <a href="mailto:gsingh622@yahoo.com"><i class="fas fa-envelope"></i>gsingh622@yahoo.com</a>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://guriboy-6fupko.manus.space" alt="Portfolio QR Code" class="qr-code">
+            </div>
+        </div>
+
+        <div class="section summary">
+            <h2 class="section-title">Career Summary</h2>
+            <p>Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users. Patent-holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions. Proven track record of building legendary apps at global scale, from startup innovation to enterprise solutions serving 90M+ users worldwide. Passionate about mentoring engineers, conducting technical interviews, and fostering inclusive tech communities while driving innovation at the intersection of iOS and artificial intelligence.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-code"></i>Languages & Frameworks</h3>
+                    <div class="skill-list">Swift, SwiftUI, Python, TypeScript, Next.js, FastAPI, Vapor, Objective-C, Flutter/Dart</div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-robot"></i>AI/ML Stack</h3>
+                    <div class="skill-list">LLM Agents, RAG Pipelines, LlamaIndex, Supabase, ChromaDB, Pinecone, Core ML, MLX, LoRA, Stable Diffusion</div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-mobile-alt"></i>Mobile Systems</h3>
+                    <div class="skill-list">ActivityKit, WidgetKit, Dynamic Island, SwiftData, Realm, Combine, UIKit, Async/Await</div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><i class="fas fa-cloud"></i>Cloud & Infrastructure</h3>
+                    <div class="skill-list">Supabase Edge Functions, Docker, RunPod, DataDog, AWS Serverless, Lambda, DynamoDB</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Staff iOS Engineer &rarr; Applied AI/ML Engineer</div>
+                    <div class="job-period">2020 - Present</div>
+                </div>
+                <div class="job-company"><i class="fab fa-paypal"></i>PayPal / Venmo</div>
+                <ul>
+                    <li>Built PayPal/Venmo's first <strong>applied agentic AI platform</strong> for autonomous merchant onboarding</li>
+                    <li>Pioneered AI image generation with custom SDXL LoRA models producing professional imagery in ~30 seconds, <strong>saving merchants $100-500 per product</strong></li>
+                    <li>Delivered <strong>first org-wide MCP integration</strong> for seamless AI agent orchestration</li>
+                    <li>Achieved <strong>58.5 GPU hours training, 23% loss reduction</strong>, 109MB production-ready model</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">iOS Developer/Consultant</div>
+                    <div class="job-period">July 2019 - 2020</div>
+                </div>
+                <div class="job-company"><i class="fab fa-google"></i>Google Stadia</div>
+                <ul>
+                    <li>Worked on Google Stadia for mobile platforms in Flutter/Dart</li>
+                    <li>Leveraged iOS expertise for native plugins and crash debugging</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">iOS Developer/Consultant</div>
+                    <div class="job-period">April 2018 - July 2019</div>
+                </div>
+                <div class="job-company"><i class="fas fa-university"></i>Morgan Stanley</div>
+                <ul>
+                    <li>Hybrid Banking and Wealth Management apps for iOS</li>
+                    <li>Key features: check-deposit, <strong>biometric authentication</strong>, certificate-pinning, jailbreak detection</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-break">
+        <div class="section detailed-skills-section">
+            <h2 class="section-title">Detailed Technical Skills</h2>
+            
+            <div class="detailed-skill-category">
+                <h3 class="skill-category-title"><i class="fas fa-code"></i>Languages & Frameworks</h3>
+                <p class="skill-list">Swift, SwiftUI, Objective-C, Python, JavaScript, TypeScript, Node.js, Express.js, FastAPI, Vapor, Flutter/Dart, Next.js, React, React Native, HTML5, CSS3, GraphQL, RESTful API Design</p>
+            </div>
+
+            <div class="detailed-skill-category">
+                <h3 class="skill-category-title"><i class="fas fa-robot"></i>Applied AI/ML & Intelligent Systems</h3>
+                <p class="skill-list">LLM & Agentic Workflows: LangChain, LlamaIndex, RAG Pipelines, MCP Servers, CrewAI, LangFlow, Prompt Engineering, Function/Tool Calling, CustomGPT Actions, Multi-Agent Orchestration<br>
+Models & Frameworks: PyTorch, TensorFlow (familiarity), Core ML, MLX, scikit-learn, Stable Diffusion, LoRA Fine-Tuning, Whisper-MLX, Hugging Face Transformers, Cohere, OpenAI APIs, Claude API, OpenRouter, Ollama, LM Studio<br>
+Vectors & Embeddings: ChromaDB, Pinecone, Qdrant, DeepLake, Dense + Sparse Retrieval, Semantic Search, Hybrid Indexing, Reranking<br>
+Specialized AI: Computer Vision & Image Processing, NLP, Speech Processing, Image / Audio Generation Pipelines, ComfyUI, ElevenLabs</p>
+            </div>
+
+            <div class="detailed-skill-category">
+                <h3 class="skill-category-title"><i class="fas fa-database"></i>Data Science & Analytics</h3>
+                <p class="skill-list">Pandas, NumPy, Feature Engineering, Data Architecture, Model Evaluation, A/B Testing, Experimentation<br>
+Databases & Storage: PostgreSQL, Supabase, SQLite, NoSQL, DynamoDB, Firestore, MongoDB, Realm, SwiftData, Cosmos DB, Redis, Vector DBs (ChromaDB, Pinecone, Qdrant, DeepLake)</p>
+            </div>
+
+            <div class="detailed-skill-category">
+                <h3 class="skill-category-title"><i class="fas fa-mobile-alt"></i>Mobile Development (iOS + Cross-Platform)</h3>
+                <p class="skill-list">iOS SDK, SwiftUI, UIKit, ActivityKit, WidgetKit, ARKit, Core Data, Core Location, Core ML Integration, On-Device Inference, SwiftData, Realm, Combine, RxSwift, BLE, XCTest, Snapshot Testing, Swift Package Manager, Flutter SDK, React Native, Cordova</p>
+            </div>
+
+            <div class="detailed-skill-category">
+                <h3 class="skill-category-title"><i class="fas fa-cloud"></i>Cloud Platforms & Infrastructure</h3>
+                <p class="skill-list">Amazon Web Services (AWS): Lambda, DynamoDB, EC2, S3, CloudFront, API Gateway, SageMaker, Amplify, CloudWatch, IAM, Cognito<br>
+Google Cloud Platform (GCP): Vertex AI, Cloud Functions, Cloud Run, BigQuery, Firebase, Firestore, Cloud Storage, Vision AI, Speech-to-Text, Cloud SQL<br>
+Microsoft Azure: Azure AI Services, Cognitive Search, Azure Functions, AI Cloud Foundry, Azure OpenAI Service, Cosmos DB, Azure DevOps, Azure Pipelines<br>
+DigitalOcean: App Platform, Droplets, Spaces, Functions, Containers<br>
+Supabase: Edge Functions, PostgreSQL DB, Auth, Realtime Subscriptions, Storage, pgvector<br>
+Firebase: Cloud Functions, Firestore, Realtime DB, Authentication, FCM, Crashlytics, Hosting<br>
+Vercel & Others: Vercel, Railway, Netlify, RunPod, Replicate<br>
+Architecture: Multi-Cloud & Hybrid Compute, Microservices, Serverless / Edge Infrastructure, NGINX</p>
+            </div>
+
+            <div class="detailed-skill-category">
+                <h3 class="skill-category-title"><i class="fas fa-tools"></i>DevOps & Tooling</h3>
+                <p class="skill-list">Docker, Docker Compose, Kubernetes, Git, GitHub Actions, Artifactory, Jenkins, Fastlane, CI/CD Pipelines, DataDog (RUM, iOS SDK Integration, APM, Logs, Dashboards), SonarQube, Amplitude, Optimizely, Crashalytics, Firebase Analytics</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

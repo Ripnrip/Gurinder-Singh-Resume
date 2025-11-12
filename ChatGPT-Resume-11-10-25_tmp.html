@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ChatGPT-Resume-11-10-25.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%F0%9F%A7%AD-gurinder-singh">🧭 Gurinder Singh</h1>
+<p><strong>Staff iOS &amp; AI/ML Engineer</strong><br>
+📍 San Francisco, CA | ✉️ <a href="mailto:gurinder@binary-bros.com">gurinder@binary-bros.com</a> | 🔗 <a href="https://www.linkedin.com/in/gurinder-singh-a30a1a48">linkedin.com/in/gurinder-singh-a30a1a48</a> | 🌐 <a href="https://guriboy-6fupko.manus.space">guriboy-6fupko.manus.space</a><br>
+🧠 QR → <a href="https://guriboy-6fupko.manus.space">Manus Portfolio ↗</a></p>
+<hr>
+<h2 id="%E2%9A%A1-career-summary">⚡ Career Summary</h2>
+<p>Staff iOS &amp; AI/ML Engineer with over a decade of experience scaling applications for millions of users. Patent holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions. Proven track record of building legendary apps at global scale—from startup innovation to enterprise solutions serving 90 M + users at PayPal/Venmo. Passionate about mentoring engineers, conducting technical interviews, and fostering inclusive tech communities while driving innovation at the intersection of iOS/Mobile and artificial intelligence.</p>
+<hr>
+<h2 id="%F0%9F%92%BC-experience">💼 Experience</h2>
+<h3 id="paypal--venmo-2020-%E2%80%93-present"><strong>PayPal / Venmo (2020 – Present)</strong></h3>
+<p><strong>Staff iOS Engineer → Applied AI/ML Engineer</strong></p>
+<h4 id="%F0%9F%A4%96-ai--ml-innovation-%E2%80%93-project-mercury-2023-%E2%80%93-present">🤖 AI / ML Innovation – Project Mercury (2023 – Present)</h4>
+<ul>
+<li>🚀 <strong>Jun 2025 – Hackathon Prototype:</strong> Won internal hackathon; conceived agentic onboarding workflow.</li>
+<li>🧩 <strong>Jul 2025 – MVP Automation Launch:</strong> Built Venmo-merchant onboarding and AI image-generation pipeline.</li>
+<li>🎨 <strong>Sep 2025 – LoRA Training Cycle:</strong> Custom SDXL LoRA models trained (58 GPU hours, 23 % loss reduction).</li>
+<li>🖼️ <strong>Oct 15 2025 – Model Deployment Update:</strong> Post-training validation and internal showcase.</li>
+<li>☁️ <strong>Q4 2025 – Batch Validation (1 K Products):</strong> Pending MLOps container deployment to GCS for H200 batch tests.</li>
+<li>Built AI-powered crash detection system (LangChain + DeepLake); championed agentic automation initiatives.</li>
+</ul>
+<h4 id="%F0%9F%93%B1-ios-engineering--business-impact">📱 iOS Engineering &amp; Business Impact</h4>
+<ul>
+<li>Led merchant automation and QR commerce efforts for Venmo.</li>
+<li>Architected Pay with Venmo checkout experience across PayPal partners (CVS, Amex collaborations).</li>
+<li>Designed Dynamic Island &amp; Live Activities features adopted by tens of millions of users.</li>
+<li>Filed patent for QR Commerce Widget framework (US Patent pending).</li>
+</ul>
+<h4 id="%F0%9F%91%A5-leadership--mentorship">👥 Leadership &amp; Mentorship</h4>
+<ul>
+<li>Mentored junior engineers and led iOS guild architecture reviews.</li>
+<li>Conducted technical interviews for Staff + roles.</li>
+<li>Drove cross-team AI/ML adoption and knowledge-sharing within PayPal Labs.</li>
+</ul>
+<hr>
+<h3 id="google-stadia--niantic-2018-%E2%80%93-2020"><strong>Google Stadia / Niantic (2018 – 2020)</strong></h3>
+<ul>
+<li>Built companion mobile infrastructure for AR titles; implemented real-time multiplayer and cloud sync layers.</li>
+</ul>
+<h3 id="morgan-stanley-2015-%E2%80%93-2018"><strong>Morgan Stanley (2015 – 2018)</strong></h3>
+<ul>
+<li>Developed secure mobile banking features integrating biometrics and encrypted APIs; improved performance 30 %.</li>
+</ul>
+<hr>
+<h2 id="%E2%9A%99%EF%B8%8F-core-skills-optimized--nov-2025">⚙️ Core Skills (Optimized — Nov 2025)</h2>
+<h3 id="%F0%9F%A7%A9-languages--frameworks">🧩 Languages &amp; Frameworks</h3>
+<p>Swift • SwiftUI • Objective-C • Python • JavaScript • TypeScript • Node.js • Express.js • FastAPI • Vapor • Flutter/Dart • Next.js • React • React Native • HTML5 • CSS3 • GraphQL • REST API Design</p>
+<hr>
+<h3 id="%F0%9F%A4%96-applied-aiml--intelligent-systems">🤖 Applied AI/ML &amp; Intelligent Systems</h3>
+<p><strong>LLM &amp; Agentic Workflows:</strong> LangChain • LlamaIndex • RAG Pipelines • MCP Servers • Manus Platform • CrewAI • LangFlow • Prompt Engineering • Function/Tool Calling • Custom GPT Actions • Multi-Agent Orchestration<br>
+<strong>Models &amp; Frameworks:</strong> <strong>PyTorch</strong> • TensorFlow (fam.) • Core ML • MLX • scikit-learn • Stable Diffusion • LoRA Fine-Tuning • Whisper-MLX • Hugging Face • Cohere • OpenAI APIs • Claude API (Opus/Sonnet/Haiku) • OpenRouter • Ollama • LM Studio<br>
+<strong>Vectors &amp; Embeddings:</strong> ChromaDB • Pinecone • Qdrant • DeepLake • Dense + Sparse Retrieval • Semantic Search • Hybrid Indexing • Reranking<br>
+<strong>Specialized AI:</strong> Computer Vision • NLP • Speech Processing • ComfyUI • ElevenLabs • Audio/Visual Pipelines</p>
+<hr>
+<h3 id="%F0%9F%93%8A-data-science--analytics">📊 Data Science &amp; Analytics</h3>
+<p>Pandas • NumPy • Feature Engineering • Data Architecture • Model Evaluation • A/B Testing • Experimentation<br>
+<strong>Databases &amp; Storage:</strong> PostgreSQL • Supabase • SQLite • DynamoDB • Firestore • MongoDB • Realm • SwiftData • Cosmos DB • Redis • Vector DBs (ChromaDB/Pinecone/Qdrant/DeepLake)</p>
+<hr>
+<h3 id="%F0%9F%8C%90-web--application-development">🌐 Web &amp; Application Development</h3>
+<p>React / Next.js • Node / Express • Serverless APIs • GraphQL • Edge Functions • PWAs • SSR/SSG/ISR • Auth (OAuth/JWT/RLS) • WebSockets • Realtime Comms • SEO • A11Y • Performance Profiling</p>
+<hr>
+<h3 id="%F0%9F%93%B1-mobile-development-ios--cross-platform">📱 Mobile Development (iOS + Cross-Platform)</h3>
+<p>iOS SDK • SwiftUI • UIKit • ActivityKit • WidgetKit • ARKit • Core Data • Core Location • Core ML Integration • On-Device Inference • SwiftData • Realm • Combine • RxSwift • BLE • XCTest • Snapshot Testing • Swift PM • Flutter • React Native • Cordova</p>
+<hr>
+<h3 id="%E2%98%81%EF%B8%8F-cloud-platforms--infrastructure">☁️ Cloud Platforms &amp; Infrastructure</h3>
+<p><strong>AWS:</strong> Lambda • DynamoDB • EC2 • S3 • CloudFront • API Gateway • SageMaker • Amplify • CloudWatch • IAM • Cognito<br>
+<strong>GCP:</strong> Vertex AI • Cloud Run • Cloud Functions • BigQuery • Firebase • Firestore • Cloud Storage • Vision AI • Speech-to-Text • Cloud SQL<br>
+<strong>Azure:</strong> AI Services • Cognitive Search • AI Cloud Foundry • Azure OpenAI • Cosmos DB • Azure Functions • DevOps • Pipelines<br>
+<strong>Others:</strong> DigitalOcean (App Platform, Spaces) • Supabase (Edge Functions, pgvector) • Firebase (FCM, Crashlytics) • Vercel • Netlify • RunPod • Replicate<br>
+<strong>Architecture:</strong> Multi-Cloud &amp; Hybrid Compute • Microservices • Serverless/Edge Infra • NGINX</p>
+<hr>
+<h3 id="%E2%9A%99%EF%B8%8F-automation--integration">⚙️ Automation &amp; Integration</h3>
+<p>MCP Server Development • Manus Platform • AI Workflow Automation (n8n, CrewAI, LangFlow) • Playwright • Puppeteer • Selenium • BeautifulSoup • FireCrawl • Webhooks • API Integration • Business Process Automation</p>
+<hr>
+<h3 id="%F0%9F%A7%AD-devops--observability">🧭 DevOps &amp; Observability</h3>
+<p>Docker • Docker Compose • Kubernetes • Git • GitHub Actions • Jenkins • Fastlane • CI/CD Pipelines • Terraform • Pulumi • CloudFormation<br>
+<strong>Monitoring &amp; Analytics:</strong> DataDog (RUM • iOS SDK Integration • APM • Logs • Dashboards) • Amplitude • Sentry • New Relic • Grafana • Prometheus • Optimizely • Crashlytics<br>
+<strong>Quality &amp; Testing:</strong> SonarQube • BrowserStack • ESLint • SwiftLint • Prettier • TDD • Snapshot Testing • UI Testing<br>
+<strong>Experimentation:</strong> Metrics Instrumentation • Event Tracking • A/B Testing • Funnel Analytics • Feature Flagging</p>
+<hr>
+<h3 id="%F0%9F%8E%A8-design--generative-tools">🎨 Design &amp; Generative Tools</h3>
+<p>Figma • Sketch • Adobe XD • Photoshop • Stable Diffusion • ComfyUI • Automatic1111 • RunPod • Replicate • OpenWebUI • FFmpeg • ElevenLabs • Whisper-MLX • Lottie • Audio/Visual Pipelines</p>
+<hr>
+<h3 id="%F0%9F%A4%9D-collaboration--project-management">🤝 Collaboration &amp; Project Management</h3>
+<p>Agile/Scrum/Kanban • Jira • Linear • Confluence • Notion • Slack • Teams • Technical Documentation • Architecture Decision Records • Runbooks</p>
+<hr>
+<h3 id="%F0%9F%A7%A0-continuous-growth--learning">🧠 Continuous Growth &amp; Learning</h3>
+<p>Active research in agentic AI systems, cross-cloud deployment, on-device ML optimization, and ethical AI development.</p>
+<hr>
+<h3 id="%F0%9F%8E%93-education">🎓 Education</h3>
+<p><strong>B.S. Computer Science</strong> — University of California San Diego<br>
+Minor in Human Computer Interaction (HCI) | Graduated with Honors</p>
+<hr>
+<p><strong>GS · Page 3 of 3</strong></p>
+
+</body>
+</html>

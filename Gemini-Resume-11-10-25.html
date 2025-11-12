@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurinder Singh - Staff iOS & AI/ML Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #1a237e; /* Deep Navy */
+            --accent-color: #00bcd4; /* Teal/Electric Blue */
+            --text-color: #333;
+            --background-light: #f4f7f6;
+            --background-dark: #eee;
+        }
+
+        /* Single-Page Optimization CSS */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.4; /* Tighter line height */
+            color: var(--text-color);
+            background-color: #fff;
+            padding: 10px; /* Reduced body padding */
+            font-size: 0.9em; /* Smaller base font for space */
+        }
+
+        .resume-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 25px; /* Reduced container padding */
+        }
+
+        /* --- Header Section --- */
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--accent-color);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .header h2 {
+            color: var(--accent-color);
+            font-size: 1.2em;
+            margin-top: 3px;
+            font-weight: 400;
+        }
+
+        .contact-info p {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 0.9em;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .qr-code {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 0.75em;
+            padding: 3px;
+            border: 1px solid var(--background-dark);
+        }
+
+        /* --- Main Content (Columns) --- */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            flex: 1;
+            max-width: 300px;
+            padding: 15px;
+            background-color: var(--background-light);
+            border-right: 1px solid #ddd;
+        }
+
+        .right-column {
+            flex: 3;
+            padding-left: 20px;
+        }
+
+        /* --- General Section Styling --- */
+        .section-skills, .section-stats, .section-summary, .section-experience, .section-leadership {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .section-leadership { border-bottom: none; }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.1em;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: var(--text-color);
+            font-size: 1.0em;
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+
+        /* Experience Details */
+        .job-entry {
+            margin-bottom: 15px;
+        }
+
+        .job-entry h4 {
+            color: var(--primary-color);
+            margin-bottom: 0;
+        }
+
+        .job-entry .dates {
+            font-style: italic;
+            font-size: 0.85em;
+            color: #666;
+            margin-bottom: 3px;
+        }
+
+        ul {
+            padding-left: 15px;
+            margin: 3px 0;
+        }
+
+        ul li {
+            margin-bottom: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Skill and Stat Lists */
+        .stats-list li {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 3px 8px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Responsive adjustments for stacking columns on mobile */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .left-column, .right-column {
+                max-width: 100%;
+                padding: 0;
+                padding-top: 15px;
+                border-right: none;
+            }
+            
+            .left-column {
+                background-color: var(--background-dark);
+                padding-bottom: 0;
+            }
+
+            .qr-code {
+                position: static;
+                margin: 5px auto;
+                display: block;
+                width: max-content;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">
+            <h1>Gurinder Singh</h1>
+            <h2>Staff Software **iOS & AI/ML** Engineer</h2>
+            <div class="contact-info">
+                <p>📧 <a href="mailto:gsingh622@yahoo.com">gsingh622@yahoo.com</a></p>
+                <p>🔗 <a href="https://guriboy-6fupko.manus.space">Portfolio</a> | <a href="#">LinkedIn</a></p>
+            </div>
+            <div class="qr-code">
+                SCAN FOR PORTFOLIO
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="left-column">
+                <section class="section-skills">
+                    <h3>💡 Core Skills & Tech Stack</h3>
+                    <div class="skill-group">
+                        <h4>Languages & Frameworks</h4>
+                        <p>Swift, SwiftUI, Python, Objective-C, Flutter/Dart, TypeScript, Next.js, FastAPI, Vapor</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>AI/ML Stack</h4>
+                        <p>**LLM Agents, RAG Pipelines, Core ML, MLX, LORA, Stable Diffusion,** Llamalndex, Pinecone, ChromaDB</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Mobile Systems</h4>
+                        <p>ActivityKit, WidgetKit, Dynamic Island, SwiftData, Combine, UIKit, Async/Await</p>
+                    </div>
+                </section>
+                
+                <section class="section-stats">
+                    <h3>🏆 Quick Stats</h3>
+                    <ul class="stats-list">
+                        <li>**90M+** Users Impacted</li>
+                        <li>**28+** Hackathons (2x 1st Place Wins)</li>
+                        <li>**Patent Holder**</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <section class="right-column">
+                <section class="section-summary">
+                    <h3>🚀 Career Summary</h3>
+                    <p>Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users. **Patent holder** and technical leader specializing in bridging **cutting-edge AI/ML with practical mobile solutions**. Proven track record of building legendary apps at global scale, from startup innovation to enterprise solutions serving **90M+ users**, recently at my current role at PayPal/Venmo. Passionate about mentoring engineers, conducting technical interviews, and fostering inclusive tech communities while driving innovation at the intersection of **iOS/Mobile and artificial intelligence**.</p>
+                </section>
+
+                <section class="section-experience">
+                    <h3>💼 Experience</h3>
+
+                    <div class="job-entry">
+                        <h4>Staff iOS Engineer → Applied AI/ML Engineer | **PayPal / Venmo**</h4>
+                        <p class="dates">2020-Present</p>
+                        <ul>
+                            <li>**AI/ML Innovation:** Pioneered PayPal/Venmo's first applied **agentic AI platform** for autonomous merchant onboarding.</li>
+                            <li>Developed AI image generation with custom SDXL LORA models, saving merchants $100-$500 per product.</li>
+                            <li>**Architected** AI-powered crash detection system (LangChain + DeepLake), **adopted org-wide**.</li>
+                            <li>Led **QRC Touch-Free Payments** initiative; secured **$60M CVS contract**.</li>
+                            <li>Filed **QRC Widget Patent** ("Interface Widget Tool for Automatic QR Code Generation"), reducing user friction by **66%**.</li>
+                            <li>Architected features reaching **millions of active users**.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job-entry">
+                        <h4>iOS Developer/Consultant | **Morgan Stanley**</h4>
+                        <p class="dates">April 2018-July 2019</p>
+                        <ul>
+                            <li>Led key feature development including check-deposit, biometric authentication, and certificate-pinning.</li>
+                            <li>Migrated codebase from 98% Objective-C to 80% Objective-C / 20% Swift.</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="section-leadership">
+                    <h3>🧑‍💻 Technical Leadership & Team Building</h3>
+                    <ul>
+                        <li>Conducted technical interviews for senior iOS and AI/ML positions.</li>
+                        <li>Partnered with Design Systems to create a **SwiftUI component library that cut development time by 30%**.</li>
+                        <li>Served as Advisory Board Member for multiple tech startups on iOS architecture and AI/ML implementation.</li>
+                        <li>Earned **2 first-place wins** in 28+ hackathons and served as a judge at Yale (2x).</li>
+                        <li>Organized events and created educational content as Interfaith ERG Chapter Lead (Sikh community).</li>
+                    </ul>
+                </section>
+                
+                <section class="section-education">
+                    <h3>🎓 Education</h3>
+                    <div class="job-entry">
+                        <h4>New York City College of Technology, Brooklyn</h4>
+                        <p class="dates">2012-2016</p>
+                        <p>BS in Computer Systems (Deferred)</p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
