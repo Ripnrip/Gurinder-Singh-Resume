@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurinder Singh - Staff iOS & AI/ML Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Color Variables based on User's Original Teal Vibe --- */
+        :root {
+            --primary-color: #14b8a6; /* Teal */
+            --primary-dark: #0d9488;
+            --primary-light: #5eead4;
+            --secondary-color: #f0fdfa; /* Light Teal Background */
+            --bg-color-main: #f8fafc; /* Light Gray/White for main content */
+            --bg-color-sidebar: #e0f2fe; /* Light Blue/Teal gradient base */
+            --text-color: #1e293b; /* Dark Slate */
+            --text-light: #4b5563;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            --sidebar-gradient: linear-gradient(180deg, #f8fafc 0%, var(--bg-color-sidebar) 100%);
+        }
+
+        /* --- Global Reset & Typography --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #a7f3d0 0%, #14b8a6 100%); /* Light/Bright Teal background */
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* --- Header Section (Top Banner) --- */
+        .header {
+            background: var(--gradient);
+            color: white;
+            padding: 50px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 700;
+            color: white;
+            flex-shrink: 0;
+            /* Using a real image or initial placeholder */
+            background-image: url('https://guriboy-6fupko.manus.space/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.56a6f274.jpg&w=640&q=75');
+            background-size: cover;
+            background-position: center;
+            text-indent: -9999px; /* Hide initials if using image */
+        }
+
+        .header-info h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-info .title {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+        }
+
+        /* --- Main Content Layout --- */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            min-height: 600px;
+        }
+
+        .sidebar {
+            background: var(--sidebar-gradient);
+            padding: 40px 30px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .content {
+            padding: 40px;
+            background: var(--bg-color-main);
+        }
+
+        /* --- Section Styling --- */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2::before {
+            content: '';
+            width: 4px;
+            height: 25px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .about-text {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.7;
+            background: var(--secondary-color);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        /* --- Experience/Education Item Styling --- */
+        .experience-item, .education-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .job-title, .degree {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 5px;
+        }
+
+        .company, .school {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .date {
+            background: var(--gradient);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .description ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .description li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .description li::before {
+            content: '✦';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* --- Sidebar Skill Styling (Bubbles/Cells) --- */
+        .sidebar .skills-category-group {
+            margin-bottom: 25px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.0rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-item {
+            background: var(--white);
+            color: var(--primary-dark);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid var(--primary-light);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, background 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-1px);
+            background: var(--primary-light);
+            color: var(--text-color);
+        }
+
+        .sidebar-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: var(--white);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-light);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            font-size: 0.9rem;
+        }
+
+        .sidebar-list .icon-label {
+             display: flex;
+             align-items: center;
+             gap: 8px;
+        }
+
+        .sidebar-icon {
+            width: 25px;
+            height: 25px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .header::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="profile-photo">GS</div>
+                <div class="header-info">
+                    <h1>Gurinder Singh</h1>
+                    <div class="title">Staff iOS & AI/ML Engineer</div>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <span>gsingh622@yahoo.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <span>linkedin.com/in/gurindersingh</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                            <span>guriboy-6fupko.manus.space</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-qrcode"></i></div>
+                            <span>Portfolio QR Code [attachment_0](attachment)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <section class="section">
+                    <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+                    
+                    <div class="skills-category-group">
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile & Native Systems</h3>
+                        <div class="skills-container">
+                            <span class="skill-item"><i class="fab fa-swift"></i>Swift</span>
+                            <span class="skill-item"><i class="fab fa-swift"></i>SwiftUI</span>
+                            <span class="skill-item"><i class="fab fa-apple"></i>Objective-C</span>
+                            <span class="skill-item"><i class="fas fa-microchip"></i>CoreML/CreateML</span>
+                            <span class="skill-item"><i class="fas fa-microchip"></i>MLX</span>
+                            <span class="skill-item"><i class="fas fa-cube"></i>ARKit/RoomPlan</span>
+                            <span class="skill-item"><i class="fas fa-bolt"></i>ActivityKit/Dynamic Island</span>
+                            <span class="skill-item"><i class="fas fa-th-large"></i>WidgetKit</span>
+                            <span class="skill-item"><i class="fas fa-link"></i>Combine/RxSwift</span>
+                            <span class="skill-item"><i class="fab fa-bluetooth-b"></i>BLE/MapKit</span>
+                            <span class="skill-item"><i class="fab fa-flutter"></i>Flutter/Dart</span>
+                            <span class="skill-item"><i class="fas fa-box-open"></i>SPM/Cocoapods</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-group">
+                        <h3><i class="fas fa-brain"></i> Applied AI/ML & RAG</h3>
+                        <div class="skills-container">
+                            <span class="skill-item"><i class="fas fa-robot"></i>LLM Agents</span>
+                            <span class="skill-item"><i class="fas fa-filter"></i>RAG Pipelines</span>
+                            <span class="skill-item"><i class="fas fa-link"></i>LangChain/LlamaIndex</span>
+                            <span class="skill-item"><i class="fas fa-search-plus"></i>Multi-Vector Search</span>
+                            <span class="skill-item"><i class="fas fa-network-wired"></i>Knowledge-Graph RAG</span>
+                            <span class="skill-item"><i class="fas fa-server"></i>MCP Clients/Servers</span>
+                            <span class="skill-item"><i class="fas fa-eye"></i>Computer Vision</span>
+                            <span class="skill-item"><i class="fas fa-volume-up"></i>TTS/STT</span>
+                            <span class="skill-item"><i class="fas fa-fire-alt"></i>PyTorch/Tensorflow</span>
+                            <span class="skill-item"><i class="fas fa-cog"></i>LoRA Fine-Tuning</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-group">
+                        <h3><i class="fas fa-cloud"></i> Cloud, Data & DevOps</h3>
+                        <div class="skills-container">
+                            <span class="skill-item"><i class="fab fa-aws"></i>AWS/GCP/Azure</span>
+                            <span class="skill-item"><i class="fab fa-docker"></i>Docker/Containerization</span>
+                            <span class="skill-item"><i class="fas fa-infinity"></i>CI/CD Pipelines</span>
+                            <span class="skill-item"><i class="fab fa-github"></i>GitHub Actions/Git</span>
+                            <span class="skill-item"><i class="fas fa-server"></i>Serverless Swift/Vapor</span>
+                            <span class="skill-item"><i class="fas fa-database"></i>PostgreSQL/SQL/NoSQL</span>
+                            <span class="skill-item"><i class="fas fa-water"></i>DeepLake/Pinecone/Qdrant</span>
+                            <span class="skill-item"><i class="fab fa-python"></i>Python/FastAPI/Next.js</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2><i class="fas fa-award"></i> Recognition</h2>
+                    <ul class="sidebar-list">
+                        <li>
+                            <div class="sidebar-icon"><i class="fas fa-scroll"></i></div>
+                            <div class="icon-label">QRC Widget Patent (2022)</div>
+                        </li>
+                        <li>
+                            <div class="sidebar-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="icon-label">PayPal Paragon Award</div>
+                        </li>
+                        <li>
+                            <div class="sidebar-icon"><i class="fas fa-medal"></i></div>
+                            <div class="icon-label">MLH @ Bloomberg London - 1st Place</div>
+                        </li>
+                        <li>
+                            <div class="sidebar-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div class="icon-label">Hack Zurich - Finalist</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="education-item" style="margin-bottom: 0; padding: 15px;">
+                        <div class="job-title" style="color: var(--primary-dark);">BS in Computer Systems</div>
+                        <div class="company" style="margin-bottom: 5px;">New York City College of Technology, Brooklyn</div>
+                        <div class="date" style="background: var(--primary-color);">2012 – 2016</div>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="content">
+                <section class="section">
+                    <h2><i class="fas fa-user-tie"></i> Summary</h2>
+                    <div class="about-text">
+                        Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users. Patent holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions. Proven track record of building legendary apps at global scale, from startup innovation to enterprise solutions serving 90M+ users, recently at my current role at PayPal/Venmo. Passionate about mentoring engineers, conducting technical interviews, and fostering inclusive tech communities while driving innovation at the intersection of iOS/Mobile and artificial intelligence.
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="job-title">Staff iOS Engineer → Applied AI/ML Engineer</div>
+                                <div class="company">PayPal / Venmo</div>
+                            </div>
+                            <div class="date">2020 – Present</div>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>Built PayPal/Venmo's **first applied agentic AI platform** for autonomous merchant onboarding</li>
+                                <li>Pioneered AI image generation with custom SDXL **LoRA models**, saving merchants $100–$500 per product</li>
+                                <li>Delivered **first org-wide MCP integration** (Model Context Protocol) for seamless AI agent orchestration</li>
+                                <li>Achieved **58.5 GPU hours training, 23% loss reduction**, for a 109MB production-ready model</li>
+                                <li>Developed AI-powered crash detection system using **LangChain + DeepLake** – now adopted org-wide</li>
+                                <li>Created **10%+ productivity improvements** via AI-powered developer automation tools (DXT)</li>
+                                <li>Led $60M CVS contract and $400M Amex partnership deals via payment infrastructure development</li>
+                                <li>Filed "**Interface Widget Tool for Automatic QR Code Generation**" patent (2022)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="job-title">iOS Developer/Consultant</div>
+                                <div class="company">Google Stadia</div>
+                            </div>
+                            <div class="date">July 2019 – 2020</div>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>Worked on Google Stadia for mobile platforms in Flutter/Dart</li>
+                                <li>Leveraged deep iOS expertise for native plugins and critical crash debugging across hybrid platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="job-title">iOS Developer/Consultant</div>
+                                <div class="company">Morgan Stanley</div>
+                            </div>
+                            <div class="date">April 2018 – July 2019</div>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>Hybrid Banking and Wealth Management apps for iOS</li>
+                                <li>Implemented key security features: biometric authentication, certificate-pinning, jailbreak detection</li>
+                                <li>Migrated codebase from 98% Objective-C to 80% Objective-C / 20% Swift</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section" style="margin-bottom: 0;">
+                    <h2><i class="fas fa-users"></i> Leadership & Community</h2>
+                    <div class="description" style="margin-left: 0;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li>Advisory Board Member for multiple tech startups on iOS architecture and AI/ML implementation</li>
+                            <li>Conducted technical interviews for senior iOS and AI/ML positions</li>
+                            <li>Hosted technical workshops: **SwiftUI, State Machines, AI/ML image generation, DataDog automation**</li>
+                            <li>Interfaith ERG Chapter Lead (Sikh community): Organized events, secured speakers, created educational content</li>
+                            <li>Represented Venmo at Yale hackathons and high school tech education initiatives; Hackathon judge at Yale (2x)</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
