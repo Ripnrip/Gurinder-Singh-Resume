@@ -7,13 +7,6 @@ export default function ResumePage() {
   return (
     <div className="resume-container">
       <div className="resume-page">
-          {/* Contact Bar */}
-          <div className="contact-bar">
-            <span>📧 gsingh622@yahoo.com</span>
-            <a href="https://guriboy.codes" target="_blank" rel="noopener noreferrer">💼 Portfolio</a>
-            <a href="https://linkedin.com/in/gurinder" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-          </div>
-
         {/* Left Sidebar */}
         <aside className="sidebar">
           <div className="sidebar-header">
@@ -23,9 +16,10 @@ export default function ResumePage() {
           </div>
 
           <div className="sidebar-contact">
-            <p>San Jose, CA • Open to remote/hybrid</p>
-            <p>Portfolio / GitHub / LinkedIn available on request</p>
-            <p>Specialties: iOS, AI/ML, Agentic Systems, Experiments</p>
+            <p>📧 gsingh622@yahoo.com</p>
+            <p>💼 <a href="https://guriboy.codes" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'none' }}>Portfolio</a></p>
+            <p>🔗 <a href="https://linkedin.com/in/gurinder" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'none' }}>LinkedIn</a></p>
+            <p style={{ marginTop: '0.5rem', fontStyle: 'italic' }}>San Jose, CA • Open to remote/hybrid</p>
           </div>
 
           <div className="sidebar-divider"></div>
@@ -64,40 +58,7 @@ export default function ResumePage() {
                 <span className="experience-date">2020 – Present</span>
               </div>
               <ul className="experience-list">
-                <li><strong>✅ Team Mercury — AI-Powered Agentic E-Commerce Platform (June 2025 → Present)</strong></li>
-                <div className="mercury-details">
-                  <p><em>Leadership: Lead engineer managing 2 new hires (&lt;1 year tenure), cross-org collaboration with Applied AI team</em></p>
-
-                  <div className="mercury-timeline">
-                    <div className="timeline-item">
-                      <strong>🟩 June 2025 — Project Conception:</strong> Concept originated during exploration of agentic AI for merchant automation; formed initial skunkworks team as 20% project
-                    </div>
-
-                    <div className="timeline-item">
-                      <strong>🟩 July 2025 — Hackathon Prototype ("Rock-Star Hit"):</strong> Built fully functional prototype in 72 hours; became standout hit at hackathon; presented to SVP of AI earning immediate backing; began leading team including two newly hired engineers
-                    </div>
-
-                    <div className="timeline-item">
-                      <strong>🟩 August 2025 — 56K Dataset + Safe Data Pipeline:</strong> Designed safe, compliant scraping pipeline; ingested and normalized 56,000 products across marketplaces; established 5 training categories; weekly collaboration with Applied AI team
-                    </div>
-
-                    <div className="timeline-item">
-                      <strong>🟩 September 2025 — LoRA Training + Model Leadership:</strong> Curated datasets and trained five SDXL LoRA models; achieved 58.5 GPU hours, 23% loss reduction, 109MB optimized models; guided new engineers through ML pipeline development; project expanded from 20% to 120% cross-org initiative
-                    </div>
-
-                    <div className="timeline-item">
-                      <strong>🟩 October 15, 2025 — SVP Demo + Productionization:</strong> Demoed integrated system to SVP and leadership; delivered multiphase agent flows (Meta/Google/TikTok); drove containerization with MLOps for GCS + H200 cluster; implemented MCP multi-agent orchestration
-                    </div>
-
-                    <div className="timeline-item">
-                      <strong>🟩 November 2025 — GraphRAG + Ads Intelligence:</strong> Built merchant knowledge graph using GraphRAG; defined schema for marketplace history, asset scoring, embeddings; synced weekly with Ads Intelligence team
-                    </div>
-
-                    <div className="timeline-item">
-                      <strong>🟩 December 2025 — 56K Dataset Batch Validation:</strong> Designed validation system for drift detection, category alignment, image quality scoring; preparing full dataset validation on H200s; working with MLOps on GPU deployment pipeline
-                    </div>
-                  </div>
-                </div>
+                <li><strong>✅ Team Mercury — AI-Powered Agentic E-Commerce Platform (June 2025 → Present)</strong>: Lead engineer managing 2 new hires (&lt;1 year tenure) with cross-org Applied AI collaboration. Built PayPal/Venmo's first applied agentic AI platform for autonomous merchant onboarding, achieving 58.5 GPU hours training, 23% loss reduction, 109MB production models.</li>
                 <li>Developed AI-powered crash detection system using LangChain + DeepLake – now adopted org-wide</li>
                 <li>Created 10%+ productivity improvements via AI-powered automation tools</li>
                 <li>Built payment-splitting for $400M Amex partnership deal (2020)</li>
@@ -123,6 +84,51 @@ export default function ResumePage() {
                 <li>Worked on Google Stadia for mobile platforms in Flutter/Dart</li>
                 <li>Leveraged iOS expertise for native plugins and crash debugging</li>
               </ul>
+            </div>
+
+            {/* Mercury Project Section */}
+            <div className="experience-item" style={{ background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.05), rgba(15, 23, 42, 0.02))', border: '2px solid rgba(56, 189, 248, 0.2)' }}>
+              <div className="experience-header">
+                <div>
+                  <h3 className="experience-title">✅ Team Mercury — AI-Powered Agentic E-Commerce Platform</h3>
+                  <p className="experience-company">PayPal / Venmo • Lead Engineer</p>
+                </div>
+                <span className="experience-date">June 2025 → Present</span>
+              </div>
+
+              <p style={{ color: '#64748b', fontStyle: 'italic', marginBottom: '1rem' }}>
+                Leadership: Lead engineer managing 2 new hires (&lt;1 year tenure), cross-org collaboration with Applied AI team
+              </p>
+
+              <div className="mercury-timeline">
+                <div className="timeline-item">
+                  <strong>🟩 June 2025 — Project Conception:</strong> Concept originated during exploration of agentic AI for merchant automation; formed initial skunkworks team as 20% project
+                </div>
+
+                <div className="timeline-item">
+                  <strong>🟩 July 2025 — Hackathon Prototype ("Rock-Star Hit"):</strong> Built fully functional prototype in 72 hours; became standout hit at hackathon; presented to SVP of AI earning immediate backing; began leading team including two newly hired engineers
+                </div>
+
+                <div className="timeline-item">
+                  <strong>🟩 August 2025 — 56K Dataset + Safe Data Pipeline:</strong> Designed safe, compliant scraping pipeline; ingested and normalized 56,000 products across marketplaces; established 5 training categories; weekly collaboration with Applied AI team
+                </div>
+
+                <div className="timeline-item">
+                  <strong>🟩 September 2025 — LoRA Training + Model Leadership:</strong> Curated datasets and trained five SDXL LoRA models; achieved 58.5 GPU hours, 23% loss reduction, 109MB optimized models; guided new engineers through ML pipeline development; project expanded from 20% to 120% cross-org initiative
+                </div>
+
+                <div className="timeline-item">
+                  <strong>🟩 October 15, 2025 — SVP Demo + Productionization:</strong> Demoed integrated system to SVP and leadership; delivered multiphase agent flows (Meta/Google/TikTok); drove containerization with MLOps for GCS + H200 cluster; implemented MCP multi-agent orchestration
+                </div>
+
+                <div className="timeline-item">
+                  <strong>🟩 November 2025 — GraphRAG + Ads Intelligence:</strong> Built merchant knowledge graph using GraphRAG; defined schema for marketplace history, asset scoring, embeddings; synced weekly with Ads Intelligence team
+                </div>
+
+                <div className="timeline-item">
+                  <strong>🟩 December 2025 — 56K Dataset Batch Validation:</strong> Designed validation system for drift detection, category alignment, image quality scoring; preparing full dataset validation on H200s; working with MLOps on GPU deployment pipeline
+                </div>
+              </div>
             </div>
 
             <div className="experience-item">
@@ -333,36 +339,6 @@ export default function ResumePage() {
           color: #64748b;
           margin-bottom: 2rem;
           font-size: 1rem;
-        }
-
-        /* Contact Bar */
-        .contact-bar {
-          display: flex;
-          justify-content: center;
-          gap: 2rem;
-          padding: 1rem 0;
-          margin-bottom: 1rem;
-          font-size: 0.9rem;
-          font-weight: 500;
-          background: #f8fafc;
-          border-radius: 8px;
-          text-align: center;
-          grid-column: 1 / -1;
-          border: 1px solid rgba(148, 163, 184, 0.2);
-        }
-
-        .contact-bar span {
-          color: #020817;
-        }
-
-        .contact-bar a {
-          color: #38bdf8;
-          text-decoration: none;
-          font-weight: 500;
-        }
-
-        .contact-bar a:hover {
-          text-decoration: underline;
         }
 
         /* Sidebar */

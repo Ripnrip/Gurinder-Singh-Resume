@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-11-14] - Cursor-Resume Layout Updates & Vercel Deployment
+
+### Changed
+- Updated Cursor-Resume/app/page.tsx: Moved contact information from top contact bar to sidebar
+- Improved sidebar contact section with emoji icons and clickable links
+- Contact info now includes: 📧 Email, 💼 Portfolio (linked), 🔗 LinkedIn (linked)
+- Added location info: "San Jose, CA • Open to remote/hybrid" in sidebar
+- Removed redundant top contact bar for cleaner layout
+
+### Added
+- Created comprehensive resume index page (index.html) with all 31 resume versions
+- Added Vercel configuration (vercel.json) for static site deployment
+- Deployed resume collection to Vercel production
+- Featured resumes section highlighting latest, Manus, and Purple versions
+- Active projects section with Cursor-Resume and KiloCode-Resume links
+- Resources section with links to documentation files
+
+### Fixed
+- Simplified Vercel config to resolve deployment errors
+- Renamed old index.html to index-resume-purple.html to preserve it
+
 ## [2025-11-14] - Ultimate Resume Creation & Design Refinement
 
 ### Added

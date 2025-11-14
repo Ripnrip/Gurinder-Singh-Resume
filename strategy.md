@@ -15,10 +15,56 @@ Leverage Simplicity and UI/Animations and Cells/Bubbles from -
 Core Technical Skills And Personal Projects from
 [Claude-Resume-11-10-25](Claude-Resume-11-10-25.html)
 
+1. Edit
+Remove Kubernetes
+Add XCode
+
+2. Get Icons
+LMStudio, 
+Manus Platform, 
+Cursor
+Kilo Code
+Gemini CLI
+Claude CLI * add
+OpenRouter
+Optimizely
+Miro
+Faiss (https://github.com/facebookresearch/faiss)
+Firestore (https://www.google.com/imgres?q=firestore&imgurl=https%3A%2F%2Ffirebase.google.com%2Fstatic%2Fimages%2Fproducts%2Ficons%2Fbuild_firestore.svg&imgrefurl=https%3A%2F%2Ffirebase.google.com%2Fproducts%2Ffirestore&docid=Qu-vRvs2DXEa7M&tbnid=afK9ye-lmj6goM&vet=12ahUKEwj84NWk9vGQAxUDiO4BHcq8EA0QM3oECBgQAA..i&w=500&h=500&hcb=2&ved=2ahUKEwj84NWk9vGQAxUDiO4BHcq8EA0QM3oECBgQAA)
+Runpod
+Replicate
+Azure
+AI Cloud Foundry
+N8N
+Pydantic
+ComfyUI
+Milvus
+Weaviate
+Neo4j
+DeepLake
+MCP Servers and Clients
+LLamaParse & LLamaIndex
+Vapor (https://vapor.codes/)
+
+3. Improvise with whatever? Emojis? something else
+Snapshot Testing (Camera)
+FAISS (meta icon)
+Vector Databases ( ? )
+NoSQL & SQL ( ?)
+Multi-Cloud ( ? )
+Observability( ? )
+Containerization ( ? )
+GGUF ( ? )
+LoRa ( ?)
+LLMs
+RAG Pipelines
+Pandas ( ? )
+
+
 
 
 ***
-
+TODO: Add Sikh Videos and Meditation for ERG
 
 **Summary**
 -
@@ -98,3 +144,36 @@ TODO:
 - Wedding Website
 - Hylios
 - AMORC Search
+
+
+
+LMStudio, 
+Manus Platform, 
+Cursor
+Kilo Code
+Gemini CLI
+Claude CLI * add
+OpenRouter
+Optimizely
+Miro
+Faiss (https://github.com/facebookresearch/faiss)
+Firestore (https://www.google.com/imgres?q=firestore&imgurl=https%3A%2F%2Ffirebase.google.com%2Fstatic%2Fimages%2Fproducts%2Ficons%2Fbuild_firestore.svg&imgrefurl=https%3A%2F%2Ffirebase.google.com%2Fproducts%2Ffirestore&docid=Qu-vRvs2DXEa7M&tbnid=afK9ye-lmj6goM&vet=12ahUKEwj84NWk9vGQAxUDiO4BHcq8EA0QM3oECBgQAA..i&w=500&h=500&hcb=2&ved=2ahUKEwj84NWk9vGQAxUDiO4BHcq8EA0QM3oECBgQAA)
+Runpod
+Replicate
+Azure
+AI Cloud Foundry
+N8N
+Pydantic
+ComfyUI
+Milvus
+Weaviate
+Neo4j
+DeepLake
+MCP Servers and Clients
+LLamaParse & LLamaIndex
+Vapor (https://vapor.codes/)
+Pinecone https://www.pinecone.io/  
+cohere https://cohere.com/  
+GraphQL,
+Realm lets use Color https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVipxfGLlB7JF063Bh4vSbxIZ1M-lR7SxyA&s 
+3. Improvise with whatever? Emojis

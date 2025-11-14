@@ -254,6 +254,7 @@ A collection of ideas and experiments to try for making the resume even more vis
 - [ ] **Export Options** - Export to PDF, DOCX, TXT formats
 - [ ] **Template System** - Multiple resume templates
 - [ ] **Dynamic Content** - Pull content from APIs/databases
+- [ ] **Separate Vercel Deployment** - Set up Cursor-Resume Next.js app as separate Vercel project for independent deployments
 
 ---
 

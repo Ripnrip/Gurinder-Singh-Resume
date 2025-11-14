@@ -35,3 +35,4 @@ build/
 # Old versions
 *-old.*
 *-backup.*
+.vercel
