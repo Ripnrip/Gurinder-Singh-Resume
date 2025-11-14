@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <!-- Apple MLX -->
+  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="#000"/>
+  <path d="M12 4.18l8 4v8.64c0 4.41-2.72 8.5-8 9.82-5.28-1.32-8-5.41-8-9.82V8.18l8-4z" fill="#FFF"/>
+  <path d="M8 9h8v1.5H8zm0 3h8v1.5H8zm0 3h5v1.5h-5z" fill="#000"/>
+</svg>
+
