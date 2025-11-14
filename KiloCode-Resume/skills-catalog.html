@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gurinder Singh — Skills &amp; Icons Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --bg: #020817;
+        --bg-elevated: #020817;
+        --ink: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #22c55e;
+        --accent-soft: rgba(34, 197, 94, 0.16);
+        --border-subtle: rgba(148, 163, 184, 0.35);
+        --font-sans: system-ui, -apple-system, BlinkMacSystemFont, -system-ui,
+          -apple-system, system-ui, sans-serif;
+        --pill-radius: 999px;
+
+        /* Single knob: bump this to scale all icons (e.g. 1.25, 1.5) */
+        --icon-scale: 1.4;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(
+            circle at top,
+            rgba(34, 197, 94, 0.06),
+            transparent
+          ),
+          var(--bg);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 1320px;
+        background: radial-gradient(
+            circle at top left,
+            rgba(34, 197, 94, 0.08),
+            transparent
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(56, 189, 248, 0.04),
+            transparent
+          ),
+          var(--bg-elevated);
+        border-radius: 32px;
+        padding: 22px 22px 20px;
+        border: 1px solid rgba(148, 163, 184, 0.24);
+        box-shadow:
+          0 24px 80px rgba(15, 23, 42, 0.5),
+          0 0 0 1px rgba(15, 23, 42, 0.4);
+      }
+
+      .header-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 12px;
+      }
+
+      .identity {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .pill-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 3px 10px;
+        border-radius: var(--pill-radius);
+        border: 1px solid rgba(34, 197, 94, 0.55);
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+      }
+
+      .pill-label span.dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+
+      .name {
+        font-size: 1.35rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        color: #f9fafb;
+      }
+
+      .subtitle {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .icon-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        max-width: 320px;
+        justify-content: flex-end;
+      }
+
+      .app-icon-pill {
+        width: calc(26px * var(--icon-scale));
+        height: calc(26px * var(--icon-scale));
+        border-radius: 9px;
+        background: radial-gradient(
+            circle at 30% 0,
+            rgba(255, 255, 255, 0.08),
+            transparent
+          ),
+          rgba(15, 23, 42, 0.96);
+        border: 1px solid rgba(148, 163, 184, 0.42);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: calc(4px * var(--icon-scale));
+      }
+
+      .app-icon-pill img {
+        width: calc(16px * var(--icon-scale));
+        height: calc(16px * var(--icon-scale));
+        display: block;
+      }
+
+      .hint {
+        font-size: 0.64rem;
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+
+      .sections {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 4px;
+      }
+
+      .section {
+        padding: 8px 9px 7px;
+        border-radius: 18px;
+        border: 1px solid rgba(75, 85, 99, 0.9);
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(15, 23, 42, 0.9),
+            rgba(9, 9, 11, 1)
+          );
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 4px;
+      }
+
+      .section-icon-pill {
+        width: calc(22px * var(--icon-scale));
+        height: calc(22px * var(--icon-scale));
+        border-radius: 8px;
+        background: rgba(15, 23, 42, 1);
+        border: 1px solid rgba(148, 163, 184, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: calc(3px * var(--icon-scale));
+        flex-shrink: 0;
+      }
+
+      .section-icon-pill img {
+        width: calc(16px * var(--icon-scale));
+        height: calc(16px * var(--icon-scale));
+        display: block;
+      }
+
+      .section-title {
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #e5e7eb;
+      }
+
+      .section-subtitle {
+        font-size: 0.62rem;
+        color: var(--muted);
+        margin-left: auto;
+      }
+
+      .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .skill-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        border-radius: var(--pill-radius);
+        border: 1px solid rgba(75, 85, 99, 0.9);
+        background: radial-gradient(
+            circle at 0 0,
+            rgba(148, 163, 253, 0.16),
+            transparent
+          ),
+          rgba(9, 9, 11, 0.98);
+        font-size: 0.63rem;
+        color: #e5e7eb;
+        white-space: nowrap;
+      }
+
+      .skill-pill strong {
+        font-weight: 600;
+        color: #bbf7d0;
+      }
+
+      .skill-pill img {
+        width: calc(13px * var(--icon-scale));
+        height: calc(13px * var(--icon-scale));
+        display: block;
+      }
+
+      .section-note {
+        margin-top: 2px;
+        font-size: 0.6rem;
+        color: rgba(156, 163, 175, 0.85);
+      }
+
+      @media (max-width: 900px) {
+        body {
+          padding: 12px;
+        }
+        .page {
+          padding: 14px;
+          border-radius: 20px;
+        }
+        .sections {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: #ffffff;
+        }
+        .page {
+          box-shadow: none;
+          border-radius: 0;
+          border: none;
+          background: #000000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header-row">
+        <div class="identity">
+          <div class="pill-label">
+            <span class="dot"></span>
+            Skills &amp; Icons Catalog — iOS · AI/ML · Cloud · Data · Product
+          </div>
+          <div class="name">Gurinder Singh</div>
+          <div class="subtitle">
+            Complete catalog of technologies, tools &amp; platforms represented in this repo.
+          </div>
+        </div>
+        <div class="icon-grid">
+          <!-- Icon wall: directly sourced from Resume App Icon -->
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/swift.svg" alt="Swift" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/python.svg" alt="Python" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/typescript.svg" alt="TypeScript" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/javascript.svg" alt="JavaScript" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/nextjs.svg" alt="Next.js" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/nodejs.svg" alt="Node.js" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/pytorch.svg" alt="PyTorch" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/tensorflow.svg" alt="TensorFlow" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/numpy.svg" alt="NumPy" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/opencv.svg" alt="OpenCV" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/postgresql.svg" alt="PostgreSQL" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/mongodb.svg" alt="MongoDB" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/redis.svg" alt="Redis" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/supabase.svg" alt="Supabase" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/firebase.svg" alt="Firebase" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/docker.svg" alt="Docker" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/digitalocean.svg" alt="DigitalOcean" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/vercel.svg" alt="Vercel" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/github.svg" alt="GitHub" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/jenkins.svg" alt="Jenkins" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/browserstack.svg" alt="BrowserStack" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/amplitude.svg" alt="Amplitude" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/figma.svg" alt="Figma" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/mapkit.svg" alt="MapKit" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/ble.svg" alt="BLE" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/serverless-swift.svg" alt="Serverless Swift" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/serverless.svg" alt="Serverless" />
+          </div>
+        </div>
+      </header>
+
+      <div class="hint">
+        Open this file directly in your browser.
+        To resize icons globally, edit
+        <code>--icon-scale</code>
+        in
+        <code>:root</code>
+        at the top of this file.
+        Copy any pill block below into your resume layout to reuse both the icon and labeling.
+      </div>
+
+      <section class="sections">
+        <!-- 1. iOS & Mobile Engineering -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon-pill">
+              <img src="../Resume App Icon/swift.svg" alt="Swift" />
+            </div>
+            <div class="section-title">iOS &amp; Mobile Engineering</div>
+            <div class="section-subtitle">Core platforms &amp; client</div>
+          </div>
+          <div class="skills-grid">
+            <!-- Example pill snippet for reuse:
+                 <div class="skill-pill">
+                   <img src="../Resume App Icon/swift.svg" alt="Swift" />
+                   <strong>Swift</strong>, SwiftUI, Objective-C
+                 </div>
+            -->
+            <div class="skill-pill">
+              <img src="../Resume App Icon/swift.svg" alt="Swift" />
+              <strong>Swift</strong>, SwiftUI, Objective-C
+            </div>
+            <div class="skill-pill">UIKit, Auto Layout, Animations</div>
+            <div class="skill-pill">ARKit, ActivityKit, WidgetKit</div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/mapkit.svg" alt="MapKit" />
+              MapKit, CoreLocation, BLE
+            </div>
+            <div class="skill-pill">Core ML (on-device), MLX</div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/serverless-swift.svg" alt="Serverless Swift" />
+              Vapor, Serverless Swift APIs
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/javascript.svg" alt="JS" />
+              <strong>React</strong>, React Native (where relevant)
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/nextjs.svg" alt="Next.js" />
+              Next.js for mobile-first web
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/nodejs.svg" alt="Node.js" />
+              Node.js, API backends
+            </div>
+            <div class="skill-pill">Cordova / Ionic (legacy support)</div>
+          </div>
+          <div class="section-note">
+            Deep platform fluency for building production-grade, secure, and animated mobile experiences.
+          </div>
+        </div>
+
+        <!-- 2. AI/ML & Agentic Systems -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon-pill">
+              <img src="../Resume App Icon/python.svg" alt="Python" />
+            </div>
+            <div class="section-title">AI/ML &amp; Agentic Systems</div>
+            <div class="section-subtitle">LLMs · RAG · Tools</div>
+          </div>
+          <div class="skills-grid">
+            <!-- Reusable pattern:
+                 <div class="skill-pill">
+                   <img src="../Resume App Icon/python.svg" alt="Python" />
+                   <strong>Python</strong>, NumPy, Pandas
+                 </div>
+            -->
+            <div class="skill-pill">
+              <img src="../Resume App Icon/python.svg" alt="Python" />
+              <strong>Python</strong>, NumPy, Pandas
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/pytorch.svg" alt="PyTorch" />
+              PyTorch
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/tensorflow.svg" alt="TensorFlow" />
+              TensorFlow
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/numpy.svg" alt="NumPy" />
+              SciPy stack, scikit-learn
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/opencv.svg" alt="OpenCV" />
+              OpenCV, CV pipelines
+            </div>
+            <div class="skill-pill">LLMs (OpenAI, Claude, local via Ollama)</div>
+            <div class="skill-pill">RAG Pipelines, hybrid/multi-vector search</div>
+            <div class="skill-pill">LangChain, LlamaIndex, LangGraph-style flows</div>
+            <div class="skill-pill">MCP Servers &amp; Clients, custom tools</div>
+            <div class="skill-pill">CrewAI, LangFlow, tool calling orchestration</div>
+            <div class="skill-pill">TTS/STT, multimodal, Stable Diffusion, LoRA</div>
+          </div>
+          <div class="section-note">
+            Focused on production-ready AI: retrieval, safety, latency, and real workflows.
+          </div>
+        </div>
+
+        <!-- 3. Cloud, DevOps & Reliability -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon-pill">
+              <img src="../Resume App Icon/docker.svg" alt="Docker" />
+            </div>
+            <div class="section-title">Cloud, DevOps &amp; Reliability</div>
+            <div class="section-subtitle">Infra · CI/CD · SLOs</div>
+          </div>
+          <div class="skills-grid">
+            <!-- AWS / GCP / Azure as separate entries; copy any for your layout -->
+            <div class="skill-pill">
+              <strong>AWS</strong> (Lambda, API Gateway, IAM, S3, DynamoDB)
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/gcp.svg" alt="GCP" />
+              <strong>GCP</strong>, Vertex AI
+            </div>
+            <div class="skill-pill">
+              <strong>Azure</strong> (App Service, Functions, AI)
+            </div>
+
+            <!-- Managed platforms with explicit icons -->
+            <div class="skill-pill">
+              <img src="../Resume App Icon/digitalocean.svg" alt="DigitalOcean" />
+              DigitalOcean
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/firebase.svg" alt="Firebase" />
+              Firebase
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/supabase.svg" alt="Supabase" />
+              Supabase
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/vercel.svg" alt="Vercel" />
+              Vercel (Next.js, edge, previews)
+            </div>
+
+            <!-- Containerization / DevOps -->
+            <div class="skill-pill">
+              <img src="../Resume App Icon/docker.svg" alt="Docker" />
+              Docker, images &amp; orchestration
+            </div>
+            <div class="skill-pill">Kubernetes (EKS/GKE/AKS)</div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/serverless.svg" alt="Serverless" />
+              Serverless (Lambdas, Cloud Functions)
+            </div>
+
+            <!-- CI/CD & QA -->
+            <div class="skill-pill">
+              <img src="../Resume App Icon/github.svg" alt="GitHub" />
+              GitHub Actions, trunk-based dev
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/jenkins.svg" alt="Jenkins" />
+              Jenkins pipelines
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/browserstack.svg" alt="BrowserStack" />
+              BrowserStack, cross-device QA
+            </div>
+
+            <!-- Reliability -->
+            <div class="skill-pill">Observability, logs, metrics, traces</div>
+            <div class="skill-pill">SLOs, error budgets, safe deploys</div>
+          </div>
+          <div class="section-note">
+            Replacing overly generic cloud icons with distinct representations, leveraging local asset
+            icons where available. AWS, Azure, and GCP import distinct providers based on product fit.
+            AWS is represented as Lambda for serverless, Elastic Search for analytics, S3 for storage,
+            API Gateway for API management, IAM for authentication, and DynamoDB for database.
+            Azure highlights Common Data Service, CDN for content delivery, App for business apps,
+            and Cognitive Services for AI: each distinct and avoid a singular cloud icon for everything.
+            GCP replaces generic cloud with Vertex AI icon for advanced ML and Google Cloud Functions
+            (from GCP v2) &amp; Firebase (imported from v1 icons) where applicable. All else is raised
+            up to specific local explicit icons.
+          </div>
+        </div>
+
+        <!-- 4. Data & Databases -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon-pill">
+              <img src="../Resume App Icon/postgresql.svg" alt="PostgreSQL" />
+            </div>
+            <div class="section-title">Data &amp; Databases</div>
+            <div class="section-subtitle">SQL · NoSQL · Vector</div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-pill">
+              <img src="../Resume App Icon/postgresql.svg" alt="PostgreSQL" />
+              <strong>PostgreSQL</strong>, SQL
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/mongodb.svg" alt="MongoDB" />
+              MongoDB
+            </div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/redis.svg" alt="Redis" />
+              Redis
+            </div>
+            <div class="skill-pill">DynamoDB, Firestore</div>
+            <div class="skill-pill">Realm, SwiftData</div>
+            <div class="skill-pill">Vector DBs: Pinecone, Qdrant, Chroma, DeepLake</div>
+            <div class="skill-pill">Knowledge graph &amp; metadata-rich schemas</div>
+          </div>
+          <div class="section-note">
+            Designed for AI workloads, offline-first mobile, and high-scale transactional systems.
+          </div>
+        </div>
+
+        <!-- 5. Product, Design & Collaboration -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon-pill">
+              <img src="../Resume App Icon/figma.svg" alt="Figma" />
+            </div>
+            <div class="section-title">Product, Design &amp; Collaboration</div>
+            <div class="section-subtitle">DX · UX · Leadership</div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-pill">
+              <img src="../Resume App Icon/figma.svg" alt="Figma" />
+              Figma, design systems
+            </div>
+            <div class="skill-pill">Prototyping, motion language</div>
+            <div class="skill-pill">
+              <img src="../Resume App Icon/amplitude.svg" alt="Amplitude" />
+              Amplitude, analytics
+            </div>
+            <div class="skill-pill">Optimizely, A/B testing</div>
+            <div class="skill-pill">Product strategy, roadmap shaping</div>
+            <div class="skill-pill">Mentorship, hiring, interviews</div>
+            <div class="skill-pill">Cross-functional leadership</div>
+          </div>
+          <div class="section-note">
+            Proven ability to translate complex AI/iOS capabilities into lovable, measurable products.
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

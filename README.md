@@ -4,6 +4,12 @@ A comprehensive collection of professional resume formats showcasing my experien
 
 ## 📄 Resume Formats
 
+### Active Project
+- **`Cursor-Resume/`** - **Active Next.js resume project** with modern React components, TypeScript, and Tailwind CSS
+  - Features comprehensive skills catalog with icons
+  - Responsive design optimized for web and print
+  - See `Cursor-Resume/README.md` for details
+
 ### HTML Versions
 - **`Gurinder_Singh_Resume_Modern.html`** - Clean, modern design with LinkedIn profile integration
 - **`Gurinder_Singh_Resume_Beautiful.html`** - Visually rich design with animations and gradients
@@ -12,8 +18,13 @@ A comprehensive collection of professional resume formats showcasing my experien
 ### Markdown Version
 - **`Gurinder_Singh_Resume_Unified.md`** - Master resume content in Markdown format
 
+### Legacy Projects
+- **`legacy/scrapwork/`** - Archived old projects and experiments (see `legacy/README.md`)
+
 ## 🚀 Key Features
 
+- **Modern Next.js Application** - Active resume built with Next.js 14, React 19, TypeScript
+- **Comprehensive Skills Catalog** - 100+ skills organized into 5 categories with icons
 - **LinkedIn Profile Integration** - All resumes use live LinkedIn profile image
 - **QR Code Portfolio Links** - Direct links to portfolio via QR codes
 - **Responsive Design** - Mobile-friendly layouts

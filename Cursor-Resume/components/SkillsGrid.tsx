@@ -198,7 +198,6 @@ type SkillKey =
   | 'Vercel'
   | 'Docker'
   | 'Containerization'
-  | 'Kubernetes'
   | 'CI/CD'
   | 'Git'
   | 'GitHub'
@@ -225,6 +224,7 @@ type SkillKey =
   | 'SwiftData'
   | 'Vector Databases'
   | 'FAISS'
+  | 'GraphQL'
   // Product, Design & Collaboration
   | 'Figma'
   | 'Sketch'
@@ -244,6 +244,8 @@ type SkillKey =
   | 'ElevenLabs'
   | 'LMStudio'
   | 'Automatic1111'
+  | 'XCode'
+  | 'Claude CLI'
 
 type SkillDef = {
   name: string
@@ -342,7 +344,6 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   Vercel: { name: 'Vercel', icon: SiVercel },
   Docker: { name: 'Docker', icon: SiDocker },
   Containerization: { name: 'Containerization' },
-  Kubernetes: { name: 'Kubernetes', icon: (props: { size?: number; className?: string }) => <SvgIcon name="Kubernetes" {...props} /> },
   'CI/CD': { name: 'CI/CD' },
   Git: { name: 'Git', icon: SiGit },
   GitHub: { name: 'GitHub', icon: SiGithub },
@@ -365,9 +366,12 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   NoSQL: { name: 'NoSQL' },
   MongoDB: { name: 'MongoDB', icon: SiMongodb },
   Firestore: { name: 'Firestore' },
+  DynamoDB: { name: 'DynamoDB', icon: SiAmazondynamodb },
   Redis: { name: 'Redis', icon: SiRedis },
+  'SwiftData': { name: 'SwiftData', icon: (props: { size?: number; className?: string }) => <SvgIcon name="SwiftData" {...props} /> },
   'Vector Databases': { name: 'Vector Databases' },
   FAISS: { name: 'FAISS' },
+  GraphQL: { name: 'GraphQL', icon: (props: { size?: number; className?: string }) => <SvgIcon name="GraphQL" {...props} /> },
   
   // Product, Design & Collaboration
   Figma: { name: 'Figma', icon: SiFigma },
@@ -388,6 +392,8 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   ElevenLabs: { name: 'ElevenLabs', icon: SiElevenlabs },
   LMStudio: { name: 'LMStudio' },
   Automatic1111: { name: 'Automatic1111' },
+  XCode: { name: 'XCode' },
+  'Claude CLI': { name: 'Claude CLI', icon: (props) => <SvgIcon name="Claude CLI" {...props} /> },
 }
 
 const SECTION_ORDER = [
@@ -511,7 +517,6 @@ const SECTIONS: SectionConfig[] = [
       'Vercel',
       'Docker',
       'Containerization',
-      'Kubernetes',
       'CI/CD',
       'Git',
       'GitHub',
@@ -544,6 +549,7 @@ const SECTIONS: SectionConfig[] = [
       'SwiftData',
       'Vector Databases',
       'FAISS',
+      'GraphQL',
     ],
   },
   {
@@ -569,6 +575,8 @@ const SECTIONS: SectionConfig[] = [
       'ElevenLabs',
       'LMStudio',
       'Automatic1111',
+      'XCode',
+      'Claude CLI',
     ],
   },
 ]

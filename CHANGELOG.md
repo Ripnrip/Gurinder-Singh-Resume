@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-11-14] - Project Organization & ARKit Icon Update
+
+### Changed
+- Created `legacy/scrapwork/` folder to organize old projects and experiments
+- Updated ARKit icon to clean black rounded square with white "AR" text
+- Updated Cursor-Resume README to indicate it's the active project
+- Improved project structure documentation
+
+### Added
+- `legacy/README.md` documenting archived projects
+- Clear separation between active project (`Cursor-Resume`) and legacy work
+
 ## [2025-11-14] - Icon Improvements & Simplification
 
 ### Changed

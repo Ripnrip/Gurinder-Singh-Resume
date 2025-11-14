@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <!-- Apple ARKit -->
-  <circle cx="12" cy="12" r="10" fill="#000"/>
-  <circle cx="12" cy="12" r="8" fill="#FFF"/>
-  <circle cx="12" cy="12" r="4" fill="#000"/>
-  <circle cx="12" cy="12" r="2" fill="#FFF"/>
-  <path d="M8 8l8 8M16 8l-8 8" stroke="#000" stroke-width="1" fill="none"/>
+  <!-- ARKit: Clean AR text in rounded square, Apple-style -->
+  <rect x="2" y="2" width="20" height="20" rx="4" fill="#000000"/>
+  <text x="12" y="16.5" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">AR</text>
 </svg>
-

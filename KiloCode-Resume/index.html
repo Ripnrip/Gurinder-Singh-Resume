@@ -1,0 +1,646 @@
+<!-- KiloCode-Resume/index.html -->
+<!-- Minimal static resume shell wired for future React/SkillsGrid.tsx usage.
+     Left column: 5 grouped skill sections with icons (to be rendered by SkillsGrid).
+     Right column: full, unsplit summary + content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gurinder Singh — Staff iOS & AI/ML Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --bg: #f8fafc;
+        --bg-elevated: #ffffff;
+        --ink: #020817;
+        --muted: #6b7280;
+        --accent: #22c55e;
+        --accent-soft: rgba(34, 197, 94, 0.14);
+        --border-subtle: rgba(148, 163, 184, 0.35);
+        --radius-xl: 20px;
+        --radius-pill: 999px;
+        --font-sans: system-ui, -apple-system, BlinkMacSystemFont, -system-ui,
+          -apple-system, system-ui, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .page {
+        display: grid;
+        grid-template-columns: 270px minmax(0, 1fr);
+        column-gap: 24px;
+        width: 100%;
+        max-width: 1200px;
+        background: radial-gradient(
+            circle at top left,
+            rgba(34, 197, 94, 0.06),
+            transparent
+          ),
+          var(--bg-elevated);
+        border-radius: 26px;
+        padding: 22px 22px 22px 22px;
+        border: 1px solid rgba(148, 163, 184, 0.45);
+        box-shadow:
+          0 18px 65px rgba(15, 23, 42, 0.12),
+          0 0 0 1px rgba(15, 23, 42, 0.02);
+      }
+
+      /* Left Column */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 14px 14px 14px 14px;
+        border-radius: 22px;
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(34, 197, 94, 0.06),
+            rgba(15, 23, 42, 0)
+          ),
+          rgba(9, 9, 11, 0.02);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(148, 163, 184, 0.35);
+      }
+
+      .sidebar-header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .name {
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .title {
+        font-size: 0.72rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+      }
+
+      .sidebar-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 0.65rem;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+
+      .sidebar-contact span {
+        white-space: nowrap;
+      }
+
+      .sidebar-divider {
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          rgba(148, 163, 184, 0.3),
+          rgba(148, 163, 184, 0.02)
+        );
+        margin: 4px 0 2px;
+      }
+
+      .pill-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 3px 8px;
+        border-radius: var(--radius-pill);
+        border: 1px solid rgba(34, 197, 94, 0.28);
+        background: var(--accent-soft);
+        color: #15803d;
+        font-size: 0.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .pill-label span.dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+
+      .sidebar-section-label {
+        padding-left: 4px;
+        margin-top: 4px;
+        border-left: 2px solid rgba(34, 197, 94, 0.9);
+        font-size: 0.62rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(15, 23, 42, 0.7);
+      }
+
+      .sidebar-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-top: 4px;
+      }
+
+      .skill-row-label {
+        font-size: 0.63rem;
+        font-weight: 600;
+        color: rgba(15, 23, 42, 0.78);
+        margin-bottom: 2px;
+      }
+
+      .skill-pills-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .skill-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 7px;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        background: linear-gradient(
+          135deg,
+          rgba(15, 23, 42, 0.01),
+          rgba(148, 163, 184, 0.06)
+        );
+        backdrop-filter: blur(4px);
+        font-size: 0.6rem;
+        color: #020817;
+        white-space: nowrap;
+      }
+
+      .skill-pill strong {
+        font-weight: 600;
+      }
+
+      /* Right Column */
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 6px 4px 4px 2px;
+      }
+
+      .summary-block {
+        padding: 10px 10px 8px 12px;
+        border-radius: 18px;
+        border: 1px solid rgba(148, 163, 184, 0.26);
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(34, 197, 94, 0.06),
+            transparent
+          ),
+          rgba(255, 255, 255, 0.96);
+        box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+      }
+
+      .summary-label {
+        font-size: 0.62rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: rgba(107, 114, 128, 0.98);
+        margin-bottom: 4px;
+      }
+
+      .summary-text {
+        font-size: 0.8rem;
+        line-height: 1.45;
+        color: #111827;
+      }
+
+      .summary-text strong {
+        font-weight: 700;
+      }
+
+      .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 2px;
+      }
+
+      .section {
+        padding: 6px 10px 6px 10px;
+        border-radius: 14px;
+        border: 1px solid rgba(148, 163, 184, 0.24);
+        background-color: rgba(248, 250, 252, 0.96);
+      }
+
+      .section-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 6px;
+        margin-bottom: 2px;
+      }
+
+      .section-title {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: rgba(75, 85, 99, 0.98);
+      }
+
+      .section-subtitle {
+        font-size: 0.63rem;
+        color: var(--muted);
+      }
+
+      .section-list {
+        margin: 2px 0 0;
+        padding-left: 14px;
+        font-size: 0.73rem;
+        line-height: 1.45;
+        color: #111827;
+      }
+
+      .section-list li {
+        margin-bottom: 2px;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: #ffffff;
+        }
+        .page {
+          box-shadow: none;
+          border-radius: 0;
+          border: none;
+          width: 100%;
+          max-width: none;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .page {
+          grid-template-columns: 1fr;
+          row-gap: 16px;
+        }
+      }
+
+      .app-icon-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 6px;
+      }
+
+      .app-icon-pill {
+        width: 20px;
+        height: 20px;
+        border-radius: 7px;
+        background: rgba(15, 23, 42, 0.02);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+      }
+
+      .app-icon-pill img {
+        width: 14px;
+        height: 14px;
+        display: block;
+      }
+
+      .skill-row-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+      }
+
+      .skill-row-icon img {
+        width: 14px;
+        height: 14px;
+        display: block;
+      }
+
+      .pill-icon {
+        width: 10px;
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="pill-label">
+            <span class="dot"></span>
+            Staff iOS &amp; AI/ML Engineer
+          </div>
+          <div class="name">Gurinder Singh</div>
+          <div class="title">Legendary apps at global scale</div>
+        </div>
+
+        <!-- App icon cluster -->
+        <div class="app-icon-row">
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/swift.svg" alt="Swift" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/python.svg" alt="Python" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/typescript.svg" alt="TypeScript" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/nextjs.svg" alt="Next.js" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/pytorch.svg" alt="PyTorch" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/docker.svg" alt="Docker" />
+          </div>
+          <div class="app-icon-pill">
+            <img src="../Resume App Icon/vercel.svg" alt="Vercel" />
+          </div>
+        </div>
+
+        <div class="sidebar-contact">
+          <span>San Jose, CA • Open to remote/hybrid</span>
+          <span>Portfolio / GitHub / LinkedIn available on request</span>
+          <span>Specialties: iOS, AI/ML, Agentic Systems, Experiments</span>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-section-label">Core Skills Overview</div>
+        <!-- High-level labels mirroring the 5 sections -->
+        <div class="skill-pills-row" style="margin-top:4px;">
+          <div class="skill-pill"><strong>iOS &amp; Mobile</strong></div>
+          <div class="skill-pill"><strong>AI/ML &amp; Agents</strong></div>
+          <div class="skill-pill"><strong>Cloud &amp; DevOps</strong></div>
+          <div class="skill-pill"><strong>Data</strong></div>
+          <div class="skill-pill"><strong>Product &amp; Design</strong></div>
+        </div>
+
+        <div class="sidebar-skills">
+          <div>
+            <div class="skill-row-label">
+              <span class="skill-row-icon">
+                <img src="../Resume App Icon/swift.svg" alt="iOS" />
+              </span>
+              iOS &amp; Mobile Engineering
+            </div>
+            <div class="skill-pills-row">
+              <div class="skill-pill">Swift / SwiftUI / Obj-C</div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/mapkit.svg" alt="MapKit" class="pill-icon" />
+                ARKit, MapKit, ActivityKit, WidgetKit
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/serverless-swift.svg" alt="Serverless Swift" class="pill-icon" />
+                Core ML on-device, MLX
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/nextjs.svg" alt="Next.js" class="pill-icon" />
+                Flutter / React / Next.js
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skill-row-label">
+              <span class="skill-row-icon">
+                <img src="../Resume App Icon/python.svg" alt="AI/ML" />
+              </span>
+              AI/ML &amp; Agentic Systems
+            </div>
+            <div class="skill-pills-row">
+              <div class="skill-pill">
+                <img src="../Resume App Icon/python.svg" alt="Python" class="pill-icon" />
+                Python, NumPy, Pandas
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/pytorch.svg" alt="PyTorch" class="pill-icon" />
+                PyTorch / TensorFlow
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/opencv.svg" alt="OpenCV" class="pill-icon" />
+                CV, TTS/STT, multimodal
+              </div>
+              <div class="skill-pill">
+                LangChain, LlamaIndex, MCP, Agents
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skill-row-label">
+              <span class="skill-row-icon">
+                <img src="../Resume App Icon/docker.svg" alt="Cloud" />
+              </span>
+              Cloud, DevOps &amp; Reliability
+            </div>
+            <div class="skill-pills-row">
+              <div class="skill-pill">
+                <img src="../Resume App Icon/gcp.svg" alt="GCP" class="pill-icon" />
+                AWS / GCP / Azure
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/serverless.svg" alt="Serverless" class="pill-icon" />
+                Serverless, Lambdas
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/docker.svg" alt="Docker" class="pill-icon" />
+                Docker, Kubernetes
+              </div>
+              <div class="skill-pill">
+                CI/CD, Observability, SLOs
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skill-row-label">
+              <span class="skill-row-icon">
+                <img src="../Resume App Icon/postgresql.svg" alt="DB" />
+              </span>
+              Data &amp; Databases
+            </div>
+            <div class="skill-pills-row">
+              <div class="skill-pill">
+                <img src="../Resume App Icon/postgresql.svg" alt="PostgreSQL" class="pill-icon" />
+                PostgreSQL / SQL
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/mongodb.svg" alt="MongoDB" class="pill-icon" />
+                MongoDB / DynamoDB
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/redis.svg" alt="Redis" class="pill-icon" />
+                Redis, SwiftData, Realm
+              </div>
+              <div class="skill-pill">
+                Vector DBs (Pinecone, Qdrant, Chroma)
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skill-row-label">
+              <span class="skill-row-icon">
+                <img src="../Resume App Icon/figma.svg" alt="Figma" />
+              </span>
+              Product, Design &amp; Collaboration
+            </div>
+            <div class="skill-pills-row">
+              <div class="skill-pill">
+                <img src="../Resume App Icon/figma.svg" alt="Figma" class="pill-icon" />
+                Figma / Design Systems
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/github.svg" alt="GitHub" class="pill-icon" />
+                GitHub, Reviews, Quality
+              </div>
+              <div class="skill-pill">
+                <img src="../Resume App Icon/amplitude.svg" alt="Amplitude" class="pill-icon" />
+                Amplitude, A/B Testing
+              </div>
+              <div class="skill-pill">Mentorship, Hiring, Strategy</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT MAIN CONTENT -->
+      <section class="main">
+        <section class="summary-block">
+          <div class="summary-label">Summary</div>
+          <div class="summary-text">
+            Staff iOS &amp; AI/ML Engineer with over a decade of experience
+            scaling applications for millions of users. Patent holder and
+            technical leader specializing in bridging cutting-edge AI/ML with
+            practical mobile solutions. Proven track record of building
+            high-impact, secure, and reliable apps at global scale—from startup
+            innovation to enterprise ecosystems serving 90M+ users, including
+            leadership and delivery in my current role at PayPal/Venmo.
+            Passionate about mentoring engineers, running technical interviews,
+            and fostering inclusive, high-ownership teams while driving
+            innovation at the intersection of iOS, experimentation, and
+            intelligent agentic systems.
+          </div>
+        </section>
+
+        <div class="sections">
+          <section class="section">
+            <div class="section-header">
+              <div class="section-title">Recent Impact &amp; Roles</div>
+              <div class="section-subtitle">
+                Highlights aligned with iOS, AI/ML &amp; experimentation
+              </div>
+            </div>
+            <ul class="section-list">
+              <li>
+                Led development of flagship iOS initiatives at PayPal/Venmo,
+                improving performance, reliability, and experimentation velocity
+                for tens of millions of users.
+              </li>
+              <li>
+                Architected AI-assisted workflows, intelligent in-app surfaces,
+                and experimentation frameworks that bridge product, design, and
+                ML teams.
+              </li>
+              <li>
+                Acted as a Staff-level multiplier: mentoring senior engineers,
+                instituting code quality and observability standards, and
+                driving technical strategy across squads.
+              </li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <div class="section-title">AI/ML &amp; Agentic Systems</div>
+              <div class="section-subtitle">
+                Applying modern LLM, RAG &amp; tools to real products
+              </div>
+            </div>
+            <ul class="section-list">
+              <li>
+                Designed and implemented <strong>RAG pipelines</strong> using
+                LangChain, LlamaIndex, hybrid search, and vector databases
+                (Pinecone, Qdrant, Chroma, DeepLake) powering secure,
+                metadata-rich knowledge experiences.
+              </li>
+              <li>
+                Built <strong>agentic workflows</strong> with CrewAI,
+                LangGraph-style flows, and custom MCP servers, integrating
+                OpenAI, Claude, and local models (Ollama) into practical dev and
+                support tooling.
+              </li>
+              <li>
+                Integrated <strong>multimodal ML</strong> (vision, TTS/STT,
+                Stable Diffusion pipelines) into mobile and web experiences
+                while respecting privacy, safety, and latency constraints.
+              </li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <div class="section-title">iOS &amp; Mobile Engineering</div>
+              <div class="section-subtitle">
+                Deep platform expertise + production rigor
+              </div>
+            </div>
+            <ul class="section-list">
+              <li>
+                Extensive experience with Swift, SwiftUI, UIKit, Combine,
+                concurrency, Core ML integration, StoreKit, push, deep links,
+                and secure data handling.
+              </li>
+              <li>
+                Built animations, interaction patterns, and performance-tuned
+                UIs matching the quality bar of leading consumer finance and
+                wellness apps.
+              </li>
+              <li>
+                Led migration, modularization, and architecture evolution for
+                large iOS codebases while maintaining uptime and feature
+                delivery.
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

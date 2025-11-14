@@ -1,12 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <!-- MLX: Official hexagonal logo with MLX text (darker teal/blue gradient for better contrast) -->
-  <path d="M12 2L4 6v6l8 4 8-4V6l-8-4z" fill="url(#mlxGradient)"/>
-  <defs>
-    <linearGradient id="mlxGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0D9488;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#14B8A6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <text x="12" y="14.5" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#FFFFFF" stroke="#000000" stroke-width="0.3" opacity="0.95">MLX</text>
+<svg width="24" height="24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Teal Hexagon Background -->
+  <path d="M50 2.5 L93.3 26.25 V 73.75 L50 97.5 L6.7 73.75 V 26.25 Z" fill="#4FD1C5"/>
+  
+  <!-- "MLX" Text -->
+  <text x="50" y="62" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="white" text-anchor="middle">MLX</text>
 </svg>

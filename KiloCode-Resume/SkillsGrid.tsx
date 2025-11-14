@@ -44,7 +44,6 @@ import {
   SiRailway,
   SiNginx,
   SiDocker,
-  SiKubernetes,
   SiGit,
   SiGithub,
   SiGithubactions,
@@ -170,7 +169,6 @@ export type SkillKey =
   | 'Netlify'
   | 'Railway'
   | 'Docker'
-  | 'Kubernetes'
   | 'NGINX'
   | 'CI/CD'
   | 'Git'
@@ -192,6 +190,7 @@ export type SkillKey =
   | 'Redis'
   | 'SwiftData DB'
   | 'Vector Databases'
+  | 'GraphQL'
   // Product, Design & Collaboration
   | 'Figma'
   | 'Sketch'
@@ -209,7 +208,9 @@ export type SkillKey =
   | 'Optimizely'
   | 'A/B Testing'
   | 'Product Strategy'
-  | 'Mentorship';
+  | 'Mentorship'
+  | 'XCode'
+  | 'Claude CLI';
 
 type SkillDef = {
   name: string;
@@ -254,15 +255,15 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   PyTorch: { name: 'PyTorch', icon: SiPytorch },
   TensorFlow: { name: 'TensorFlow', icon: SiTensorflow },
   'scikit-learn': { name: 'scikit-learn', icon: SiScikitlearn },
-  Pandas: { name: 'Pandas' },
+  Pandas: { name: 'Pandas', icon: (props) => <SvgIcon name="Pandas" {...props} /> },
   NumPy: { name: 'NumPy', icon: (props) => <SvgIcon name="NumPy" {...props} /> },
-  LLMs: { name: 'LLMs' },
-  'RAG Pipelines': { name: 'RAG Pipelines' },
+  LLMs: { name: 'LLMs', icon: (props) => <SvgIcon name="LLMs" {...props} /> },
+  'RAG Pipelines': { name: 'RAG Pipelines', icon: (props) => <SvgIcon name="RAG Pipelines" {...props} /> },
   LangChain: { name: 'LangChain', icon: SiLangchain },
-  LlamaIndex: { name: 'LlamaIndex' },
-  LlamaParse: { name: 'LlamaParse' },
-  'MCP Servers': { name: 'MCP Servers' },
-  'MCP Clients': { name: 'MCP Clients' },
+  LlamaIndex: { name: 'LlamaIndex', icon: (props) => <SvgIcon name="LlamaIndex" {...props} /> },
+  LlamaParse: { name: 'LlamaParse', icon: (props) => <SvgIcon name="LlamaParse" {...props} /> },
+  'MCP Servers': { name: 'MCP Servers', icon: (props) => <SvgIcon name="MCP Servers" {...props} /> },
+  'MCP Clients': { name: 'MCP Clients', icon: (props) => <SvgIcon name="MCP Clients" {...props} /> },
   CrewAI: { name: 'CrewAI', icon: SiCrewai },
   LangFlow: { name: 'LangFlow', icon: SiLangflow },
   OpenAI: { name: 'OpenAI', icon: SiOpenai },
@@ -273,12 +274,12 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   Pinecone: { name: 'Pinecone', icon: SiPinecone },
   Qdrant: { name: 'Qdrant', icon: SiQdrant },
   DeepLake: { name: 'DeepLake', icon: SiDeeplake },
-  Milvus: { name: 'Milvus' },
-  Weaviate: { name: 'Weaviate' },
-  Neo4j: { name: 'Neo4j' },
+  Milvus: { name: 'Milvus', icon: (props) => <SvgIcon name="Milvus" {...props} /> },
+  Weaviate: { name: 'Weaviate', icon: (props) => <SvgIcon name="Weaviate" {...props} /> },
+  Neo4j: { name: 'Neo4j', icon: (props) => <SvgIcon name="Neo4j" {...props} /> },
   'Hugging Face': { name: 'Hugging Face', icon: SiHuggingface },
   'Stable Diffusion': { name: 'Stable Diffusion', icon: SiStabilityai },
-  ComfyUI: { name: 'ComfyUI' },
+  ComfyUI: { name: 'ComfyUI', icon: (props) => <SvgIcon name="ComfyUI" {...props} /> },
   'Computer Vision': { name: 'Computer Vision' },
   'Speech (TTS/STT)': { name: 'Speech (TTS/STT)' },
 
@@ -286,8 +287,8 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   AWS: { name: 'AWS', icon: SiAmazonaws },
   'AWS Lambda': { name: 'AWS Lambda', icon: SiAwslambda },
   GCP: { name: 'GCP', icon: SiGooglecloud },
-  'Vertex AI': { name: 'Vertex AI' },
-  Azure: { name: 'Azure', icon: SiMicrosoftazure },
+  'Vertex AI': { name: 'Vertex AI', icon: (props) => <SvgIcon name="Vertex AI" {...props} /> },
+  Azure: { name: 'Azure', icon: (props) => <SvgIcon name="Azure" {...props} /> },
   DigitalOcean: { name: 'DigitalOcean', icon: SiDigitalocean },
   Supabase: { name: 'Supabase', icon: SiSupabase },
   Firebase: { name: 'Firebase', icon: SiFirebase },
@@ -295,7 +296,6 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   Netlify: { name: 'Netlify', icon: SiNetlify },
   Railway: { name: 'Railway', icon: SiRailway },
   Docker: { name: 'Docker', icon: SiDocker },
-  Kubernetes: { name: 'Kubernetes', icon: SiKubernetes },
   NGINX: { name: 'NGINX', icon: SiNginx },
   'CI/CD': { name: 'CI/CD' },
   Git: { name: 'Git', icon: SiGit },
@@ -306,18 +306,19 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   SonarQube: { name: 'SonarQube', icon: SiSonarqube },
   BrowserStack: { name: 'BrowserStack', icon: SiBrowserstack },
   Datadog: { name: 'Datadog', icon: SiDatadog },
-  Observability: { name: 'Observability' },
-  'Multi-cloud': { name: 'Multi-cloud' },
+  Observability: { name: 'Observability', icon: (props) => <SvgIcon name="Observability" {...props} /> },
+  'Multi-cloud': { name: 'Multi-cloud', icon: (props) => <SvgIcon name="Multi-cloud" {...props} /> },
 
   // Data & Databases
-  SQL: { name: 'SQL' },
+  SQL: { name: 'SQL', icon: (props) => <SvgIcon name="SQL" {...props} /> },
   PostgreSQL: { name: 'PostgreSQL', icon: SiPostgresql },
   MongoDB: { name: 'MongoDB', icon: SiMongodb },
   DynamoDB: { name: 'DynamoDB', icon: SiAmazondynamodb },
-  Firestore: { name: 'Firestore' },
+  Firestore: { name: 'Firestore', icon: (props) => <SvgIcon name="Firestore" {...props} /> },
   Redis: { name: 'Redis', icon: SiRedis },
   'SwiftData DB': { name: 'SwiftData', icon: (props) => <SvgIcon name="SwiftData" {...props} /> },
-  'Vector Databases': { name: 'Vector Databases' },
+  'Vector Databases': { name: 'Vector Databases', icon: (props) => <SvgIcon name="Vector Databases" {...props} /> },
+  GraphQL: { name: 'GraphQL', icon: SiGraphql },
 
   // Product, Design & Collaboration
   Figma: { name: 'Figma', icon: SiFigma },
@@ -333,10 +334,12 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   Slack: { name: 'Slack', icon: SiSlack },
   'Microsoft Teams': { name: 'Microsoft Teams', icon: SiMicrosoftteams },
   Amplitude: { name: 'Amplitude', icon: SiAmplitudeanalytics },
-  Optimizely: { name: 'Optimizely', icon: SiOptimizely },
+  Optimizely: { name: 'Optimizely', icon: (props) => <SvgIcon name="Optimizely" {...props} /> },
   'A/B Testing': { name: 'A/B Testing' },
   'Product Strategy': { name: 'Product Strategy' },
   Mentorship: { name: 'Mentorship' },
+  XCode: { name: 'XCode' },
+  'Claude CLI': { name: 'Claude CLI', icon: (props) => <SvgIcon name="Claude CLI" {...props} /> },
 };
 
 const SECTION_ORDER = [
@@ -437,7 +440,6 @@ const SECTIONS: SectionConfig[] = [
       'Netlify',
       'Railway',
       'Docker',
-      'Kubernetes',
       'NGINX',
       'Git',
       'GitHub',
@@ -465,6 +467,7 @@ const SECTIONS: SectionConfig[] = [
       'Realm',
       'SwiftData DB',
       'Vector Databases',
+      'GraphQL',
     ],
   },
   {
@@ -488,6 +491,11 @@ const SECTIONS: SectionConfig[] = [
       'A/B Testing',
       'Product Strategy',
       'Mentorship',
+      'XCode',
+      'Claude CLI',
+      'Pinecone',
+      'Cohere',
+      'GraphQL',
     ],
   },
 ];

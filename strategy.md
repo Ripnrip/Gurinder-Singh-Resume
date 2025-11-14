@@ -33,7 +33,8 @@ Core Technical Skills And Personal Projects from
 - **Web/Server Frameworks:** Vapor, Serverless Swift, Flask, FastAPI, UV, Node.js, Next.js, AngularJS
 
 
-**🤖 Applied AI/ML & Data Systems**
+//TODO: (Add the Rag Detals in Mercury and AMORC Search)
+**🤖 Applied AI/ML & Data Systems** 
 - **LLM Agentic Systems & Orchestration:**: CrewAI, N8N Workflow Agents, Langflow/Langgraph, OpenAI Agents SDK, Pydantic AI
 - **Architecture & Tooling Integrations:**: MCP Clients & Servers, OpenAI APIs, Codex CLI, Custom GPTs & Actions, Claude CLI & APIs, Plugins & Desktop Extensions(DXT) | Browser tools, Retrieval tools, Custom built tools, etc
 - **RAG Pipelines (Retrieval-Augmented Generation)**: LangChain, LlamaIndex/LlamaParse, Hybrid + Multi-Vector Search, Re-ranking, RLHF, Metadata-rich document pipelines (OCR, embeddings, chunking), Knowledge-Graph RAG, multimodal RAG (text, audio, vision)
@@ -46,7 +47,7 @@ Core Technical Skills And Personal Projects from
 - Docker
 - Containerization
 - AWS (Lambda, EC2, IAM, DynamoDB, Serverless)
-- GCP / Vertex AI
+- GCP  (Vertex AI, [Add More Here]
 - Microsoft Azure( AI Cloud Foundry )
 - Digital Ocean
 - Supabase

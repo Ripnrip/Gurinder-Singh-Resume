@@ -1,0 +1,19 @@
+{
+  "name": "kilocode-resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@icons-pack/react-simple-icons": "^13.8.0",
+    "@types/react": "^19.2.4",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

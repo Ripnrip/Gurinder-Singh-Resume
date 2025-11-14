@@ -1,12 +1,14 @@
 # Cursor Resume
 
-A modern, beautiful resume built with Next.js, TypeScript, and Tailwind CSS featuring a left sidebar with comprehensive skills organized into 5 sections.
+**Active Resume Project** - A modern, beautiful resume built with Next.js, TypeScript, and Tailwind CSS featuring a left sidebar with comprehensive skills organized into 5 sections.
+
+> **Note**: Old projects and experiments have been moved to `/legacy/scrapwork/` for reference.
 
 ## Features
 
 - **Left Sidebar Layout**: Skills organized in a beautiful left sidebar with icons
 - **5 Consolidated Skill Sections**:
-  1. iOS & Mobile Engineering
+  1. iOS / Mobile & Web Engineering
   2. AI/ML & Agentic Systems
   3. Cloud, DevOps & Reliability
   4. Data & Databases
