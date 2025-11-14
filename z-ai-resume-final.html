@@ -311,49 +311,63 @@
         }
         
         .skill-category {
-            background-color: var(--secondary-color);
+            background-color: var(--white);
             border-radius: 8px;
-            padding: 1.25rem;
-            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
         }
         
         .skill-category h3 {
-            color: var(--primary-dark);
-            margin-bottom: 10px;
-            font-size: 1.1rem;
+            color: rgba(15, 23, 42, 0.75);
+            margin-bottom: 0.75rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 0.35rem;
+            padding-left: 0.25rem;
+            border-left: 2px solid rgba(56, 189, 248, 0.9);
         }
         
         .skill-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
+            gap: 0.4rem;
         }
         
         .skill-tag {
-            background-color: var(--secondary-color);
-            border: 1px solid #99f6e4;
-            color: var(--primary-dark);
-            padding: 0.4rem 0.9rem;
-            border-radius: 999px;
-            font-size: 0.9rem;
-            font-weight: 500;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.35rem;
+            padding: 0.3rem 0.65rem;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.35);
+            background: linear-gradient(
+                135deg,
+                rgba(15, 23, 42, 0.02),
+                rgba(148, 163, 184, 0.06)
+            );
+            backdrop-filter: blur(6px);
+            color: #020817;
+            white-space: nowrap;
+            font-size: 9pt;
+            font-weight: 500;
             transition: all 0.2s ease;
         }
         
         .skill-tag:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(20, 184, 166, 0.15);
-            border-color: var(--primary-color);
+            transform: translateY(-1px);
+            border-color: rgba(56, 189, 248, 0.5);
+            background: linear-gradient(
+                135deg,
+                rgba(56, 189, 248, 0.08),
+                rgba(148, 163, 184, 0.1)
+            );
         }
 
-        .skill-tag i {
-            color: var(--primary-color);
+        .skill-tag span {
+            flex-shrink: 0;
             font-size: 0.85rem;
         }
         
@@ -432,82 +446,155 @@
                 <h2 class="section-title">Core Skills</h2>
                 <div class="skills-container">
                     <div class="skill-category">
-                        <h3><span>📱</span> Languages & Frameworks</h3>
+                        <h3>📱 iOS & Mobile Engineering</h3>
                         <div class="skill-list">
-                            <span class="skill-tag"><i class="fab fa-swift"></i>Swift</span>
-                            <span class="skill-tag"><i class="fab fa-swift"></i>SwiftUI</span>
-                            <span class="skill-tag"><i class="fab fa-apple"></i>Objective-C</span>
-                            <span class="skill-tag"><i class="fab fa-python"></i>Python</span>
-                            <span class="skill-tag"><i class="fab fa-js"></i>TypeScript</span>
-                            <span class="skill-tag"><i class="fas fa-arrow-right"></i>Next.js</span>
-                            <span class="skill-tag"><i class="fab fa-node"></i>Node.js</span>
-                            <span class="skill-tag"><i class="fab fa-react"></i>React</span>
-                            <span class="skill-tag"><i class="fab fa-flutter"></i>Flutter/Dart</span>
-                            <span class="skill-tag"><i class="fas fa-bolt"></i>FastAPI</span>
-                            <span class="skill-tag"><i class="fas fa-cloud"></i>Vapor</span>
-                            <span class="skill-tag"><i class="fas fa-project-diagram"></i>GraphQL</span>
+                            <span class="skill-tag">Swift</span>
+                            <span class="skill-tag">SwiftUI</span>
+                            <span class="skill-tag">Objective-C</span>
+                            <span class="skill-tag">UIKit</span>
+                            <span class="skill-tag">Core ML</span>
+                            <span class="skill-tag">MLX</span>
+                            <span class="skill-tag">SwiftData</span>
+                            <span class="skill-tag">Realm</span>
+                            <span class="skill-tag">ARKit</span>
+                            <span class="skill-tag">ActivityKit</span>
+                            <span class="skill-tag">WidgetKit</span>
+                            <span class="skill-tag">MapKit</span>
+                            <span class="skill-tag">RoomPlan</span>
+                            <span class="skill-tag">Combine</span>
+                            <span class="skill-tag">RxSwift</span>
+                            <span class="skill-tag">BLE</span>
+                            <span class="skill-tag">Vapor</span>
+                            <span class="skill-tag">Serverless Swift</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Cordova/Ionic</span>
+                            <span class="skill-tag">AngularJS</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h3><span>🤖</span> AI/ML & Intelligent Systems</h3>
+                        <h3>🤖 AI/ML & Agentic Systems</h3>
                         <div class="skill-list">
-                            <span class="skill-tag"><i class="fas fa-brain"></i>LLM Agents</span>
-                            <span class="skill-tag"><i class="fas fa-filter"></i>RAG Pipelines</span>
-                            <span class="skill-tag"><i class="fas fa-link"></i>LangChain</span>
-                            <span class="skill-tag"><i class="fas fa-book"></i>LlamaIndex</span>
-                            <span class="skill-tag"><i class="fas fa-server"></i>MCP Servers</span>
-                            <span class="skill-tag"><i class="fas fa-palette"></i>ChromaDB</span>
-                            <span class="skill-tag"><i class="fas fa-tree"></i>Pinecone</span>
-                            <span class="skill-tag"><i class="fas fa-search"></i>Qdrant</span>
-                            <span class="skill-tag"><i class="fas fa-water"></i>DeepLake</span>
-                            <span class="skill-tag"><i class="fas fa-cube"></i>Cohere</span>
-                            <span class="skill-tag"><i class="fab fa-apple"></i>Core ML</span>
-                            <span class="skill-tag"><i class="fas fa-bolt"></i>MLX</span>
-                            <span class="skill-tag"><i class="fas fa-fire"></i>PyTorch</span>
-                            <span class="skill-tag"><i class="fas fa-chart-line"></i>TensorFlow</span>
-                            <span class="skill-tag"><i class="fas fa-cog"></i>LoRA Fine-Tuning</span>
-                            <span class="skill-tag"><i class="fas fa-image"></i>Stable Diffusion</span>
-                            <span class="skill-tag"><i class="fas fa-table"></i>Pandas</span>
-                            <span class="skill-tag"><i class="fas fa-calculator"></i>NumPy</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">LLMs</span>
+                            <span class="skill-tag">RAG Pipelines</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LlamaIndex</span>
+                            <span class="skill-tag">LlamaParse</span>
+                            <span class="skill-tag">MCP Servers</span>
+                            <span class="skill-tag">MCP Clients</span>
+                            <span class="skill-tag">CrewAI</span>
+                            <span class="skill-tag">LangFlow</span>
+                            <span class="skill-tag">LangGraph</span>
+                            <span class="skill-tag">OpenAI</span>
+                            <span class="skill-tag">Claude</span>
+                            <span class="skill-tag">Cohere</span>
+                            <span class="skill-tag">Ollama</span>
+                            <span class="skill-tag">ChromaDB</span>
+                            <span class="skill-tag">Pinecone</span>
+                            <span class="skill-tag">Qdrant</span>
+                            <span class="skill-tag">DeepLake</span>
+                            <span class="skill-tag">Milvus</span>
+                            <span class="skill-tag">Weaviate</span>
+                            <span class="skill-tag">Neo4j</span>
+                            <span class="skill-tag">Hugging Face</span>
+                            <span class="skill-tag">Stable Diffusion</span>
+                            <span class="skill-tag">ComfyUI</span>
+                            <span class="skill-tag">LoRA</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">YOLO</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">TTS/STT</span>
+                            <span class="skill-tag">GGUF</span>
+                            <span class="skill-tag">N8N</span>
+                            <span class="skill-tag">Pydantic AI</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h3><span>☁️</span> Cloud & Infrastructure</h3>
+                        <h3>☁️ Cloud, DevOps & Reliability</h3>
                         <div class="skill-list">
-                            <span class="skill-tag"><i class="fab fa-docker"></i>Docker</span>
-                            <span class="skill-tag"><i class="fas fa-cube"></i>Kubernetes</span>
-                            <span class="skill-tag"><i class="fab fa-aws"></i>AWS</span>
-                            <span class="skill-tag"><i class="fab fa-google"></i>GCP / Vertex AI</span>
-                            <span class="skill-tag"><i class="fab fa-microsoft"></i>Azure</span>
-                            <span class="skill-tag"><i class="fas fa-database"></i>Supabase</span>
-                            <span class="skill-tag"><i class="fas fa-fire"></i>Firebase</span>
-                            <span class="skill-tag"><i class="fas fa-rocket"></i>Vercel</span>
-                            <span class="skill-tag"><i class="fab fa-github"></i>GitHub Actions</span>
-                            <span class="skill-tag"><i class="fas fa-chart-line"></i>DataDog</span>
-                            <span class="skill-tag"><i class="fas fa-server"></i>RunPod</span>
-                            <span class="skill-tag"><i class="fas fa-copy"></i>Replicate</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">AWS Lambda</span>
+                            <span class="skill-tag">EC2</span>
+                            <span class="skill-tag">IAM</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Vertex AI</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">AI Cloud Foundry</span>
+                            <span class="skill-tag">DigitalOcean</span>
+                            <span class="skill-tag">Supabase</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Containerization</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Fastlane</span>
+                            <span class="skill-tag">SonarQube</span>
+                            <span class="skill-tag">BrowserStack</span>
+                            <span class="skill-tag">Datadog</span>
+                            <span class="skill-tag">Observability</span>
+                            <span class="skill-tag">Multi-cloud</span>
+                            <span class="skill-tag">Serverless</span>
+                            <span class="skill-tag">RunPod</span>
+                            <span class="skill-tag">Replicate</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h3><span>📲</span> iOS & Mobile Development</h3>
+                        <h3>💾 Data & Databases</h3>
                         <div class="skill-list">
-                            <span class="skill-tag"><i class="fab fa-apple"></i>iOS SDK</span>
-                            <span class="skill-tag"><i class="fas fa-th"></i>UIKit</span>
-                            <span class="skill-tag"><i class="fas fa-vr-cardboard"></i>ARKit</span>
-                            <span class="skill-tag"><i class="fas fa-bolt"></i>ActivityKit</span>
-                            <span class="skill-tag"><i class="fas fa-th"></i>WidgetKit</span>
-                            <span class="skill-tag"><i class="fas fa-database"></i>SwiftData</span>
-                            <span class="skill-tag"><i class="fas fa-database"></i>Realm</span>
-                            <span class="skill-tag"><i class="fas fa-link"></i>Combine</span>
-                            <span class="skill-tag"><i class="fas fa-link"></i>RxSwift</span>
-                            <span class="skill-tag"><i class="fas fa-bluetooth"></i>BLE</span>
-                            <span class="skill-tag"><i class="fas fa-map"></i>MapKit</span>
-                            <span class="skill-tag"><i class="fas fa-camera"></i>Snapshot Testing</span>
-                            <span class="skill-tag"><i class="fas fa-vial"></i>XCTest</span>
-                            <span class="skill-tag"><i class="fas fa-universal-access"></i>Accessibility</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">NoSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">Firestore</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Vector Databases</span>
+                            <span class="skill-tag">FAISS</span>
+                            <span class="skill-tag">GraphQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>🎨 Product, Design & Collaboration</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Sketch</span>
+                            <span class="skill-tag">Miro</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">TDD</span>
+                            <span class="skill-tag">Agile/Scrum</span>
+                            <span class="skill-tag">Snapshot Testing</span>
+                            <span class="skill-tag">UI Testing</span>
+                            <span class="skill-tag">Optimizely</span>
+                            <span class="skill-tag">Amplitude</span>
+                            <span class="skill-tag">Cursor</span>
+                            <span class="skill-tag">Kilo Code</span>
+                            <span class="skill-tag">Gemini CLI</span>
+                            <span class="skill-tag">OpenRouter</span>
+                            <span class="skill-tag">Manus Platform</span>
+                            <span class="skill-tag">ElevenLabs</span>
+                            <span class="skill-tag">LMStudio</span>
+                            <span class="skill-tag">XCode</span>
+                            <span class="skill-tag">Claude CLI</span>
                         </div>
                     </div>
                 </div>
