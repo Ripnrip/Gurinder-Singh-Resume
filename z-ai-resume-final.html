@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurinder Singh - Staff iOS & AI/ML Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -371,6 +370,28 @@
             font-size: 0.85rem;
         }
         
+        .skill-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .skill-fallback {
+            width: 18px;
+            height: 18px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.5rem;
+            font-weight: 600;
+            background: rgba(56, 189, 248, 0.12);
+            color: rgba(15, 23, 42, 0.9);
+            flex-shrink: 0;
+        }
+        
         .page-break {
             page-break-before: always;
         }
@@ -712,6 +733,194 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // 🎭 The Icon Mapping System - Maps skill names to their icon sources
+        // Uses Simple Icons CDN for standard icons and local paths for custom icons
+        
+        const ICON_MAP = {
+            // iOS & Mobile Engineering
+            'Swift': 'Cursor-Resume/public/icons/swift.svg',
+            'SwiftUI': 'Cursor-Resume/public/icons/swiftui.svg',
+            'Objective-C': 'https://cdn.simpleicons.org/apple/000000',
+            'UIKit': 'Cursor-Resume/public/icons/uikit.svg',
+            'Core ML': 'Cursor-Resume/public/icons/coreml.svg',
+            'MLX': 'Cursor-Resume/public/icons/mlx.svg',
+            'SwiftData': 'Cursor-Resume/public/icons/swiftdata.svg',
+            'Realm': 'Cursor-Resume/public/icons/realm.svg',
+            'ARKit': 'Cursor-Resume/public/icons/arkit.svg',
+            'ActivityKit': 'Cursor-Resume/public/icons/activitykit.svg',
+            'WidgetKit': 'Cursor-Resume/public/icons/widgetkit.svg',
+            'MapKit': 'Cursor-Resume/public/icons/mapkit.svg',
+            'RoomPlan': 'https://cdn.simpleicons.org/apple/000000',
+            'Combine': 'https://cdn.simpleicons.org/apple/000000',
+            'RxSwift': 'Cursor-Resume/public/icons/rxswift.svg',
+            'BLE': 'Cursor-Resume/public/icons/ble.svg',
+            'Vapor': 'Cursor-Resume/public/icons/vapor.svg',
+            'Serverless Swift': 'Cursor-Resume/public/icons/serverless-swift.svg',
+            'Flutter': 'https://cdn.simpleicons.org/flutter/02569B',
+            'Dart': 'https://cdn.simpleicons.org/dart/0175C2',
+            'React Native': 'https://cdn.simpleicons.org/react/61DAFB',
+            'React': 'https://cdn.simpleicons.org/react/61DAFB',
+            'Next.js': 'Cursor-Resume/public/icons/nextjs.svg',
+            'JavaScript': 'Cursor-Resume/public/icons/javascript.svg',
+            'TypeScript': 'Cursor-Resume/public/icons/typescript.svg',
+            'Node.js': 'Cursor-Resume/public/icons/nodejs.svg',
+            'Cordova/Ionic': 'Cursor-Resume/public/icons/cordova.svg',
+            'AngularJS': 'https://cdn.simpleicons.org/angular/DD0031',
+            
+            // AI/ML & Agentic Systems
+            'Python': 'Cursor-Resume/public/icons/python.svg',
+            'PyTorch': 'Cursor-Resume/public/icons/pytorch.svg',
+            'TensorFlow': 'Cursor-Resume/public/icons/tensorflow.svg',
+            'scikit-learn': 'https://cdn.simpleicons.org/scikitlearn/F7931E',
+            'Pandas': 'Cursor-Resume/public/icons/pandas.svg',
+            'NumPy': 'Cursor-Resume/public/icons/numpy.svg',
+            'LLMs': 'Cursor-Resume/public/icons/llms.svg',
+            'RAG Pipelines': 'Cursor-Resume/public/icons/rag-pipelines.svg',
+            'LangChain': 'Cursor-Resume/public/icons/langchain.svg',
+            'LlamaIndex': 'Cursor-Resume/public/icons/llamaindex.svg',
+            'LlamaParse': 'Cursor-Resume/public/icons/llamaindex.svg',
+            'MCP Servers': 'Cursor-Resume/public/icons/mcp.svg',
+            'MCP Clients': 'Cursor-Resume/public/icons/mcp.svg',
+            'CrewAI': 'Cursor-Resume/public/icons/crewai.svg',
+            'LangFlow': 'Cursor-Resume/public/icons/langflow.svg',
+            'LangGraph': 'Cursor-Resume/public/icons/langgraph.svg',
+            'OpenAI': 'https://cdn.simpleicons.org/openai/412991',
+            'Claude': 'https://cdn.simpleicons.org/anthropic/000000',
+            'Cohere': 'Cursor-Resume/public/icons/cohere.svg',
+            'Ollama': 'https://cdn.simpleicons.org/ollama/FF6D3A',
+            'ChromaDB': 'Cursor-Resume/public/icons/chromadb.svg',
+            'Pinecone': 'Cursor-Resume/public/icons/pinecone.svg',
+            'Qdrant': 'Cursor-Resume/public/icons/qdrant.svg',
+            'DeepLake': 'Cursor-Resume/public/icons/deeplake.svg',
+            'Milvus': 'Cursor-Resume/public/icons/milvus.svg',
+            'Weaviate': 'Cursor-Resume/public/icons/weaviate.svg',
+            'Neo4j': 'Cursor-Resume/public/icons/neo4j.svg',
+            'Hugging Face': 'https://cdn.simpleicons.org/huggingface/FFD21E',
+            'Stable Diffusion': 'https://cdn.simpleicons.org/stabilityai/000000',
+            'ComfyUI': 'Cursor-Resume/public/icons/comfyui.svg',
+            'LoRA': 'Cursor-Resume/public/icons/lora.svg',
+            'Computer Vision': 'https://cdn.simpleicons.org/opencv/5C3EE8',
+            'YOLO': 'https://cdn.simpleicons.org/opencv/5C3EE8',
+            'OpenCV': 'Cursor-Resume/public/icons/opencv.svg',
+            'TTS/STT': 'https://cdn.simpleicons.org/elevenlabs/000000',
+            'GGUF': 'Cursor-Resume/public/icons/gguf.svg',
+            'N8N': 'Cursor-Resume/public/icons/n8n.svg',
+            'Pydantic AI': 'Cursor-Resume/public/icons/pydantic.svg',
+            
+            // Cloud, DevOps & Reliability
+            'AWS': 'https://cdn.simpleicons.org/amazonaws/232F3E',
+            'AWS Lambda': 'https://cdn.simpleicons.org/awslambda/FF9900',
+            'EC2': 'https://cdn.simpleicons.org/amazonaws/232F3E',
+            'IAM': 'https://cdn.simpleicons.org/amazonaws/232F3E',
+            'GCP': 'Cursor-Resume/public/icons/gcp.svg',
+            'Vertex AI': 'Cursor-Resume/public/icons/vertexai.svg',
+            'Azure': 'Cursor-Resume/public/icons/azure.svg',
+            'AI Cloud Foundry': 'Cursor-Resume/public/icons/ai-cloud-foundry.svg',
+            'DigitalOcean': 'Cursor-Resume/public/icons/digitalocean.svg',
+            'Supabase': 'Cursor-Resume/public/icons/supabase.svg',
+            'Firebase': 'Cursor-Resume/public/icons/firebase.svg',
+            'Vercel': 'Cursor-Resume/public/icons/vercel.svg',
+            'Docker': 'Cursor-Resume/public/icons/docker.svg',
+            'Containerization': 'Cursor-Resume/public/icons/containerization.svg',
+            'CI/CD': 'https://cdn.simpleicons.org/githubactions/2088FF',
+            'Git': 'https://cdn.simpleicons.org/git/F05032',
+            'GitHub': 'Cursor-Resume/public/icons/github.svg',
+            'GitHub Actions': 'https://cdn.simpleicons.org/githubactions/2088FF',
+            'Jenkins': 'Cursor-Resume/public/icons/jenkins.svg',
+            'Fastlane': 'https://cdn.simpleicons.org/fastlane/00F200',
+            'SonarQube': 'https://cdn.simpleicons.org/sonarqube/4E9BCD',
+            'BrowserStack': 'Cursor-Resume/public/icons/browserstack.svg',
+            'Datadog': 'https://cdn.simpleicons.org/datadog/632CA6',
+            'Observability': 'Cursor-Resume/public/icons/observability.svg',
+            'Multi-cloud': 'Cursor-Resume/public/icons/multi-cloud.svg',
+            'Serverless': 'Cursor-Resume/public/icons/serverless.svg',
+            'RunPod': 'Cursor-Resume/public/icons/runpod.svg',
+            'Replicate': 'Cursor-Resume/public/icons/replicate.svg',
+            
+            // Data & Databases
+            'SQL': 'Cursor-Resume/public/icons/sql.svg',
+            'PostgreSQL': 'Cursor-Resume/public/icons/postgresql.svg',
+            'NoSQL': 'Cursor-Resume/public/icons/nosql.svg',
+            'MongoDB': 'Cursor-Resume/public/icons/mongodb.svg',
+            'DynamoDB': 'https://cdn.simpleicons.org/amazondynamodb/4053D6',
+            'Firestore': 'Cursor-Resume/public/icons/firestore.svg',
+            'Redis': 'Cursor-Resume/public/icons/redis.svg',
+            'Vector Databases': 'Cursor-Resume/public/icons/vector-databases.svg',
+            'FAISS': 'Cursor-Resume/public/icons/faiss.svg',
+            'GraphQL': 'Cursor-Resume/public/icons/graphql.svg',
+            
+            // Product, Design & Collaboration
+            'Figma': 'Cursor-Resume/public/icons/figma.svg',
+            'Sketch': 'https://cdn.simpleicons.org/sketch/FFAE00',
+            'Miro': 'Cursor-Resume/public/icons/miro.svg',
+            'Jira': 'https://cdn.simpleicons.org/jira/0052CC',
+            'TDD': 'https://cdn.simpleicons.org/jest/C21325',
+            'Agile/Scrum': 'https://cdn.simpleicons.org/jira/0052CC',
+            'Snapshot Testing': 'Cursor-Resume/public/icons/snapshot-testing.svg',
+            'UI Testing': 'https://cdn.simpleicons.org/jest/C21325',
+            'Optimizely': 'Cursor-Resume/public/icons/optimizely.svg',
+            'Amplitude': 'Cursor-Resume/public/icons/amplitude.svg',
+            'Cursor': 'Cursor-Resume/public/icons/cursor.svg',
+            'Kilo Code': 'Cursor-Resume/public/icons/kilocode.svg',
+            'Gemini CLI': 'Cursor-Resume/public/icons/gemini-cli.svg',
+            'OpenRouter': 'Cursor-Resume/public/icons/openrouter.svg',
+            'Manus Platform': 'Cursor-Resume/public/icons/manus.svg',
+            'ElevenLabs': 'https://cdn.simpleicons.org/elevenlabs/000000',
+            'LMStudio': 'Cursor-Resume/public/icons/lmstudio.svg',
+            'XCode': 'https://cdn.simpleicons.org/xcode/147EFB',
+            'Claude CLI': 'Cursor-Resume/public/icons/claude-cli.svg',
+        };
+        
+        // 🌟 Inject icons into all skill tags
+        function injectIcons() {
+            const skillTags = document.querySelectorAll('.skill-tag');
+            skillTags.forEach(tag => {
+                const skillName = tag.textContent.trim();
+                const iconSrc = ICON_MAP[skillName];
+                
+                if (iconSrc) {
+                    const icon = document.createElement('img');
+                    icon.src = iconSrc;
+                    icon.alt = skillName;
+                    icon.className = 'skill-icon';
+                    icon.onerror = function() {
+                        // Fallback if icon fails to load
+                        this.style.display = 'none';
+                        const fallback = createFallback(skillName);
+                        tag.insertBefore(fallback, tag.firstChild);
+                    };
+                    tag.insertBefore(icon, tag.firstChild);
+                } else {
+                    // Create fallback initials
+                    const fallback = createFallback(skillName);
+                    tag.insertBefore(fallback, tag.firstChild);
+                }
+            });
+        }
+        
+        // 🎨 Create fallback icon with initials
+        function createFallback(name) {
+            const fallback = document.createElement('div');
+            fallback.className = 'skill-fallback';
+            const initials = name
+                .split(' ')
+                .map(w => w[0])
+                .join('')
+                .slice(0, 3)
+                .toUpperCase();
+            fallback.textContent = initials;
+            return fallback;
+        }
+        
+        // ✨ Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', injectIcons);
+        } else {
+            injectIcons();
+        }
+    </script>
 </body>
 </html>
 
