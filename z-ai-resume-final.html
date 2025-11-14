@@ -283,6 +283,39 @@
             left: 0;
             font-weight: bold;
         }
+        
+        .experience-subsection {
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-subsection:last-child {
+            margin-bottom: 0;
+        }
+        
+        .subsection-title {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.75rem;
+            margin-top: 0;
+        }
+        
+        .subsection-subtitle {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-top: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-subsection ul {
+            margin-top: 0.5rem;
+        }
+        
+        .experience-subsection li strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
 
         /* Hackathon Section */
         .hackathon-grid {
@@ -655,19 +688,51 @@
                     </div>
                     <div class="item-subtitle">PayPal / Venmo</div>
                     <div class="item-details">
-                        <ul>
-                            <li>Built PayPal/Venmo's first applied agentic AI platform for autonomous merchant onboarding</li>
-                            <li>Pioneered AI image generation with custom SDXL LoRA models producing professional imagery in ~30 seconds, saving merchants $100–$500 per product</li>
-                            <li>Delivered first org-wide MCP integration for seamless AI agent orchestration</li>
-                            <li>Achieved 58.5 GPU hours training, 23% loss reduction, 109MB production-ready model</li>
-                            <li>Implemented multi-platform automation managing Venmo, Honey, Facebook/Meta, Google Ads, and TikTok</li>
-                            <li>Developed AI-powered crash detection system using LangChain + DeepLake – now adopted org-wide</li>
-                            <li>Built payment-splitting for $400M Amex partnership deal (2020)</li>
-                            <li>Led initiative winning $60M CVS contract with QRC Touch-Free Payments</li>
-                            <li>Filed "Interface Widget Tool for Automatic QR Code Generation" patent (2022) – Reduced user friction by 66%</li>
-                            <li>Built end-to-end infrastructure with server-side Swift for Dynamic Island / Live Activities</li>
-                            <li>Mentored cross-functional engineers on concurrency, accessibility, and feature-flag development</li>
-                        </ul>
+                        <div class="experience-subsection">
+                            <h4 class="subsection-title">🤖 AI/ML Evolution & Technical Innovation (2023–Present)</h4>
+                            <h5 class="subsection-subtitle">Team Mercury – AI-Powered Agentic E-Commerce Platform (October 2025)</h5>
+                            <ul>
+                                <li>Built PayPal/Venmo's first applied agentic AI platform for autonomous merchant onboarding and product enhancement</li>
+                                <li>Pioneered AI image generation with custom SDXL LoRA models producing professional imagery in ~30 seconds, saving merchants $100–$500 per product</li>
+                                <li>Delivered first org-wide MCP (Model Context Protocol) integration for seamless AI agent orchestration</li>
+                                <li>Achieved 58.5 GPU hours training, 23% loss reduction, 109MB production-ready model managing 5 product categories</li>
+                                <li>Implemented multi-platform automation managing Venmo, Honey, Facebook/Meta, Google Ads, and TikTok campaigns</li>
+                            </ul>
+                            <h5 class="subsection-subtitle">AI/ML Implementation & Automation (2024)</h5>
+                            <ul>
+                                <li>Developed AI-powered crash detection system using LangChain + DeepLake with automated DataDog monitors — now adopted org-wide</li>
+                                <li>Created 10%+ productivity improvements via AI-powered automation tools</li>
+                                <li>Championed AI coding assistants across teams, training colleagues on leveraging AI</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-subsection">
+                            <h4 class="subsection-title">📱 iOS Engineering Excellence & Business Impact</h4>
+                            <h5 class="subsection-subtitle">Major Product Launches & Partnerships</h5>
+                            <ul>
+                                <li><strong>Amex Partnership (2020):</strong> Built payment-splitting integration for $400M partnership deal</li>
+                                <li><strong>Pay With Venmo Checkout (2024–Present):</strong> Key stakeholder driving hypergrowth through merchant integrations, server-side Swift implementation, and end-to-end integration architecture</li>
+                                <li><strong>QRC Touch-Free Payments (COVID era):</strong> Led moonshot initiative winning $60M CVS contract for contactless payments</li>
+                                <li><strong>Venmo × Amazon Partnership (2023):</strong> Built sandbox/integration app in two days for partnership launch</li>
+                                <li><strong>Gift Cards (2023):</strong> Led successful delivery of mission-critical feature for majority iOS user base</li>
+                            </ul>
+                            <h5 class="subsection-subtitle">iOS Innovation & Patents</h5>
+                            <ul>
+                                <li><strong>QRC Widget Patent (2022):</strong> Filed "Interface Widget Tool for Automatic QR Code Generation" (PayPal Ref. OCP.D2021.103924.US1). First team to use SwiftUI for iOS widgets at Venmo. Reduced user friction by 66%</li>
+                                <li><strong>Dynamic Island / Live Activities:</strong> Built end-to-end infrastructure including server-side Swift implementation</li>
+                                <li>Architected merchant features spanning Live Activities, QR code widgets, and Supabase-powered notification systems reaching millions of active users</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-subsection">
+                            <h4 class="subsection-title">👥 Technical Leadership & Impact</h4>
+                            <ul>
+                                <li>Mentored cross-functional engineers on concurrency, accessibility, and feature-flag driven development</li>
+                                <li>Partnered with Design Systems to create modern SwiftUI component library that cut feature development time by 30%</li>
+                                <li>Built internal AI observability tooling using DataDog to trace inference latency and prompt performance across services</li>
+                                <li>Prototype-to-production lead for Team Mercury (2025 AI Hackathon Winner)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
@@ -682,8 +747,8 @@
                     <div class="item-subtitle">Google Stadia</div>
                     <div class="item-details">
                         <ul>
-                            <li>Worked on Google Stadia for mobile platforms in Flutter/Dart</li>
-                            <li>Leveraged iOS expertise for native plugins and crash debugging</li>
+                            <li>Worked on Google Stadia for mobile platforms, primarily in Flutter/Dart</li>
+                            <li>Leveraged iOS domain expertise for native iOS plugins, troubleshooting, and debugging crash reports</li>
                         </ul>
                     </div>
                 </div>
@@ -699,8 +764,8 @@
                     <div class="item-subtitle">Morgan Stanley</div>
                     <div class="item-details">
                         <ul>
-                            <li>Hybrid Banking and Wealth Management apps for iOS</li>
-                            <li>Key features: check-deposit, biometric authentication, certificate-pinning, jailbreak detection</li>
+                            <li>Worked on Hybrid (Cordova + Native) Banking and Wealth Management apps for iOS</li>
+                            <li>Developed key features: check-deposit, biometric authentication, certificate-pinning, jailbreak detection, push authentication</li>
                             <li>Migrated codebase from 98% Objective-C to 80% Objective-C / 20% Swift</li>
                         </ul>
                     </div>
