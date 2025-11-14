@@ -33,6 +33,8 @@ const SVG_ICON_MAP: Record<string, string> = {
   'RxSwift': '/icons/rxswift.svg',
   'Core ML': '/icons/coreml.svg',
   'MLX': '/icons/mlx.svg',
+  'SwiftData': '/icons/swiftdata.svg',
+  'Realm': '/icons/realm.svg',
   'ARKit': '/icons/arkit.svg',
   'ActivityKit': '/icons/activitykit.svg',
   'WidgetKit': '/icons/widgetkit.svg',
