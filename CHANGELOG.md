@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-11-14] - Icon Improvements & Simplification
+
+### Changed
+- Increased font size in Core ML icon: ML text from 8px to 10px for better readability
+- Increased font size in MLX icon: MLX text from 6px to 8px for better readability
+- Simplified package.json dev script back to basic `next dev` command (removed complex hostname configuration)
+
+### Fixed
+- Improved text visibility in Core ML and MLX hexagonal icons
+
+## [2024-11-14] - Icon Collection Integration
+
 ### Added
 - Official Core ML icon with hexagonal logo design (teal/blue gradient)
 - Official MLX icon with hexagonal logo design
@@ -14,25 +26,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Official Realm logo from Simple Icons
 - Official RxSwift logo downloaded using image-to-svg.js tool
 - Updated catalog page with white background theme matching Claude-Resume style
-- Dev server configuration to bind to all interfaces (0.0.0.0) for better accessibility
+- UIKit icon with light blue circle and dark gray "U"
 
 ### Changed
 - Updated Core ML and MLX icons to match official Apple branding (hexagonal shapes)
 - Replaced RxSwift icon with official logo from GitHub using image-to-svg.js tool
-- Improved icon contrast and visibility
+- Improved icon contrast and visibility with darker gradients and text strokes
 - Catalog page styling updated to white background for better readability
-- Dev server now accessible from both IPv4 and IPv6 addresses
 
 ### Fixed
-- Resolved "Access is only allowed at [::1]:3001" error by binding dev server to 0.0.0.0
 - Fixed duplicate keys in SVG_ICON_MAP ('Realm', 'Core ML', 'SwiftData')
 - Icon display issues for Core ML, MLX, SwiftData, and Realm
 - Build and runtime errors related to icon rendering
 
-## [2024-11-14] - Icon Collection Integration
+## [2024-11-14] - Initial Icon Collection
 
 ### Added
-- Comprehensive icon collection with 18+ new custom SVG icons
 - SvgIcon component for custom icon rendering
 - Skills catalog page at `/catalog` showcasing all skills
 - Icons for: LangChain, LlamaIndex, LangGraph, CrewAI, LangFlow, ChromaDB, Pinecone, Qdrant, DeepLake, RxSwift, Core ML, MLX, ARKit, ActivityKit, WidgetKit, Cordova, Ionic, Kubernetes
