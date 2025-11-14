@@ -300,18 +300,63 @@
         }
         
         @media print {
+            /* 🌟 Print-Friendly Styles - Ensures consistent colors and layout when printing */
+            
+            @page {
+                size: letter;
+                margin: 0.5in;
+            }
+            
+            /* Force colors to print (prevent browser color adjustments) */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            
             body {
-                background: white;
-                padding: 0;
+                background: white !important;
+                padding: 0 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
             
             .container {
-                box-shadow: none;
-                max-width: 100%;
+                box-shadow: none !important;
+                max-width: 100% !important;
             }
             
             .section {
                 page-break-inside: avoid;
+            }
+            
+            /* Ensure gradients and colored backgrounds print */
+            .top-header {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            .highlights-bar {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* Ensure images print */
+            img {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                max-width: 100%;
+            }
+            
+            /* Remove hover effects */
+            a:hover {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            
+            /* Remove text shadows */
+            * {
+                text-shadow: none !important;
             }
         }
         

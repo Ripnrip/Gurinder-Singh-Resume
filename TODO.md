@@ -216,6 +216,7 @@ A collection of ideas and experiments to try for making the resume even more vis
 ## 📝 Content Enhancements
 
 ### Additional Sections
+- [ ] **Personal Projects** - Select personal projects showcasing technical skills
 - [ ] **Publications** - Technical articles, blog posts, papers
 - [ ] **Speaking Engagements** - Conferences, talks, workshops
 - [ ] **Open Source** - GitHub contributions, open source projects

@@ -616,27 +616,71 @@
 
         /* Print Styles */
         @media print {
+            /* 🌟 Print-Friendly Styles - Ensures consistent colors and layout when printing */
+            
+            @page {
+                size: letter;
+                margin: 0.5in;
+            }
+            
+            /* Force colors to print (prevent browser color adjustments) */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            
             body {
-                background: white;
+                background: white !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
 
             .bg-animation {
-                display: none;
+                display: none !important;
             }
 
             .container {
-                padding: 0;
+                padding: 0 !important;
+                box-shadow: none !important;
+                max-width: 100% !important;
             }
 
             .header,
             .section {
-                box-shadow: none;
-                background: white;
-                border: 1px solid var(--border-color);
+                box-shadow: none !important;
+                background: white !important;
+                border: 1px solid var(--border-color) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
 
             .section {
                 page-break-inside: avoid;
+            }
+            
+            /* Ensure gradients and colored backgrounds print */
+            .header {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* Ensure images print */
+            img {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                max-width: 100%;
+            }
+            
+            /* Remove hover effects */
+            a:hover {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            
+            /* Remove text shadows */
+            * {
+                text-shadow: none !important;
             }
         }
 

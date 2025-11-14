@@ -597,14 +597,126 @@
         }
         
         @media print {
-            .resume {
-                box-shadow: none;
-                padding: 0;
-                margin: 0;
+            /* 🌟 Print-Friendly Styles - Ensures consistent colors and layout when printing */
+            
+            /* Reset page margins and ensure full page usage */
+            @page {
+                size: letter;
+                margin: 0.5in;
             }
             
+            /* Force colors to print (prevent browser color adjustments) */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            
+            /* Ensure backgrounds print */
+            body {
+                background: white !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            .resume {
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+                background: white !important;
+            }
+            
+            /* Ensure header gradient prints */
+            .header {
+                background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                page-break-inside: avoid;
+            }
+            
+            /* Ensure stats bar background prints */
+            .stats-bar {
+                background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                page-break-inside: avoid;
+            }
+            
+            /* Ensure summary background prints */
+            .summary {
+                background-color: var(--secondary-color) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* Ensure experience item backgrounds print */
+            .experience-item {
+                background-color: var(--light-gray) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                page-break-inside: avoid;
+            }
+            
+            /* Ensure skill tags print with backgrounds */
+            .skill-tag {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* Ensure hackathon cards print */
+            .hackathon-card {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                page-break-inside: avoid;
+            }
+            
+            /* Ensure images print */
+            img {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                max-width: 100%;
+            }
+            
+            /* Remove hover effects */
+            a:hover {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            
+            /* Ensure QR code prints */
+            .qr-code {
+                background: white !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            /* Page break controls */
             .page-break {
                 page-break-before: always;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .experience-item {
+                page-break-inside: avoid;
+            }
+            
+            /* Hide any print-only elements if needed */
+            .no-print {
+                display: none !important;
+            }
+            
+            /* Ensure text shadows don't cause issues */
+            * {
+                text-shadow: none !important;
+            }
+            
+            /* Ensure borders print */
+            .section-title {
+                border-bottom-color: var(--primary-color) !important;
             }
         }
     </style>
