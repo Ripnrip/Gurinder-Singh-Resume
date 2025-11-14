@@ -3,17 +3,6 @@
   "public": true,
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/(.*\\.(html|css|js|svg|png|jpg|jpeg|gif|ico|webp))",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ],
   "rewrites": [
     {
       "source": "/",
