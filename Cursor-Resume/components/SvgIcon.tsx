@@ -55,6 +55,19 @@ const SVG_ICON_MAP: Record<string, string> = {
   'Serverless Swift': '/icons/serverless-swift.svg',
   'Serverless': '/icons/serverless.svg',
   'GCP': '/icons/gcp.svg',
+  'Realm': '/icons/realm.svg',
+  'Vapor': '/icons/vapor.svg',
+  'Pandas': '/icons/pandas.svg',
+  'SwiftUI': '/icons/swiftui.svg',
+  'Core ML': '/icons/coreml.svg',
+  'SwiftData': '/icons/swiftdata.svg',
+  'Milvus': '/icons/milvus.svg',
+  'Weaviate': '/icons/weaviate.svg',
+  'Neo4j': '/icons/neo4j.svg',
+  'Vertex AI': '/icons/vertexai.svg',
+  'Firestore': '/icons/firestore.svg',
+  'Cohere': '/icons/cohere.svg',
+  'Optimizely': '/icons/optimizely.svg',
 }
 
 export const SvgIcon: React.FC<SvgIconProps> = ({ name, size = 20, className }) => {
