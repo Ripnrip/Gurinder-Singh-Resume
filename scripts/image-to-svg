@@ -3,6 +3,8 @@ const fs = require('fs/promises');
 const axios = require('axios');
 const potrace = require('potrace');
 const { optimize } = require('svgo');
+const os = require('os');
+const path = require('path');
 
 /**
  * 🎭 The Image-to-SVG Alchemist - A Tool for Digital Transmutation
@@ -17,10 +19,17 @@ const { optimize } = require('svgo');
 async function convertImageToTinySvg(imageUrl, outputPath) {
   try {
     console.log(`🌐 ✨ IMAGE QUEST AWAKENS! Fetching from: ${imageUrl}`);
+    const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+    const tempFileName = `temp_icon_${Date.now()}${path.extname(imageUrl) || '.png'}`;
+    const tempFilePath = path.join(os.tmpdir(), tempFileName);
+    await fs.writeFile(tempFilePath, response.data);
     
     console.log('🎨 Tracing the artistic soul of the image... with color!');
     const svgString = await new Promise((resolve, reject) => {
-      potrace.posterize(imageUrl, { steps: 4 }, (err, svg) => {
+      potrace.posterize(tempFilePath, { steps: 4 }, (err, svg) => {
+        fs.unlink(tempFilePath, (unlinkErr) => {
+          if (unlinkErr) console.error(`🌙 ⚠️ Gentle reminder: Failed to clean up temp file: ${tempFilePath}`, unlinkErr);
+        });
         if (err) return reject(err);
         resolve(svg);
       });
@@ -37,7 +46,11 @@ async function convertImageToTinySvg(imageUrl, outputPath) {
 
   } catch (creativeChallenge) {
     console.error(`💥 😭 ALCHEMY TEMPORARILY HALTED!`);
-    console.error(`🌩️ Temporary setback: ${creativeChallenge.message}`);
+    if (axios.isAxiosError(creativeChallenge) && creativeChallenge.response) {
+      console.error(`🌩️ The server responded with a ${creativeChallenge.response.status} status.`);
+    } else {
+      console.error(`🌩️ Temporary setback: ${creativeChallenge.message}`);
+    }
     console.log(`🎭 But the show must go on...`);
   }
 }
