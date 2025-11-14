@@ -333,7 +333,6 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   'AWS Lambda': { name: 'AWS Lambda', icon: SiAwslambda },
   EC2: { name: 'EC2' },
   IAM: { name: 'IAM' },
-  DynamoDB: { name: 'DynamoDB', icon: SiAmazondynamodb },
   GCP: { name: 'GCP', icon: (props: { size?: number; className?: string }) => <SvgIcon name="GCP" {...props} /> },
   'Vertex AI': { name: 'Vertex AI' },
   Azure: { name: 'Azure' },
@@ -368,7 +367,6 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   Firestore: { name: 'Firestore' },
   DynamoDB: { name: 'DynamoDB', icon: SiAmazondynamodb },
   Redis: { name: 'Redis', icon: SiRedis },
-  'SwiftData': { name: 'SwiftData', icon: (props: { size?: number; className?: string }) => <SvgIcon name="SwiftData" {...props} /> },
   'Vector Databases': { name: 'Vector Databases' },
   FAISS: { name: 'FAISS' },
   GraphQL: { name: 'GraphQL', icon: (props: { size?: number; className?: string }) => <SvgIcon name="GraphQL" {...props} /> },
@@ -393,7 +391,7 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   LMStudio: { name: 'LMStudio' },
   Automatic1111: { name: 'Automatic1111' },
   XCode: { name: 'XCode' },
-  'Claude CLI': { name: 'Claude CLI', icon: (props) => <SvgIcon name="Claude CLI" {...props} /> },
+  'Claude CLI': { name: 'Claude CLI', icon: (props: { size?: number; className?: string }) => <SvgIcon name="Claude CLI" {...props} /> },
 }
 
 const SECTION_ORDER = [

@@ -14,8 +14,10 @@
             --secondary-color: #f0fdfa;
             --text-color: #334155;
             --text-light: #64748b;
+            --text-dark: #111827;
             --white: #ffffff;
             --border-color: #e2e8f0;
+            --light-gray: #f9fafb;
             --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
         
@@ -28,132 +30,206 @@
         body {
             font-family: 'Inter', sans-serif;
             color: var(--text-color);
-            line-height: 1.5;
-            background-color: var(--white);
+            line-height: 1.6;
+            background-color: var(--light-gray);
+            font-size: 10pt;
         }
         
         .resume {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 30px;
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: 2rem auto;
+            padding: 0;
             background-color: var(--white);
             box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
         }
         
-        .header {
+        /* New Header Styles */
+        .new-header {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            padding: 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid var(--primary-color);
-            margin-bottom: 30px;
+            color: var(--white);
         }
-        
-        .header-left {
+        .profile-section {
             display: flex;
+            gap: 1.5rem;
             align-items: center;
-            gap: 20px;
+            flex: 1;
         }
-        
+        .profile-image-wrapper {
+            flex-shrink: 0;
+        }
         .profile-image {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--primary-color);
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
-        .name-title h1 {
-            color: var(--primary-dark);
-            font-size: 2.5rem;
-            margin-bottom: 5px;
+        .header-content h1 {
+            font-size: 28pt;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
         }
-        
-        .name-title p {
-            color: var(--text-light);
-            font-size: 1.2rem;
+        .header-content .title {
+            font-size: 12pt;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 1rem;
         }
-        
-        .header-right {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 15px;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        
-        .contact-item {
+        .contact-bar {
             display: flex;
             align-items: center;
-            gap: 8px;
-            color: var(--text-color);
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
-        
-        .contact-item span:first-child {
-            color: var(--primary-color);
-            width: 20px;
-            text-align: center;
+        .contact-bar a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 8.5pt;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
         .qr-code {
-            width: 100px;
-            height: 100px;
-            border: 2px solid var(--primary-color);
+            background: var(--white);
+            padding: 0.5rem;
             border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            color: var(--text-light);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .qr-code img {
+             width: 100px;
+             height: 100px;
+        }
+        .qr-label {
+            font-size: 7pt;
+            font-weight: 700;
             text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        /* Stats Bar Styles */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+            border-bottom: 2px solid #99f6e4;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 20pt;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 0.25rem;
+        }
+        .stat-label {
+            font-size: 8pt;
+            color: #0f766e;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .main-content {
+            padding: 1.5rem 2rem;
         }
         
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
         }
         
         .section-title {
+            font-size: 13pt;
+            font-weight: 700;
             color: var(--primary-dark);
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-        
-        .section-title span:first-child {
-            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
         }
         
         .summary {
             background-color: var(--secondary-color);
-            padding: 20px;
+            padding: 1.25rem;
             border-radius: 8px;
             border-left: 4px solid var(--primary-color);
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        /* New Core Skills Grid */
+        .core-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .core-skill-card {
+            background: var(--white);
+            border: 2px solid #ccfbf1;
+            border-radius: 8px;
+            padding: 1.25rem;
+            transition: all 0.2s ease;
+        }
+        .core-skill-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(20, 184, 166, 0.15);
+        }
+        .skill-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .skill-icon {
+            font-size: 20pt;
+        }
+        .skill-name {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+        .skill-list-condensed {
+            font-size: 8.5pt;
+            color: var(--text-color);
+            line-height: 1.6;
         }
         
         .experience-item {
-            margin-bottom: 25px;
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
         }
         
         .item-header {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             margin-bottom: 8px;
         }
         
         .item-title {
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: var(--primary-dark);
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: var(--text-dark);
             display: flex;
             align-items: center;
             gap: 10px;
@@ -167,11 +243,13 @@
         
         .item-date {
             color: var(--text-light);
-            font-style: italic;
+            font-weight: 600;
+            font-size: 9pt;
         }
         
         .item-subtitle {
-            color: var(--primary-color);
+            color: var(--primary-dark);
+            font-weight: 600;
             margin-bottom: 10px;
         }
         
@@ -181,32 +259,67 @@
         
         .item-details ul {
             list-style-type: none;
+            padding: 0;
         }
         
         .item-details li {
-            margin-bottom: 5px;
+            margin-bottom: 0.4rem;
             position: relative;
-            padding-left: 20px;
+            padding-left: 1.2rem;
         }
         
         .item-details li:before {
-            content: "•";
+            content: "▸";
             color: var(--primary-color);
-            font-weight: bold;
             position: absolute;
             left: 0;
+        }
+
+        /* Hackathon Section */
+        .hackathon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .hackathon-card {
+            background: var(--light-gray);
+            padding: 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            text-align: center;
+        }
+        .hackathon-badge {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: var(--white);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 8pt;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+        }
+        .hackathon-title {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        .hackathon-desc {
+            font-size: 8.5pt;
+            color: var(--text-light);
+            line-height: 1.5;
         }
         
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
         }
         
         .skill-category {
             background-color: var(--secondary-color);
             border-radius: 8px;
-            padding: 15px;
+            padding: 1.25rem;
             border-left: 4px solid var(--primary-color);
         }
         
@@ -222,22 +335,31 @@
         .skill-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 0.75rem;
         }
         
         .skill-tag {
-            background-color: var(--white);
-            border: 1px solid var(--primary-light);
+            background-color: var(--secondary-color);
+            border: 1px solid #99f6e4;
             color: var(--primary-dark);
-            padding: 4px 10px;
-            border-radius: 20px;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
             font-size: 0.9rem;
-            display: flex;
+            font-weight: 500;
+            display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
         }
         
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(20, 184, 166, 0.15);
+            border-color: var(--primary-color);
+        }
+
         .skill-tag i {
+            color: var(--primary-color);
             font-size: 0.8rem;
         }
         
@@ -256,8 +378,8 @@
             .resume {
                 box-shadow: none;
                 padding: 0;
+                margin: 0;
             }
-            
             .page-break {
                 page-break-before: always;
             }
@@ -266,41 +388,60 @@
 </head>
 <body>
     <div class="resume">
-        <div class="header">
-            <div class="header-left">
+        <!-- New Header -->
+        <div class="new-header">
+            <div class="profile-section">
+                <div class="profile-image-wrapper">
                 <img src="https://guriboy-6fupko.manus.space/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.56a6f274.jpg&w=640&q=75" alt="Gurinder Singh" class="profile-image">
-                <div class="name-title">
+                </div>
+                <div class="header-content">
                     <h1>Gurinder Singh</h1>
-                    <p>Staff iOS & AI/ML Engineer</p>
+                    <div class="title">Staff iOS & AI/ML Engineer</div>
+                    <div class="contact-bar">
+                        <a href="mailto:gsingh622@yahoo.com"><span>📧</span> Email</a>
+                        <a href="https://linkedin.com/in/gurindersingh"><span>💼</span> LinkedIn</a>
+                        <a href="https://guriboy-6fupko.manus.space"><span>🌐</span> Portfolio</a>
+                    </div>
                 </div>
             </div>
-            <div class="header-right">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span>📧</span>
-                        <span>gsingh622@yahoo.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>💼</span>
-                        <span>linkedin.com/in/gurindersingh</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>🌐</span>
-                        <span>guriboy-6fupko.manus.space</span>
-                    </div>
-                </div>
+            <div class="qr-section">
                 <div class="qr-code">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://guriboy-6fupko.manus.space/" alt="Portfolio QR Code">
                 </div>
+                <div class="qr-label">SCAN FOR PORTFOLIO</div>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value">90M+</div>
+                <div class="stat-label">Users Impacted</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">28+</div>
+                <div class="stat-label">Hackathons</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">2x</div>
+                <div class="stat-label">1st Place Wins</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">🏆</div>
+                <div class="stat-label">Patent Holder</div>
             </div>
         </div>
         
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Summary</h2>
         <div class="summary">
             <p>Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users. Patent holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions. Proven track record of building legendary apps at global scale, from startup innovation to enterprise solutions serving 90M+ users, recently at my current role at PayPal/Venmo. Passionate about mentoring engineers, conducting technical interviews, and fostering inclusive tech communities while driving innovation at the intersection of iOS/Mobile and artificial intelligence.</p>
+                </div>
         </div>
         
         <div class="section">
-            <h2 class="section-title"><span>💼</span> Professional Experience</h2>
+                <h2 class="section-title">Professional Experience</h2>
             
             <div class="experience-item">
                 <div class="item-header">
@@ -366,262 +507,284 @@
         </div>
         
         <div class="section">
-            <h2 class="section-title"><span>⚡</span> Core Skills</h2>
-            
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><span>📱</span> Languages & Frameworks</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fab fa-swift"></i>Swift</span>
-                        <span class="skill-tag"><i class="fab fa-swift"></i>SwiftUI</span>
-                        <span class="skill-tag"><i class="fab fa-apple"></i>Objective-C</span>
-                        <span class="skill-tag"><i class="fab fa-python"></i>Python</span>
-                        <span class="skill-tag"><i class="fab fa-js"></i>JavaScript</span>
-                        <span class="skill-tag"><i class="fab fa-js"></i>TypeScript</span>
-                        <span class="skill-tag"><i class="fas fa-arrow-right"></i>Next.js</span>
-                        <span class="skill-tag"><i class="fab fa-node"></i>Node.js</span>
-                        <span class="skill-tag"><i class="fab fa-flutter"></i>Flutter/Dart</span>
-                        <span class="skill-tag"><i class="fas fa-bolt"></i>FastAPI</span>
-                        <span class="skill-tag"><i class="fas fa-cloud"></i>Vapor</span>
+                <h2 class="section-title">Hackathon Achievements</h2>
+                 <div class="hackathon-grid">
+                    <div class="hackathon-card">
+                        <div class="hackathon-badge">🏆 1st Place</div>
+                        <div class="hackathon-title">MLH @ Bloomberg London (2017)</div>
+                        <div class="hackathon-desc">Automated Search & Rescue System – Won among 500+ participants. Featured in BBC documentary.</div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>🤖</span> Applied AI/ML & Data Systems</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fas fa-brain"></i>LLM Agents</span>
-                        <span class="skill-tag"><i class="fas fa-filter"></i>RAG Pipelines</span>
-                        <span class="skill-tag"><i class="fas fa-link"></i>LangChain</span>
-                        <span class="skill-tag"><i class="fas fa-book"></i>LlamaIndex</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>Vector Databases</span>
-                        <span class="skill-tag"><i class="fas fa-water"></i>DeepLake</span>
-                        <span class="skill-tag"><i class="fas fa-cube"></i>Cohere</span>
-                        <span class="skill-tag"><i class="fas fa-search"></i>Qdrant</span>
-                        <span class="skill-tag"><i class="fas fa-palette"></i>ChromaDB</span>
-                        <span class="skill-tag"><i class="fas fa-tree"></i>Pinecone</span>
-                        <span class="skill-tag"><i class="fas fa-project-diagram"></i>Embedding Strategies</span>
-                        <span class="skill-tag"><i class="fas fa-comments"></i>NLP</span>
-                        <span class="skill-tag"><i class="fas fa-eye"></i>Computer Vision</span>
-                        <span class="skill-tag"><i class="fas fa-microphone"></i>Speech Processing</span>
-                        <span class="skill-tag"><i class="fab fa-apple"></i>CoreML</span>
-                        <span class="skill-tag"><i class="fab fa-apple"></i>MLX</span>
-                        <span class="skill-tag"><i class="fas fa-cog"></i>LoRA Fine-Tuning</span>
-                        <span class="skill-tag"><i class="fas fa-image"></i>Stable Diffusion</span>
-                        <span class="skill-tag"><i class="fas fa-robot"></i>OpenAI APIs</span>
-                        <span class="skill-tag"><i class="fas fa-robot"></i>Claude API</span>
-                        <span class="skill-tag"><i class="fas fa-globe"></i>Manus Platform</span>
-                        <span class="skill-tag"><i class="fas fa-server"></i>MCP Servers</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>NoSQL</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>SQL</span>
-                        <span class="skill-tag"><i class="fas fa-table"></i>Pandas</span>
-                        <span class="skill-tag"><i class="fas fa-calculator"></i>NumPy</span>
-                        <span class="skill-tag"><i class="fas fa-fire"></i>PyTorch</span>
-                        <span class="skill-tag"><i class="fas fa-chart-line"></i>scikit-learn</span>
-                        <span class="skill-tag"><i class="fas fa-desktop"></i>Ollama</span>
-                        <span class="skill-tag"><i class="fas fa-desktop"></i>LMStudio</span>
+                    <div class="hackathon-card">
+                        <div class="hackathon-badge">🏆 1st Place</div>
+                        <div class="hackathon-title">Devcamp NYC (2016)</div>
+                        <div class="hackathon-desc">Talent Management App – Won among 300+ participants at Google NYC.</div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>☁️</span> Cloud Infrastructure & Tooling</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fab fa-docker"></i>Docker</span>
-                        <span class="skill-tag"><i class="fas fa-cube"></i>Containerization</span>
-                        <span class="skill-tag"><i class="fab fa-git-alt"></i>Git</span>
-                        <span class="skill-tag"><i class="fab fa-github"></i>GitHub Actions</span>
-                        <span class="skill-tag"><i class="fab fa-microsoft"></i>Azure DevOps</span>
-                        <span class="skill-tag"><i class="fas fa-infinity"></i>CI/CD</span>
-                        <span class="skill-tag"><i class="fab fa-jira"></i>Agile (Jira)</span>
-                        <span class="skill-tag"><i class="fas fa-bolt"></i>Serverless Compute</span>
-                        <span class="skill-tag"><i class="fas fa-chart-line"></i>Observability</span>
-                        <span class="skill-tag"><i class="fab fa-google"></i>GCP / Vertex AI</span>
-                        <span class="skill-tag"><i class="fab fa-microsoft"></i>Microsoft Azure</span>
-                        <span class="skill-tag"><i class="fas fa-robot"></i>HuggingFace</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>📲</span> Mobile & Systems</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fab fa-apple"></i>iOS SDK</span>
-                        <span class="skill-tag"><i class="fas fa-vr-cardboard"></i>ARKit</span>
-                        <span class="skill-tag"><i class="fas fa-bolt"></i>ActivityKit</span>
-                        <span class="skill-tag"><i class="fas fa-th"></i>WidgetKit</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>SwiftData</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>Realm</span>
-                        <span class="skill-tag"><i class="fas fa-link"></i>Combine</span>
-                        <span class="skill-tag"><i class="fas fa-link"></i>RxSwift</span>
-                        <span class="skill-tag"><i class="fas fa-bluetooth"></i>BLE</span>
-                        <span class="skill-tag"><i class="fab fa-apple"></i>CoreML Integration</span>
-                        <span class="skill-tag"><i class="fas fa-microchip"></i>On-Device Inference</span>
-                        <span class="skill-tag"><i class="fab fa-swift"></i>Swift Package Manager</span>
-                        <span class="skill-tag"><i class="fab fa-flutter"></i>Flutter SDK</span>
-                        <span class="skill-tag"><i class="fas fa-mobile-alt"></i>Cordova</span>
-                        <span class="skill-tag"><i class="fas fa-vial"></i>XCTest</span>
-                        <span class="skill-tag"><i class="fas fa-camera"></i>Snapshot Testing</span>
-                        <span class="skill-tag"><i class="fas fa-universal-access"></i>Accessibility</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>🎨</span> Creative & Generative Tools</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fab fa-figma"></i>Figma</span>
-                        <span class="skill-tag"><i class="fab fa-sketch"></i>Sketch</span>
-                        <span class="skill-tag"><i class="fas fa-palette"></i>ComfyUI</span>
-                        <span class="skill-tag"><i class="fas fa-film"></i>FFmpeg</span>
-                        <span class="skill-tag"><i class="fas fa-microphone"></i>ElevenLabs</span>
-                        <span class="skill-tag"><i class="fas fa-microphone"></i>Whisper-MLX</span>
-                        <span class="skill-tag"><i class="fas fa-image"></i>Stable Diffusion</span>
-                        <span class="skill-tag"><i class="fas fa-keyboard"></i>Prompt Engineering</span>
-                        <span class="skill-tag"><i class="fas fa-music"></i>Audio Generation</span>
-                        <span class="skill-tag"><i class="fas fa-video"></i>Visual Generation</span>
-                        <span class="skill-tag"><i class="fas fa-server"></i>RunPod</span>
-                        <span class="skill-tag"><i class="fas fa-copy"></i>Replicate</span>
-                        <span class="skill-tag"><i class="fas fa-desktop"></i>Automatic1111</span>
-                        <span class="skill-tag"><i class="fas fa-globe"></i>OpenWebUI</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>🔧</span> Automation & Integration</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fas fa-server"></i>MCP Servers</span>
-                        <span class="skill-tag"><i class="fas fa-globe"></i>Manus</span>
-                        <span class="skill-tag"><i class="fas fa-robot"></i>AI Workflow Automation</span>
-                        <span class="skill-tag"><i class="fas fa-project-diagram"></i>N8N</span>
-                        <span class="skill-tag"><i class="fas fa-users"></i>CrewAI</span>
-                        <span class="skill-tag"><i class="fas fa-code-branch"></i>Langflow</span>
-                        <span class="skill-tag"><i class="fas fa-play"></i>Playwright</span>
-                        <span class="skill-tag"><i class="fas fa-hand-pointer"></i>Puppeteer</span>
-                        <span class="skill-tag"><i class="fas fa-bug"></i>Selenium</span>
-                        <span class="skill-tag"><i class="fas fa-cogs"></i>Workflow Automation</span>
-                        <span class="skill-tag"><i class="fas fa-plug"></i>API Integration</span>
-                        <span class="skill-tag"><i class="fas fa-plug"></i>MCP Integration</span>
-                        <span class="skill-tag"><i class="fas fa-spider"></i>Web Scraping</span>
+                    <div class="hackathon-card">
+                        <div class="hackathon-badge">🎯 Finalist</div>
+                        <div class="hackathon-title">HackZurich (2018)</div>
+                        <div class="hackathon-desc">AR Car Buying Tool – Finalist among 400+. Attended HackZurich 4x</div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="page-break"></div>
-        
-        <div class="section">
-            <h2 class="section-title"><span>🗄️</span> Data & Databases</h2>
             
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><span>💾</span> Database Technologies</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fas fa-database"></i>SQL</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>PostgreSQL</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>Supabase</span>
-                        <span class="skill-tag"><i class="fas fa-palette"></i>ChromaDB</span>
-                        <span class="skill-tag"><i class="fas fa-tree"></i>Pinecone</span>
-                        <span class="skill-tag"><i class="fas fa-search"></i>Qdrant</span>
-                        <span class="skill-tag"><i class="fas fa-water"></i>DeepLake</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>Vector Databases</span>
-                        <span class="skill-tag"><i class="fas fa-bolt"></i>DynamoDB</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>Realm</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>SwiftData</span>
+            <div class="section">
+                <h2 class="section-title">Core Skills Overview</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><span>📱</span> Languages & Frameworks</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fab fa-swift"></i>Swift</span>
+                            <span class="skill-tag"><i class="fab fa-swift"></i>SwiftUI</span>
+                            <span class="skill-tag"><i class="fab fa-apple"></i>Objective-C</span>
+                            <span class="skill-tag"><i class="fab fa-python"></i>Python</span>
+                            <span class="skill-tag"><i class="fab fa-js"></i>JavaScript</span>
+                            <span class="skill-tag"><i class="fab fa-js"></i>TypeScript</span>
+                            <span class="skill-tag"><i class="fas fa-arrow-right"></i>Next.js</span>
+                            <span class="skill-tag"><i class="fab fa-node"></i>Node.js</span>
+                            <span class="skill-tag"><i class="fab fa-flutter"></i>Flutter/Dart</span>
+                            <span class="skill-tag"><i class="fas fa-bolt"></i>FastAPI</span>
+                            <span class="skill-tag"><i class="fas fa-cloud"></i>Vapor</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>🛠️</span> DevOps & Tools</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fab fa-git-alt"></i>Git/GitHub</span>
-                        <span class="skill-tag"><i class="fas fa-infinity"></i>CI/CD Pipelines</span>
-                        <span class="skill-tag"><i class="fab fa-jira"></i>Jira</span>
-                        <span class="skill-tag"><i class="fab fa-github"></i>GitHub Actions</span>
-                        <span class="skill-tag"><i class="fas fa-rocket"></i>Fastlane</span>
-                        <span class="skill-tag"><i class="fab fa-jenkins"></i>Jenkins</span>
-                        <span class="skill-tag"><i class="fas fa-vial"></i>Test-Driven Development</span>
-                        <span class="skill-tag"><i class="fas fa-sync"></i>Agile/Scrum</span>
-                        <span class="skill-tag"><i class="fas fa-cube"></i>SonarCube</span>
-                        <span class="skill-tag"><i class="fas fa-browser"></i>BrowserStack</span>
-                        <span class="skill-tag"><i class="fas fa-camera"></i>Snapshot Testing</span>
-                        <span class="skill-tag"><i class="fas fa-desktop"></i>UI Testing</span>
-                        <span class="skill-tag"><i class="fas fa-chart-line"></i>Optimizely</span>
-                        <span class="skill-tag"><i class="fas fa-chart-bar"></i>Amplitude</span>
+                    
+                    <div class="skill-category">
+                        <h3><span>🤖</span> Applied AI/ML & Data Systems</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fas fa-brain"></i>LLM Agents</span>
+                            <span class="skill-tag"><i class="fas fa-filter"></i>RAG Pipelines</span>
+                            <span class="skill-tag"><i class="fas fa-link"></i>LangChain</span>
+                            <span class="skill-tag"><i class="fas fa-book"></i>LlamaIndex</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>Vector Databases</span>
+                            <span class="skill-tag"><i class="fas fa-water"></i>DeepLake</span>
+                            <span class="skill-tag"><i class="fas fa-cube"></i>Cohere</span>
+                            <span class="skill-tag"><i class="fas fa-search"></i>Qdrant</span>
+                            <span class="skill-tag"><i class="fas fa-palette"></i>ChromaDB</span>
+                            <span class="skill-tag"><i class="fas fa-tree"></i>Pinecone</span>
+                            <span class="skill-tag"><i class="fas fa-project-diagram"></i>Embedding Strategies</span>
+                            <span class="skill-tag"><i class="fas fa-comments"></i>NLP</span>
+                            <span class="skill-tag"><i class="fas fa-eye"></i>Computer Vision</span>
+                            <span class="skill-tag"><i class="fas fa-microphone"></i>Speech Processing</span>
+                            <span class="skill-tag"><i class="fab fa-apple"></i>CoreML</span>
+                            <span class="skill-tag"><i class="fab fa-apple"></i>MLX</span>
+                            <span class="skill-tag"><i class="fas fa-cog"></i>LoRA Fine-Tuning</span>
+                            <span class="skill-tag"><i class="fas fa-image"></i>Stable Diffusion</span>
+                            <span class="skill-tag"><i class="fas fa-robot"></i>OpenAI APIs</span>
+                            <span class="skill-tag"><i class="fas fa-robot"></i>Claude API</span>
+                            <span class="skill-tag"><i class="fas fa-globe"></i>Manus Platform</span>
+                            <span class="skill-tag"><i class="fas fa-server"></i>MCP Servers</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>NoSQL</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>SQL</span>
+                            <span class="skill-tag"><i class="fas fa-table"></i>Pandas</span>
+                            <span class="skill-tag"><i class="fas fa-calculator"></i>NumPy</span>
+                            <span class="skill-tag"><i class="fas fa-fire"></i>PyTorch</span>
+                            <span class="skill-tag"><i class="fas fa-chart-line"></i>scikit-learn</span>
+                            <span class="skill-tag"><i class="fas fa-desktop"></i>Ollama</span>
+                            <span class="skill-tag"><i class="fas fa-desktop"></i>LMStudio</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>☁️</span> Cloud Platforms</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag"><i class="fab fa-aws"></i>AWS Lambda</span>
-                        <span class="skill-tag"><i class="fab fa-aws"></i>AWS DynamoDB</span>
-                        <span class="skill-tag"><i class="fab fa-aws"></i>AWS Serverless</span>
-                        <span class="skill-tag"><i class="fab fa-google"></i>Google Cloud Platform</span>
-                        <span class="skill-tag"><i class="fab fa-microsoft"></i>Microsoft Azure</span>
-                        <span class="skill-tag"><i class="fab fa-microsoft"></i>AI Cloud Foundry</span>
-                        <span class="skill-tag"><i class="fab fa-digital-ocean"></i>Digital Ocean</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i>Supabase</span>
-                        <span class="skill-tag"><i class="fas fa-fire"></i>Firebase</span>
-                        <span class="skill-tag"><i class="fas fa-rocket"></i>Vercel</span>
-                        <span class="skill-tag"><i class="fas fa-cloud"></i>Multi-cloud Architecture</span>
-                        <span class="skill-tag"><i class="fas fa-cms"></i>Strapi(CMS)</span>
+                    
+                    <div class="skill-category">
+                        <h3><span>☁️</span> Cloud Infrastructure & Tooling</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fab fa-docker"></i>Docker</span>
+                            <span class="skill-tag"><i class="fas fa-cube"></i>Containerization</span>
+                            <span class="skill-tag"><i class="fab fa-git-alt"></i>Git</span>
+                            <span class="skill-tag"><i class="fab fa-github"></i>GitHub Actions</span>
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i>Azure DevOps</span>
+                            <span class="skill-tag"><i class="fas fa-infinity"></i>CI/CD</span>
+                            <span class="skill-tag"><i class="fab fa-jira"></i>Agile (Jira)</span>
+                            <span class="skill-tag"><i class="fas fa-bolt"></i>Serverless Compute</span>
+                            <span class="skill-tag"><i class="fas fa-chart-line"></i>Observability</span>
+                            <span class="skill-tag"><i class="fab fa-google"></i>GCP / Vertex AI</span>
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i>Microsoft Azure</span>
+                            <span class="skill-tag"><i class="fas fa-robot"></i>HuggingFace</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><span>📲</span> Mobile & Systems</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fab fa-apple"></i>iOS SDK</span>
+                            <span class="skill-tag"><i class="fas fa-vr-cardboard"></i>ARKit</span>
+                            <span class="skill-tag"><i class="fas fa-bolt"></i>ActivityKit</span>
+                            <span class="skill-tag"><i class="fas fa-th"></i>WidgetKit</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>SwiftData</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>Realm</span>
+                            <span class="skill-tag"><i class="fas fa-link"></i>Combine</span>
+                            <span class="skill-tag"><i class="fas fa-link"></i>RxSwift</span>
+                            <span class="skill-tag"><i class="fas fa-bluetooth"></i>BLE</span>
+                            <span class="skill-tag"><i class="fab fa-apple"></i>CoreML Integration</span>
+                            <span class="skill-tag"><i class="fas fa-microchip"></i>On-Device Inference</span>
+                            <span class="skill-tag"><i class="fab fa-swift"></i>Swift Package Manager</span>
+                            <span class="skill-tag"><i class="fab fa-flutter"></i>Flutter SDK</span>
+                            <span class="skill-tag"><i class="fas fa-mobile-alt"></i>Cordova</span>
+                            <span class="skill-tag"><i class="fas fa-vial"></i>XCTest</span>
+                            <span class="skill-tag"><i class="fas fa-camera"></i>Snapshot Testing</span>
+                            <span class="skill-tag"><i class="fas fa-universal-access"></i>Accessibility</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><span>🎨</span> Creative & Generative Tools</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fab fa-figma"></i>Figma</span>
+                            <span class="skill-tag"><i class="fab fa-sketch"></i>Sketch</span>
+                            <span class="skill-tag"><i class="fas fa-palette"></i>ComfyUI</span>
+                            <span class="skill-tag"><i class="fas fa-film"></i>FFmpeg</span>
+                            <span class="skill-tag"><i class="fas fa-microphone"></i>ElevenLabs</span>
+                            <span class="skill-tag"><i class="fas fa-microphone"></i>Whisper-MLX</span>
+                            <span class="skill-tag"><i class="fas fa-image"></i>Stable Diffusion</span>
+                            <span class="skill-tag"><i class="fas fa-keyboard"></i>Prompt Engineering</span>
+                            <span class="skill-tag"><i class="fas fa-music"></i>Audio Generation</span>
+                            <span class="skill-tag"><i class="fas fa-video"></i>Visual Generation</span>
+                            <span class="skill-tag"><i class="fas fa-server"></i>RunPod</span>
+                            <span class="skill-tag"><i class="fas fa-copy"></i>Replicate</span>
+                            <span class="skill-tag"><i class="fas fa-desktop"></i>Automatic1111</span>
+                            <span class="skill-tag"><i class="fas fa-globe"></i>OpenWebUI</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><span>🔧</span> Automation & Integration</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fas fa-server"></i>MCP Servers</span>
+                            <span class="skill-tag"><i class="fas fa-globe"></i>Manus</span>
+                            <span class="skill-tag"><i class="fas fa-robot"></i>AI Workflow Automation</span>
+                            <span class="skill-tag"><i class="fas fa-project-diagram"></i>N8N</span>
+                            <span class="skill-tag"><i class="fas fa-users"></i>CrewAI</span>
+                            <span class="skill-tag"><i class="fas fa-code-branch"></i>Langflow</span>
+                            <span class="skill-tag"><i class="fas fa-play"></i>Playwright</span>
+                            <span class="skill-tag"><i class="fas fa-hand-pointer"></i>Puppeteer</span>
+                            <span class="skill-tag"><i class="fas fa-bug"></i>Selenium</span>
+                            <span class="skill-tag"><i class="fas fa-cogs"></i>Workflow Automation</span>
+                            <span class="skill-tag"><i class="fas fa-plug"></i>API Integration</span>
+                            <span class="skill-tag"><i class="fas fa-plug"></i>MCP Integration</span>
+                            <span class="skill-tag"><i class="fas fa-spider"></i>Web Scraping</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title"><span>🏆</span> Achievements & Recognition</h2>
             
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><span>📜</span> Patent</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">QRC Widget Patent (2022)</span>
-                    </div>
-                </div>
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h2 class="section-title"><span>🗄️</span> Data & Databases</h2>
                 
-                <div class="skill-category">
-                    <h3><span>🏅</span> Awards</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">PayPal Props Awards: Paragon (5000 pts)</span>
-                        <span class="skill-tag">PayPal Props Awards: Phenom (1500 pts)</span>
-                        <span class="skill-tag">PayPal Props Awards: Powerhouse (750 pts)</span>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><span>💾</span> Database Technologies</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fas fa-database"></i>SQL</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>PostgreSQL</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>Supabase</span>
+                            <span class="skill-tag"><i class="fas fa-palette"></i>ChromaDB</span>
+                            <span class="skill-tag"><i class="fas fa-tree"></i>Pinecone</span>
+                            <span class="skill-tag"><i class="fas fa-search"></i>Qdrant</span>
+                            <span class="skill-tag"><i class="fas fa-water"></i>DeepLake</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>Vector Databases</span>
+                            <span class="skill-tag"><i class="fas fa-bolt"></i>DynamoDB</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>Realm</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>SwiftData</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><span>🏆</span> Hackathon Wins</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">MLH @ Bloomberg London (2017) - 1st Place</span>
-                        <span class="skill-tag">Devcamp NYC (2016) - 1st Place</span>
-                        <span class="skill-tag">HackZurich (2018) - Finalist</span>
+                    
+                    <div class="skill-category">
+                        <h3><span>🛠️</span> DevOps & Tools</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fab fa-git-alt"></i>Git/GitHub</span>
+                            <span class="skill-tag"><i class="fas fa-infinity"></i>CI/CD Pipelines</span>
+                            <span class="skill-tag"><i class="fab fa-jira"></i>Jira</span>
+                            <span class="skill-tag"><i class="fab fa-github"></i>GitHub Actions</span>
+                            <span class="skill-tag"><i class="fas fa-rocket"></i>Fastlane</span>
+                            <span class="skill-tag"><i class="fab fa-jenkins"></i>Jenkins</span>
+                            <span class="skill-tag"><i class="fas fa-vial"></i>Test-Driven Development</span>
+                            <span class="skill-tag"><i class="fas fa-sync"></i>Agile/Scrum</span>
+                            <span class="skill-tag"><i class="fas fa-cube"></i>SonarCube</span>
+                            <span class="skill-tag"><i class="fas fa-browser"></i>BrowserStack</span>
+                            <span class="skill-tag"><i class="fas fa-camera"></i>Snapshot Testing</span>
+                            <span class="skill-tag"><i class="fas fa-desktop"></i>UI Testing</span>
+                            <span class="skill-tag"><i class="fas fa-chart-line"></i>Optimizely</span>
+                            <span class="skill-tag"><i class="fas fa-chart-bar"></i>Amplitude</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><span>☁️</span> Cloud Platforms</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag"><i class="fab fa-aws"></i>AWS Lambda</span>
+                            <span class="skill-tag"><i class="fab fa-aws"></i>AWS DynamoDB</span>
+                            <span class="skill-tag"><i class="fab fa-aws"></i>AWS Serverless</span>
+                            <span class="skill-tag"><i class="fab fa-google"></i>Google Cloud Platform</span>
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i>Microsoft Azure</span>
+                            <span class="skill-tag"><i class="fab fa-microsoft"></i>AI Cloud Foundry</span>
+                            <span class="skill-tag"><i class="fab fa-digital-ocean"></i>Digital Ocean</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>Supabase</span>
+                            <span class="skill-tag"><i class="fas fa-fire"></i>Firebase</span>
+                            <span class="skill-tag"><i class="fas fa-rocket"></i>Vercel</span>
+                            <span class="skill-tag"><i class="fas fa-cloud"></i>Multi-cloud Architecture</span>
+                            <span class="skill-tag"><i class="fas fa-cms"></i>Strapi(CMS)</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title"><span>🎓</span> Education</h2>
             
-            <div class="experience-item">
-                <div class="item-header">
-                    <div class="item-title">BS in Computer Systems</div>
-                    <div class="item-date">2012 – 2016</div>
+            <div class="section">
+                <h2 class="section-title"><span>🏆</span> Achievements & Recognition</h2>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><span>📜</span> Patent</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">QRC Widget Patent (2022)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><span>🏅</span> Awards</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">PayPal Props Awards: Paragon (5000 pts)</span>
+                            <span class="skill-tag">PayPal Props Awards: Phenom (1500 pts)</span>
+                            <span class="skill-tag">PayPal Props Awards: Powerhouse (750 pts)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><span>🏆</span> Hackathon Wins</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">MLH @ Bloomberg London (2017) - 1st Place</span>
+                            <span class="skill-tag">Devcamp NYC (2016) - 1st Place</span>
+                            <span class="skill-tag">HackZurich (2018) - Finalist</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="item-subtitle">New York City College of Technology, Brooklyn</div>
             </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title"><span>👥</span> Leadership & Community</h2>
             
-            <div class="item-details">
-                <ul>
-                    <li>Advisory Board Member for multiple tech startups on iOS architecture and AI/ML implementation</li>
-                    <li>Conducted technical interviews for senior iOS and AI/ML positions</li>
-                    <li>Hosted technical workshops: SwiftUI, State Machines, AI/ML image generation, DataDog automation</li>
-                    <li>Interfaith ERG Chapter Lead (Sikh community): Organized events, secured speakers, created educational content</li>
-                    <li>Represented Venmo at Yale hackathons and high school tech education initiatives</li>
-                    <li>Hackathon judge at Yale (2x), mentor at PenApps (University of Pennsylvania)</li>
-                </ul>
+            <div class="section">
+                <h2 class="section-title"><span>🎓</span> Education</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">BS in Computer Systems</div>
+                        <div class="item-date">2012 – 2016</div>
+                    </div>
+                    <div class="item-subtitle">New York City College of Technology, Brooklyn</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><span>👥</span> Leadership & Community</h2>
+                
+                <div class="item-details">
+                    <ul>
+                        <li>Advisory Board Member for multiple tech startups on iOS architecture and AI/ML implementation</li>
+                        <li>Conducted technical interviews for senior iOS and AI/ML positions</li>
+                        <li>Hosted technical workshops: SwiftUI, State Machines, AI/ML image generation, DataDog automation</li>
+                        <li>Interfaith ERG Chapter Lead (Sikh community): Organized events, secured speakers, created educational content</li>
+                        <li>Represented Venmo at Yale hackathons and high school tech education initiatives</li>
+                        <li>Hackathon judge at Yale (2x), mentor at PenApps (University of Pennsylvania)</li>
+                    </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

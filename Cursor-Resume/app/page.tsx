@@ -7,6 +7,13 @@ export default function ResumePage() {
   return (
     <div className="resume-container">
       <div className="resume-page">
+          {/* Contact Bar */}
+          <div className="contact-bar">
+            <span>📧 gsingh622@yahoo.com</span>
+            <a href="https://guriboy.codes" target="_blank" rel="noopener noreferrer">💼 Portfolio</a>
+            <a href="https://linkedin.com/in/gurinder" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+          </div>
+
         {/* Left Sidebar */}
         <aside className="sidebar">
           <div className="sidebar-header">
@@ -57,11 +64,40 @@ export default function ResumePage() {
                 <span className="experience-date">2020 – Present</span>
               </div>
               <ul className="experience-list">
-                <li>Built PayPal/Venmo's first applied agentic AI platform for autonomous merchant onboarding</li>
-                <li>Pioneered AI image generation with custom SDXL LoRA models producing professional imagery in ~30 seconds, saving merchants $100–$500 per product</li>
-                <li>Delivered first org-wide MCP integration for seamless AI agent orchestration</li>
-                <li>Achieved 58.5 GPU hours training, 23% loss reduction, 109MB production-ready model</li>
-                <li>Implemented multi-platform automation managing Venmo, Honey, Facebook/Meta, Google Ads, and TikTok</li>
+                <li><strong>✅ Team Mercury — AI-Powered Agentic E-Commerce Platform (June 2025 → Present)</strong></li>
+                <div className="mercury-details">
+                  <p><em>Leadership: Lead engineer managing 2 new hires (&lt;1 year tenure), cross-org collaboration with Applied AI team</em></p>
+
+                  <div className="mercury-timeline">
+                    <div className="timeline-item">
+                      <strong>🟩 June 2025 — Project Conception:</strong> Concept originated during exploration of agentic AI for merchant automation; formed initial skunkworks team as 20% project
+                    </div>
+
+                    <div className="timeline-item">
+                      <strong>🟩 July 2025 — Hackathon Prototype ("Rock-Star Hit"):</strong> Built fully functional prototype in 72 hours; became standout hit at hackathon; presented to SVP of AI earning immediate backing; began leading team including two newly hired engineers
+                    </div>
+
+                    <div className="timeline-item">
+                      <strong>🟩 August 2025 — 56K Dataset + Safe Data Pipeline:</strong> Designed safe, compliant scraping pipeline; ingested and normalized 56,000 products across marketplaces; established 5 training categories; weekly collaboration with Applied AI team
+                    </div>
+
+                    <div className="timeline-item">
+                      <strong>🟩 September 2025 — LoRA Training + Model Leadership:</strong> Curated datasets and trained five SDXL LoRA models; achieved 58.5 GPU hours, 23% loss reduction, 109MB optimized models; guided new engineers through ML pipeline development; project expanded from 20% to 120% cross-org initiative
+                    </div>
+
+                    <div className="timeline-item">
+                      <strong>🟩 October 15, 2025 — SVP Demo + Productionization:</strong> Demoed integrated system to SVP and leadership; delivered multiphase agent flows (Meta/Google/TikTok); drove containerization with MLOps for GCS + H200 cluster; implemented MCP multi-agent orchestration
+                    </div>
+
+                    <div className="timeline-item">
+                      <strong>🟩 November 2025 — GraphRAG + Ads Intelligence:</strong> Built merchant knowledge graph using GraphRAG; defined schema for marketplace history, asset scoring, embeddings; synced weekly with Ads Intelligence team
+                    </div>
+
+                    <div className="timeline-item">
+                      <strong>🟩 December 2025 — 56K Dataset Batch Validation:</strong> Designed validation system for drift detection, category alignment, image quality scoring; preparing full dataset validation on H200s; working with MLOps on GPU deployment pipeline
+                    </div>
+                  </div>
+                </div>
                 <li>Developed AI-powered crash detection system using LangChain + DeepLake – now adopted org-wide</li>
                 <li>Created 10%+ productivity improvements via AI-powered automation tools</li>
                 <li>Built payment-splitting for $400M Amex partnership deal (2020)</li>
@@ -69,6 +105,7 @@ export default function ResumePage() {
                 <li>Built sandbox/integration app for Venmo × Amazon Partnership (2023) in two days</li>
                 <li>Filed "Interface Widget Tool for Automatic QR Code Generation" patent (2022) – Reduced user friction by 66%</li>
                 <li>Built end-to-end infrastructure with server-side Swift for Dynamic Island / Live Activities</li>
+                <li>Led App Clip Exploration/Discovery initiative for Venmo - researched implementation strategies, user experience flows, and technical feasibility for instant app access without full installation</li>
                 <li>Mentored cross-functional engineers on concurrency, accessibility, and feature-flag development</li>
                 <li>Partnered with Design Systems to create SwiftUI component library that cut development time by 30%</li>
               </ul>
@@ -136,15 +173,78 @@ export default function ResumePage() {
           <section className="section">
             <h2 className="section-title">
               <FaTrophy className="section-icon" />
-              Hackathon Achievements
+              Hackathon Achievements & Innovation
             </h2>
-            <ul className="experience-list">
-              <li><strong>MLH @ Bloomberg London (2017) – 1st Place:</strong> Automated Search & Rescue System – Won among 500+ participants. Featured in BBC documentary.</li>
-              <li><strong>Devcamp NYC (2016) – 1st Place:</strong> Talent Management App – Won among 300+ participants at Google NYC.</li>
-              <li><strong>HackZurich (2018) – Finalist:</strong> AR Car Buying Tool – Finalist among 400+. Featured in Credit Suisse interview. Attended HackZurich 4×</li>
-              <li><strong>Mentorship & Judging:</strong> Hack Yale Judge (×2), PenApps Mentor (University of Pennsylvania)</li>
-              <li>28+ hackathons attended across 6+ countries as participant, mentor, and judge</li>
-            </ul>
+            <p style={{ marginBottom: '1rem', color: '#64748b' }}>
+              <strong>28+ hackathons</strong> attended across <strong>6+ countries</strong> as participant, mentor, and judge. Earned <strong>2 first-place wins</strong> and served as judge at Yale (2×). Recognized globally for innovation and technical excellence.
+            </p>
+
+            <div className="hackathon-list">
+              <div className="hackathon-item">
+                <div className="hackathon-icon">🏆</div>
+                <div className="hackathon-content">
+                  <div className="hackathon-header">
+                    <span className="hackathon-achievement">1ST PLACE</span>
+                    <span className="hackathon-event">MLH @ Bloomberg London</span>
+                  </div>
+                  <div className="hackathon-details">
+                    <p>Automated Search & Rescue System</p>
+                    <p>Won among 500+ participants</p>
+                    <p>Featured in BBC documentary</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="hackathon-item">
+                <div className="hackathon-icon">🏆</div>
+                <div className="hackathon-content">
+                  <div className="hackathon-header">
+                    <span className="hackathon-achievement">1ST PLACE</span>
+                    <span className="hackathon-event">Devcamp NYC</span>
+                  </div>
+                  <div className="hackathon-details">
+                    <p>Talent Management App</p>
+                    <p>Won among 300+ participants</p>
+                    <p>at Google NYC</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="hackathon-item">
+                <div className="hackathon-icon">🎯</div>
+                <div className="hackathon-content">
+                  <div className="hackathon-header">
+                    <span className="hackathon-achievement">FINALIST</span>
+                    <span className="hackathon-event">HackZurich</span>
+                  </div>
+                  <div className="hackathon-details">
+                    <p>AR Car Buying Tool</p>
+                    <p>Finalist among 400+</p>
+                    <p>Attended 4× | Credit Suisse feature</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ marginTop: '1.5rem' }}>
+              <strong style={{ color: '#38bdf8', display: 'block', marginBottom: '0.5rem' }}>Mentorship & Judging</strong>
+              <div className="award-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div className="award-item">
+                  <span className="award-icon" style={{ fontSize: '1.2rem' }}>🎓</span>
+                  <div className="award-content">
+                    <div className="award-title" style={{ fontWeight: '600', color: '#020817' }}>Hack Yale – Judge (2×)</div>
+                    <div className="award-description" style={{ fontSize: '0.85rem', color: '#64748b' }}>Yale University</div>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <span className="award-icon" style={{ fontSize: '1.2rem' }}>🎓</span>
+                  <div className="award-content">
+                    <div className="award-title" style={{ fontWeight: '600', color: '#020817' }}>PenApps – Mentor</div>
+                    <div className="award-description" style={{ fontSize: '0.85rem', color: '#64748b' }}>University of Pennsylvania</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Leadership & Community */}
@@ -233,6 +333,36 @@ export default function ResumePage() {
           color: #64748b;
           margin-bottom: 2rem;
           font-size: 1rem;
+        }
+
+        /* Contact Bar */
+        .contact-bar {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          padding: 1rem 0;
+          margin-bottom: 1rem;
+          font-size: 0.9rem;
+          font-weight: 500;
+          background: #f8fafc;
+          border-radius: 8px;
+          text-align: center;
+          grid-column: 1 / -1;
+          border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        .contact-bar span {
+          color: #020817;
+        }
+
+        .contact-bar a {
+          color: #38bdf8;
+          text-decoration: none;
+          font-weight: 500;
+        }
+
+        .contact-bar a:hover {
+          text-decoration: underline;
         }
 
         /* Sidebar */
@@ -450,6 +580,123 @@ export default function ResumePage() {
           line-height: 1.6;
           color: #334155;
           margin: 0;
+        }
+
+        /* Hackathon Layout */
+        .hackathon-list {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+
+        .hackathon-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+          padding: 1rem;
+          background: #f8fafc;
+          border-radius: 10px;
+          border-left: 4px solid #38bdf8;
+        }
+
+        .hackathon-icon {
+          font-size: 1.5rem;
+          flex-shrink: 0;
+          width: 2rem;
+          text-align: center;
+        }
+
+        .hackathon-content {
+          flex: 1;
+        }
+
+        .hackathon-header {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 0.5rem;
+          flex-wrap: wrap;
+        }
+
+        .hackathon-achievement {
+          background: #38bdf8;
+          color: white;
+          font-size: 0.7rem;
+          font-weight: 700;
+          padding: 0.25rem 0.5rem;
+          border-radius: 12px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .hackathon-event {
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: #020817;
+        }
+
+        .hackathon-details {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+        }
+
+        .hackathon-details p {
+          font-size: 0.8rem;
+          color: #64748b;
+          margin: 0;
+          line-height: 1.4;
+        }
+
+        .award-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+
+        .award-item {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.75rem;
+          background: #f8fafc;
+          border-radius: 8px;
+          border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        /* Mercury Timeline Styles */
+        .mercury-details {
+          margin: 1rem 0;
+          padding: 0;
+        }
+
+        .mercury-details p {
+          font-size: 0.85rem;
+          color: #64748b;
+          margin-bottom: 1rem;
+          font-style: italic;
+        }
+
+        .mercury-timeline {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+
+        .mercury-timeline .timeline-item {
+          padding: 0.75rem;
+          background: white;
+          border-radius: 8px;
+          border-left: 4px solid #38bdf8;
+          font-size: 0.85rem;
+          line-height: 1.5;
+          color: #334155;
+        }
+
+        .mercury-timeline .timeline-item strong {
+          color: #020817;
+          font-weight: 600;
         }
 
         @media (max-width: 968px) {

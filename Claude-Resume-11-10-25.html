@@ -78,7 +78,7 @@
             font-size: 14pt;
             font-weight: 600;
             color: var(--medium-gray);
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.3rem;
         }
         
         .contact-info {
@@ -97,7 +97,35 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
-        
+
+        /* Contact Bar - Top Section */
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            font-size: 10pt;
+            font-weight: 500;
+            background: var(--light-gray);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-bar span {
+            color: var(--dark-gray);
+        }
+
+        .contact-bar a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-bar a:hover {
+            text-decoration: underline;
+        }
+
         .qr-box {
             width: 100px;
             height: 100px;
@@ -224,6 +252,45 @@
             color: var(--dark-gray);
             margin-bottom: 0.5rem;
         }
+
+        .project-subtitle {
+            font-size: 8.5pt;
+            color: var(--medium-gray);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        /* Timeline Styles */
+        .timeline-section {
+            margin-top: 0.5rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid var(--primary-blue);
+        }
+
+        .timeline-month {
+            font-size: 8pt;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+            display: block;
+        }
+
+        .timeline-item ul {
+            margin: 0;
+            padding-left: 0.8rem;
+        }
+
+        .timeline-item li {
+            font-size: 8pt;
+            margin-bottom: 0.2rem;
+            line-height: 1.4;
+        }
         
         ul {
             margin-left: 1.2rem;
@@ -274,41 +341,71 @@
             color: var(--dark-gray);
         }
         
-        /* Hackathon Cards */
-        .hackathon-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+        /* Hackathon Layout */
+        .hackathon-list {
+            display: flex;
+            flex-direction: column;
             gap: 1rem;
             margin-top: 1rem;
         }
-        
-        .hackathon-card {
-            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
-            color: white;
+
+        .hackathon-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
             padding: 1rem;
+            background: var(--light-gray);
             border-radius: 10px;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .hackathon-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            width: 2rem;
             text-align: center;
         }
-        
-        .hackathon-badge {
-            font-size: 9pt;
-            font-weight: 700;
-            background: rgba(255,255,255,0.3);
-            padding: 0.3rem 0.6rem;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 0.5rem;
+
+        .hackathon-content {
+            flex: 1;
         }
-        
-        .hackathon-title {
+
+        .hackathon-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hackathon-achievement {
+            background: var(--primary-blue);
+            color: white;
+            font-size: 8pt;
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hackathon-event {
             font-size: 10pt;
             font-weight: 700;
-            margin-bottom: 0.3rem;
+            color: var(--dark-gray);
         }
-        
-        .hackathon-description {
-            font-size: 8pt;
-            opacity: 0.9;
+
+        .hackathon-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .hackathon-details p {
+            font-size: 8.5pt;
+            color: var(--medium-gray);
+            margin: 0;
+            line-height: 1.4;
         }
         
         /* Awards */
@@ -416,16 +513,18 @@
     
     <!-- PAGE 1 -->
     <div class="page">
+        <!-- Contact Info Bar -->
+        <div class="contact-bar">
+            <span>📧 gsingh622@yahoo.com</span>
+            <a href="https://guriboy.codes" target="_blank">💼 Portfolio</a>
+            <a href="https://linkedin.com/in/gurinder" target="_blank">🔗 LinkedIn</a>
+        </div>
+
         <!-- Header -->
         <div class="header">
             <div class="header-left">
                 <h1>Gurinder Singh</h1>
                 <div class="title">Staff Software iOS & AI/ML Engineer</div>
-                <div class="contact-info">
-                    <span>📧 gsingh622@yahoo.com</span>
-                    <a href="https://guriboy.codes" target="_blank">💼 Portfolio</a>
-                    <a href="https://linkedin.com/in/gurinder" target="_blank">🔗 LinkedIn</a>
-                </div>
             </div>
             <div class="qr-box">
                 SCAN FOR<br>PORTFOLIO
@@ -477,14 +576,77 @@
                     <div class="subsection-title">🤖 AI/ML Evolution & Technical Innovation (2023–Present)</div>
                     
                     <div class="project-highlight">
-                        <div class="project-highlight-title">Team Mercury – AI-Powered Agentic E-Commerce Platform (October 2025)</div>
-                        <ul>
-                            <li>Built PayPal/Venmo's <strong>first applied agentic AI platform</strong> for autonomous merchant onboarding</li>
-                            <li>Pioneered AI image generation with custom <strong>SDXL LoRA models</strong> producing professional imagery in ~30 seconds, <strong>saving merchants $100–$500 per product</strong></li>
-                            <li>Delivered <strong>first org-wide MCP integration</strong> for seamless AI agent orchestration</li>
-                            <li>Achieved <strong>58.5 GPU hours training, 23% loss reduction</strong>, 109MB production-ready model</li>
-                            <li>Implemented multi-platform automation managing Venmo, Honey, Facebook/Meta, Google Ads, and TikTok</li>
-                        </ul>
+                        <div class="project-highlight-title">✅ Team Mercury — AI-Powered Agentic E-Commerce Platform (June 2025 → Present)</div>
+                        <div class="project-subtitle">Leadership: Lead engineer managing 2 new hires (&lt;1 year tenure), cross-org collaboration with Applied AI team</div>
+
+                        <div class="timeline-section">
+                            <div class="timeline-item">
+                                <div class="timeline-month">🟩 June 2025 — Project Conception</div>
+                                <ul>
+                                    <li>Concept originated during exploration of agentic AI for merchant automation</li>
+                                    <li>Formed initial skunkworks team — started as a 20% project</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-month">🟩 July 2025 — Hackathon Prototype ("Rock-Star Hit")</div>
+                                <ul>
+                                    <li>Built a fully functional prototype in 72 hours</li>
+                                    <li>Became a standout hit at the hackathon; gained momentum across org</li>
+                                    <li>Presented to the SVP of AI two weeks later, earning immediate backing</li>
+                                    <li>Began leading a small but high-velocity team, including two newly hired engineers (&lt;1 yr at PayPal)</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-month">🟩 August 2025 — 56K Dataset + Safe Data Pipeline</div>
+                                <ul>
+                                    <li>Designed and led development of the safe, compliant scraping pipeline</li>
+                                    <li>Ingested and normalized 56,000 high-quality products across major marketplaces</li>
+                                    <li>Established foundational 5 training categories</li>
+                                    <li>Weekly collaboration sessions with the broader Applied AI team began</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-month">🟩 September 2025 — LoRA Training + Model Leadership</div>
+                                <ul>
+                                    <li>Curated category datasets and trained five SDXL LoRA models</li>
+                                    <li><strong>Achieved:</strong> 58.5 GPU hours, 23% loss reduction, 109MB optimized production models</li>
+                                    <li>Guided the two new engineers through ML pipeline development, evals, and SDXL workflows</li>
+                                    <li>Project demand expanded — transitioning from a 20% passion project to a 120% cross-org initiative</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-month">🟩 October 15, 2025 — SVP Demo + Productionization Path</div>
+                                <ul>
+                                    <li>Demoed integrated system to SVP + senior leadership</li>
+                                    <li>Delivered multiphase agent flows (Meta/Google/TikTok)</li>
+                                    <li>Drove containerization with MLOps for GCS + H200 cluster</li>
+                                    <li>Implemented MCP multi-agent orchestration</li>
+                                    <li>Continued mentoring the new engineers weekly on training, evals, and scaling</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-month">🟩 November 2025 — GraphRAG + Ads Intelligence Integration</div>
+                                <ul>
+                                    <li>Built early merchant knowledge graph leveraging GraphRAG</li>
+                                    <li>Defined schema for marketplace history, asset scoring, embeddings, and ad performance</li>
+                                    <li>Sync'd weekly with Ads Intelligence team + Applied AI org for alignment</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-month">🟩 December 2025 — 56K Dataset Batch Validation</div>
+                                <ul>
+                                    <li>Designed batch validation system for: drift detection, category alignment, image quality scoring</li>
+                                    <li>Preparing full 56K dataset validation on H200s</li>
+                                    <li>Working with MLOps on final GPU deployment pipeline</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="project-highlight">
@@ -515,6 +677,7 @@
                         <ul>
                             <li><strong>QRC Widget Patent (2022):</strong> Filed "Interface Widget Tool for Automatic QR Code Generation" – <strong>Reduced user friction by 66%</strong></li>
                             <li><strong>Dynamic Island / Live Activities:</strong> Built end-to-end infrastructure with server-side Swift</li>
+                            <li><strong>App Clip Exploration/Discovery:</strong> Led initiative for Venmo - researched implementation strategies, user experience flows, and technical feasibility for instant app access without full installation</li>
                             <li>Architected features reaching <strong>millions of active users</strong></li>
                         </ul>
                     </div>
@@ -690,34 +853,49 @@
                 <strong>28+ hackathons</strong> attended across <strong>6+ countries</strong> as participant, mentor, and judge. Earned <strong>2 first-place wins</strong> and served as judge at Yale (2×). Recognized globally for innovation and technical excellence.
             </p>
             
-            <div class="hackathon-grid">
-                <div class="hackathon-card">
-                    <div class="hackathon-badge">🏆 1ST PLACE</div>
-                    <div class="hackathon-title">MLH @ Bloomberg London</div>
-                    <div class="hackathon-description">
-                        Automated Search & Rescue System<br>
-                        Won among 500+ participants<br>
-                        Featured in BBC documentary
+            <div class="hackathon-list">
+                <div class="hackathon-item">
+                    <div class="hackathon-icon">🏆</div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-header">
+                            <span class="hackathon-achievement">1ST PLACE</span>
+                            <span class="hackathon-event">MLH @ Bloomberg London</span>
+                        </div>
+                        <div class="hackathon-details">
+                            <p>Automated Search & Rescue System</p>
+                            <p>Won among 500+ participants</p>
+                            <p>Featured in BBC documentary</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="hackathon-card">
-                    <div class="hackathon-badge">🏆 1ST PLACE</div>
-                    <div class="hackathon-title">Devcamp NYC</div>
-                    <div class="hackathon-description">
-                        Talent Management App<br>
-                        Won among 300+ participants<br>
-                        at Google NYC
+
+                <div class="hackathon-item">
+                    <div class="hackathon-icon">🏆</div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-header">
+                            <span class="hackathon-achievement">1ST PLACE</span>
+                            <span class="hackathon-event">Devcamp NYC</span>
+                        </div>
+                        <div class="hackathon-details">
+                            <p>Talent Management App</p>
+                            <p>Won among 300+ participants</p>
+                            <p>at Google NYC</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="hackathon-card" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-orange));">
-                    <div class="hackathon-badge">🎯 FINALIST</div>
-                    <div class="hackathon-title">HackZurich</div>
-                    <div class="hackathon-description">
-                        AR Car Buying Tool<br>
-                        Finalist among 400+<br>
-                        Attended 4× | Credit Suisse feature
+
+                <div class="hackathon-item">
+                    <div class="hackathon-icon">🎯</div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-header">
+                            <span class="hackathon-achievement">FINALIST</span>
+                            <span class="hackathon-event">HackZurich</span>
+                        </div>
+                        <div class="hackathon-details">
+                            <p>AR Car Buying Tool</p>
+                            <p>Finalist among 400+</p>
+                            <p>Attended 4× | Credit Suisse feature</p>
+                        </div>
                     </div>
                 </div>
             </div>
