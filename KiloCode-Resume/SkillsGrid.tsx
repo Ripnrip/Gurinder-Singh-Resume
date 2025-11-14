@@ -316,7 +316,7 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   DynamoDB: { name: 'DynamoDB', icon: SiAmazondynamodb },
   Firestore: { name: 'Firestore' },
   Redis: { name: 'Redis', icon: SiRedis },
-  'SwiftData DB': { name: 'SwiftData' },
+  'SwiftData DB': { name: 'SwiftData', icon: (props) => <SvgIcon name="SwiftData" {...props} /> },
   'Vector Databases': { name: 'Vector Databases' },
 
   // Product, Design & Collaboration
