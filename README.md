@@ -15,8 +15,14 @@ A comprehensive collection of professional resume formats showcasing my experien
 - **`Gurinder_Singh_Resume_Beautiful.html`** - Visually rich design with animations and gradients
 - **`Gurinder_Singh_Resume-Claude.html`** - Professional layout with structured sections
 
+### Content Management
+- **`resume-content.md`** - **⭐ SINGLE SOURCE OF TRUTH** - All resume content (personal info, experience, skills, hackathons, etc.)
+  - All HTML and other resume files should reference this file
+  - When updating content, edit `resume-content.md` first, then sync to other formats
+  - See file header comments in HTML files for sync instructions
+
 ### Markdown Version
-- **`Gurinder_Singh_Resume_Unified.md`** - Master resume content in Markdown format
+- **`Gurinder_Singh_Resume_Unified.md`** - Legacy master resume content (superseded by `resume-content.md`)
 
 ### Legacy Projects
 - **`legacy/scrapwork/`** - Archived old projects and experiments (see `legacy/README.md`)
