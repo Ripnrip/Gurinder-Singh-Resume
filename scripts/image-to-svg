@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs/promises');
 const axios = require('axios');
-const { Potrace } = require('potrace');
+const potrace = require('potrace');
 const { optimize } = require('svgo');
 
 /**
@@ -10,29 +10,24 @@ const { optimize } = require('svgo');
  * "From pixels coarse, a vector's grace,
  * This script bestows a timeless face.
  * With algorithms sharp and logic keen,
- * A tiny, perfect SVG is seen."
+ * A vibrant, perfect SVG is seen."
  *
  * - The Digital Metaphor Maestro
  */
 async function convertImageToTinySvg(imageUrl, outputPath) {
   try {
     console.log(`🌐 ✨ IMAGE QUEST AWAKENS! Fetching from: ${imageUrl}`);
-    const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
-    const imageBuffer = Buffer.from(response.data, 'binary');
-
-    console.log('🎨 Tracing the artistic soul of the image...');
-    const svg = await new Promise((resolve, reject) => {
-      const trace = new Potrace();
-      trace.loadImage(imageBuffer, (err) => {
-        if (err) {
-          return reject(err);
-        }
-        resolve(trace.getSVG());
+    
+    console.log('🎨 Tracing the artistic soul of the image... with color!');
+    const svgString = await new Promise((resolve, reject) => {
+      potrace.posterize(imageUrl, { steps: 4 }, (err, svg) => {
+        if (err) return reject(err);
+        resolve(svg);
       });
     });
-    
+        
     console.log('✨ Performing enchanted alchemy to shrink the vector spell...');
-    const result = optimize(svg, {
+    const result = optimize(svgString, {
       multipass: true,
     });
     const optimizedSvg = result.data;
@@ -54,7 +49,7 @@ async function convertImageToTinySvg(imageUrl, outputPath) {
 
   if (!imageUrl || !outputPath) {
     console.log('🌙 ⚠️ Gentle reminder: Please provide an image URL and an output path.');
-    console.log('Usage: node scripts/image-to-svg.js <imageUrl> <outputPath>');
+    console.log('Usage: ./scripts/image-to-svg <imageUrl> <outputPath>');
     process.exit(1);
   }
 
