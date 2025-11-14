@@ -255,7 +255,7 @@ const SKILL_ICON_MAP: Record<SkillKey, SkillDef> = {
   Swift: { name: 'Swift', icon: SiSwift },
   SwiftUI: { name: 'SwiftUI' },
   'Objective-C': { name: 'Objective-C' },
-  UIKit: { name: 'UIKit' },
+  UIKit: { name: 'UIKit', icon: (props: { size?: number; className?: string }) => <SvgIcon name="UIKit" {...props} /> },
   'Core ML': { name: 'Core ML', icon: (props: { size?: number; className?: string }) => <SvgIcon name="Core ML" {...props} /> },
   MLX: { name: 'MLX', icon: (props: { size?: number; className?: string }) => <SvgIcon name="MLX" {...props} /> },
   SwiftData: { name: 'SwiftData', icon: (props: { size?: number; className?: string }) => <SvgIcon name="SwiftData" {...props} /> },

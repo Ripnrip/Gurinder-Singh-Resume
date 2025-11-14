@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <!-- Core ML: Official hexagonal logo with ML text (teal/blue gradient) -->
+  <!-- Core ML: Official hexagonal logo with ML text (darker teal/blue gradient for better contrast) -->
   <path d="M12 2L4 6v6l8 4 8-4V6l-8-4z" fill="url(#coremlGradient)"/>
   <defs>
     <linearGradient id="coremlGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#5EEAD4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#0D9488;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#14B8A6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <text x="12" y="15" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#FFFFFF">ML</text>
+  <text x="12" y="15" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#FFFFFF" stroke="#000000" stroke-width="0.3" opacity="0.95">ML</text>
 </svg>

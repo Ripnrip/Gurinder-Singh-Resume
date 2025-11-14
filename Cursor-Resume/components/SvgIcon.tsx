@@ -30,6 +30,7 @@ const SVG_ICON_MAP: Record<string, string> = {
   'DeepLake': '/icons/deeplake.svg',
   
   // iOS & Mobile Engineering
+  'UIKit': '/icons/uikit.svg',
   'RxSwift': '/icons/rxswift.svg',
   'Core ML': '/icons/coreml.svg',
   'MLX': '/icons/mlx.svg',
