@@ -17,3 +17,4 @@ The active resume project is located at: **`/Cursor-Resume`**
 
 This is the main Next.js application currently being developed and maintained.
 
+
