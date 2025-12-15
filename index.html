@@ -3,629 +3,772 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurinder Singh - Resume Collection</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Gurinder Singh - Staff iOS & AI/ML Engineer</title>
+    <meta name="description" content="Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users. Patent holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions.">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
-            --primary-color: #14b8a6;
-            --primary-dark: #0d9488;
-            --text-color: #334155;
-            --text-light: #64748b;
-            --bg-light: #f9fafb;
-            --white: #ffffff;
-            --border-color: #e2e8f0;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --background: #f8fafc;
+            --foreground: #020817;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
-            color: var(--text-color);
-            line-height: 1.6;
-            min-height: 100vh;
-            padding: 2rem 1rem;
+            color: var(--foreground);
+            background: var(--background);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-
-        .container {
+        .resume-container {
+            min-height: 100vh;
+            background: #f8fafc;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .resume-page {
             max-width: 1200px;
             margin: 0 auto;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
+            background: white;
+            border-radius: 24px;
             padding: 2rem;
-            background: var(--white);
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--primary-dark);
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.5px;
-        }
-        
-        header .subtitle {
-            font-size: 1.25rem;
-            color: var(--text-light);
-            font-weight: 500;
-            margin-bottom: 1rem;
-        }
-        
-        header .description {
-            font-size: 1rem;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .stats-bar {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
-            border-radius: 12px;
-            color: var(--white);
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
         }
-        
-        .stat-item {
+        .page-2 {
+            margin-top: 2rem;
+        }
+        .page-2-content {
+            grid-column: 1 / -1;
+        }
+        .page-2-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #020817;
+            margin-bottom: 0.5rem;
             text-align: center;
         }
-        
-        .stat-value {
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 0.25rem;
+        .page-2-subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 1rem;
         }
-        
-        .stat-label {
-            font-size: 0.875rem;
-            opacity: 0.9;
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.05), rgba(15, 23, 42, 0.02));
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            height: fit-content;
+            position: sticky;
+            top: 2rem;
+        }
+        .sidebar-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: #0c4a6e;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            width: fit-content;
+        }
+        .name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #020817;
+            margin: 0;
+        }
+        .tagline {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin: 0;
             font-weight: 500;
         }
-
-        .section {
-            margin-bottom: 3rem;
+        .sidebar-contact {
+            font-size: 0.7rem;
+            color: #64748b;
+            line-height: 1.6;
         }
-
+        .sidebar-contact p {
+            margin: 0.25rem 0;
+        }
+        .sidebar-divider {
+            height: 1px;
+            background: linear-gradient(to right, rgba(148, 163, 184, 0.3), transparent);
+            margin: 0.5rem 0;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .summary-section {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.05), rgba(15, 23, 42, 0.02));
+            border-radius: 16px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
         .section-title {
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-dark);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid var(--primary-color);
+            color: #020817;
+            margin-bottom: 1rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.75rem;
         }
-        
-        .section-title::before {
-            content: '';
-            width: 4px;
-            height: 24px;
-            background: var(--primary-color);
-            border-radius: 2px;
+        .section-icon {
+            color: #38bdf8;
         }
-        
-        .resume-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 1.5rem;
+        .summary-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #334155;
+            margin: 0;
         }
-
-        .resume-card {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+        .section {
             display: flex;
             flex-direction: column;
+            gap: 1rem;
         }
-
-        .resume-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--primary-color);
+        .experience-item {
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
         }
-        
-        .resume-card.featured {
-            border-color: var(--primary-color);
-            background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%);
-        }
-        
-        .resume-card-header {
+        .experience-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 1rem;
+            gap: 1rem;
         }
-
-        .resume-card-title {
-            font-size: 1.125rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin-bottom: 0.25rem;
-        }
-
-        .resume-card-badge {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
+        .experience-title {
+            font-size: 1.1rem;
             font-weight: 600;
+            color: #020817;
+            margin: 0 0 0.25rem 0;
+        }
+        .experience-company {
+            font-size: 0.95rem;
+            color: #38bdf8;
+            font-weight: 600;
+            margin: 0;
+        }
+        .experience-date {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .experience-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .experience-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #334155;
+        }
+        .experience-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+        .experience-list li strong {
+            color: #020817;
+            font-weight: 600;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .project-card {
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #020817;
+            margin: 0 0 0.5rem 0;
+        }
+        .project-tech {
+            font-size: 0.85rem;
+            color: #38bdf8;
+            font-weight: 500;
+            margin: 0 0 0.75rem 0;
+        }
+        .project-description {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #334155;
+            margin: 0;
+        }
+        .hackathon-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .hackathon-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+        }
+        .hackathon-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            width: 2rem;
+            text-align: center;
+        }
+        .hackathon-content {
+            flex: 1;
+        }
+        .hackathon-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .hackathon-achievement {
+            background: #38bdf8;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
-        .resume-card-description {
-            font-size: 0.875rem;
-            color: var(--text-light);
-            margin-bottom: 1rem;
-            flex-grow: 1;
-        }
-        
-        .resume-card-features {
-            list-style: none;
-            margin-bottom: 1rem;
-        }
-        
-        .resume-card-features li {
-            font-size: 0.875rem;
-            color: var(--text-light);
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .resume-card-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
+        .hackathon-event {
+            font-size: 0.9rem;
             font-weight: 700;
+            color: #020817;
         }
-        
-        .resume-card-footer {
+        .hackathon-details {
             display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .hackathon-details p {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin: 0;
+            line-height: 1.4;
+        }
+        .award-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .award-item {
+            display: flex;
+            align-items: center;
             gap: 0.75rem;
-            margin-top: auto;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border-color);
-        }
-        
-        .btn {
-            flex: 1;
-            padding: 0.75rem 1rem;
+            padding: 0.75rem;
+            background: #f8fafc;
             border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.875rem;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            border: 1px solid rgba(148, 163, 184, 0.2);
         }
-
-        .btn-primary {
-            background: var(--primary-color);
-            color: var(--white);
+        .mercury-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
-        
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
+        .mercury-timeline .timeline-item {
+            padding: 0.75rem;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #38bdf8;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #334155;
         }
-        
-        .btn-secondary {
-            background: transparent;
-            color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-        
-        .btn-secondary:hover {
-            background: var(--primary-color);
-            color: var(--white);
-        }
-        
-        .info-box {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow);
-            border-left: 4px solid var(--primary-color);
-        }
-        
-        .info-box h3 {
-            font-size: 1.125rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin-bottom: 0.75rem;
-        }
-        
-        .info-box p {
-            font-size: 0.875rem;
-            color: var(--text-light);
-            margin-bottom: 0.5rem;
-        }
-        
-        .info-box a {
-            color: var(--primary-color);
-            text-decoration: none;
+        .mercury-timeline .timeline-item strong {
+            color: #020817;
             font-weight: 600;
         }
-        
-        .info-box a:hover {
-            text-decoration: underline;
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
         }
-        
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: var(--text-light);
-            font-size: 0.875rem;
+        .skills-grid--sidebar {
+            font-size: 0.75rem;
         }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            .resume-grid {
+        .skills-grid--detailed {
+            font-size: 0.85rem;
+        }
+        .skill-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .skill-section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            color: rgba(15, 23, 42, 0.75);
+            padding-left: 0.25rem;
+            border-left: 2px solid rgba(56, 189, 248, 0.9);
+        }
+        .section-icon {
+            flex-shrink: 0;
+            color: rgba(56, 189, 248, 0.9);
+        }
+        .skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .skill-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.3rem 0.65rem;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.35);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.02), rgba(148, 163, 184, 0.06));
+            backdrop-filter: blur(6px);
+            color: #020817;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        .skill-pill:hover {
+            transform: translateY(-1px);
+            border-color: rgba(56, 189, 248, 0.5);
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(148, 163, 184, 0.1));
+        }
+        .skills-grid--sidebar .skill-pill {
+            padding: 0.25rem 0.55rem;
+        }
+        .skill-icon {
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+        }
+        .skill-fallback {
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.5rem;
+            font-weight: 600;
+            background: rgba(56, 189, 248, 0.12);
+            color: rgba(15, 23, 42, 0.9);
+        }
+        .skill-label {
+            font-weight: 500;
+        }
+        @media (max-width: 968px) {
+            .resume-page {
                 grid-template-columns: 1fr;
             }
-
-            .stats-bar {
-                grid-template-columns: repeat(2, 1fr);
+            .sidebar {
+                position: relative;
+                top: 0;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media print {
+            .resume-container {
+                padding: 0;
+                background: white;
+            }
+            .resume-page {
+                box-shadow: none;
+                page-break-after: always;
+            }
+            .page-2 {
+                page-break-after: auto;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-                        <h1>Gurinder Singh</h1>
-            <div class="subtitle">Resume Collection</div>
-            <div class="description">
-                Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users.
-                Explore different resume formats and designs below.
+    <div class="resume-container">
+        <div class="resume-page">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="badge">Staff iOS & AI/ML Engineer</div>
+                    <h1 class="name">Gurinder Singh</h1>
+                    <p class="tagline">Legendary apps at global scale</p>
             </div>
-        </header>
-
-        <div class="stats-bar">
-            <div class="stat-item">
-                <div class="stat-value">31</div>
-                <div class="stat-label">Resume Versions</div>
+                <div class="sidebar-contact">
+                    <p>📧 gsingh622@yahoo.com</p>
+                    <p>💼 <a href="https://guriboy.codes" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: none;">Portfolio</a></p>
+                    <p>🔗 <a href="https://linkedin.com/in/gurinder" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: none;">LinkedIn</a></p>
+                    <p style="margin-top: 0.5rem; font-style: italic;">San Jose, CA • Open to remote/hybrid</p>
+                </div>
+                <div class="sidebar-divider"></div>
+                <!-- Skills Grid -->
+                <div class="skills-grid skills-grid--sidebar">
+                    <!-- Note: Skills sections are simplified in this static version. -->
+                    <!-- For full skills catalog with icons, see Cursor-Resume project. -->
+                    <div class="skill-section">
+                        <div class="skill-section-header">
+                            <span class="section-icon">🍎</span>
+                            <span class="skill-section-label">iOS & Mobile Engineering</span>
                     </div>
-            <div class="stat-item">
-                <div class="stat-value">90M+</div>
-                <div class="stat-label">Users Impacted</div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><span class="skill-label">Swift</span></div>
+                            <div class="skill-pill"><span class="skill-label">SwiftUI</span></div>
+                            <div class="skill-pill"><span class="skill-label">Core ML</span></div>
+                            <div class="skill-pill"><span class="skill-label">UIKit</span></div>
+                            <div class="skill-pill"><span class="skill-label">React Native</span></div>
+                            <div class="skill-pill"><span class="skill-label">Flutter</span></div>
                     </div>
-            <div class="stat-item">
-                <div class="stat-value">28+</div>
-                <div class="stat-label">Hackathons</div>
                     </div>
-            <div class="stat-item">
-                <div class="stat-value">🏆</div>
-                <div class="stat-label">Patent Holder</div>
+                    <div class="skill-section">
+                        <div class="skill-section-header">
+                            <span class="section-icon">🧠</span>
+                            <span class="skill-section-label">AI/ML & Agentic Systems</span>
+                    </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><span class="skill-label">Python</span></div>
+                            <div class="skill-pill"><span class="skill-label">LangChain</span></div>
+                            <div class="skill-pill"><span class="skill-label">LlamaIndex</span></div>
+                            <div class="skill-pill"><span class="skill-label">RAG Pipelines</span></div>
+                            <div class="skill-pill"><span class="skill-label">PyTorch</span></div>
+                            <div class="skill-pill"><span class="skill-label">TensorFlow</span></div>
+                    </div>
+                    </div>
+                    <div class="skill-section">
+                        <div class="skill-section-header">
+                            <span class="section-icon">☁️</span>
+                            <span class="skill-section-label">Cloud, DevOps & Reliability</span>
+                        </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><span class="skill-label">AWS</span></div>
+                            <div class="skill-pill"><span class="skill-label">GCP</span></div>
+                            <div class="skill-pill"><span class="skill-label">Docker</span></div>
+                            <div class="skill-pill"><span class="skill-label">Kubernetes</span></div>
+                            <div class="skill-pill"><span class="skill-label">Supabase</span></div>
+                            <div class="skill-pill"><span class="skill-label">Vercel</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-section">
+                        <div class="skill-section-header">
+                            <span class="section-icon">💾</span>
+                            <span class="skill-section-label">Data & Databases</span>
+                        </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><span class="skill-label">PostgreSQL</span></div>
+                            <div class="skill-pill"><span class="skill-label">MongoDB</span></div>
+                            <div class="skill-pill"><span class="skill-label">Redis</span></div>
+                            <div class="skill-pill"><span class="skill-label">ChromaDB</span></div>
+                            <div class="skill-pill"><span class="skill-label">Pinecone</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-section">
+                        <div class="skill-section-header">
+                            <span class="section-icon">🛠️</span>
+                            <span class="skill-section-label">Product, Design & Collaboration</span>
+                        </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><span class="skill-label">Figma</span></div>
+                            <div class="skill-pill"><span class="skill-label">Jira</span></div>
+                            <div class="skill-pill"><span class="skill-label">Git</span></div>
+                            <div class="skill-pill"><span class="skill-label">GitHub</span></div>
+                            <div class="skill-pill"><span class="skill-label">TDD</span></div>
+                        </div>
                     </div>
                 </div>
-        
-        <div class="info-box">
-            <h3>📝 Content Management</h3>
-            <p><strong>Single Source of Truth:</strong> All resume content is managed in <code>resume-content.md</code></p>
-            <p>When updating content, edit <code>resume-content.md</code> first, then sync to other formats.</p>
-            <p><a href="resume-content.md">View resume-content.md →</a></p>
+            </aside>
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Summary -->
+                <section class="summary-section">
+                    <h2 class="section-title">Summary</h2>
+                    <p class="summary-text">
+                        Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users. 
+                        Patent holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions. 
+                        Proven track record of building legendary apps at global scale, from startup innovation to enterprise solutions 
+                        serving 90M+ users, recently at my current role at PayPal/Venmo. Passionate about mentoring engineers, 
+                        conducting technical interviews, and fostering inclusive tech communities while driving innovation at the 
+                        intersection of iOS/Mobile and artificial intelligence.
+                    </p>
+                </section>
+                <!-- Professional Experience -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="section-icon">💼</span>
+                        Professional Experience
+                    </h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Staff iOS Engineer → Applied AI/ML Engineer</h3>
+                                <p class="experience-company">PayPal / Venmo</p>
+                            </div>
+                            <span class="experience-date">2020 – Present</span>
+                        </div>
+                        <ul class="experience-list">
+                            <li><strong>✅ Team Mercury — AI-Powered Agentic E-Commerce Platform (June 2025 → Present)</strong>: Lead engineer managing 2 new hires (&lt;1 year tenure) with cross-org Applied AI collaboration. Built PayPal/Venmo's first applied agentic AI platform for autonomous merchant onboarding, achieving 58.5 GPU hours training, 23% loss reduction, 109MB production models.</li>
+                            <li>Developed AI-powered crash detection system using LangChain + DeepLake – now adopted org-wide</li>
+                            <li>Created 10%+ productivity improvements via AI-powered automation tools</li>
+                            <li>Built payment-splitting for $400M Amex partnership deal (2020)</li>
+                            <li>Led initiative winning $60M CVS contract with QRC Touch-Free Payments</li>
+                            <li>Built sandbox/integration app for Venmo × Amazon Partnership (2023) in two days</li>
+                            <li>Filed "Interface Widget Tool for Automatic QR Code Generation" patent (2022) – Reduced user friction by 66%</li>
+                            <li>Built end-to-end infrastructure with server-side Swift for Dynamic Island / Live Activities</li>
+                            <li>Led App Clip Exploration/Discovery initiative for Venmo - researched implementation strategies, user experience flows, and technical feasibility for instant app access without full installation</li>
+                            <li>Mentored cross-functional engineers on concurrency, accessibility, and feature-flag development</li>
+                            <li>Partnered with Design Systems to create SwiftUI component library that cut development time by 30%</li>
+                        </ul>
                     </div>
-        
-        <div class="section">
-            <h2 class="section-title">⭐ Featured & Active Resumes</h2>
-            <div class="resume-grid">
-                <div class="resume-card featured">
-                    <div class="resume-card-header">
-                        <div>
-                            <div class="resume-card-title">z-ai-resume-final.html</div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">iOS Developer/Consultant</h3>
+                                <p class="experience-company">Google Stadia</p>
                     </div>
-                        <span class="resume-card-badge">Latest</span>
+                            <span class="experience-date">July 2019 – 2020</span>
+                        </div>
+                        <ul class="experience-list">
+                            <li>Worked on Google Stadia for mobile platforms in Flutter/Dart</li>
+                            <li>Leveraged iOS expertise for native plugins and crash debugging</li>
+                        </ul>
                     </div>
-                    <div class="resume-card-description">
-                        The definitive resume combining best elements from all iterations. Features comprehensive Project Mercury timeline, beautiful hackathon section, and complete icon system.
+                    <!-- Mercury Project Section -->
+                    <div class="experience-item" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.05), rgba(15, 23, 42, 0.02)); border: 2px solid rgba(56, 189, 248, 0.2);">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">✅ Team Mercury — AI-Powered Agentic E-Commerce Platform</h3>
+                                <p class="experience-company">PayPal / Venmo • Lead Engineer</p>
                     </div>
-                    <ul class="resume-card-features">
-                        <li>Complete Project Mercury timeline</li>
-                        <li>Print-friendly styles</li>
-                        <li>Full icon system</li>
-                        <li>Modern gradient design</li>
+                            <span class="experience-date">June 2025 → Present</span>
+                        </div>
+                        <p style="color: #64748b; font-style: italic; margin-bottom: 1rem;">
+                            Leadership: Lead engineer managing 2 new hires (&lt;1 year tenure), cross-org collaboration with Applied AI team
+                        </p>
+                        <div class="mercury-timeline">
+                            <div class="timeline-item">
+                                <strong>🟩 June 2025 — Project Conception:</strong> Concept originated during exploration of agentic AI for merchant automation; formed initial skunkworks team as 20% project
+                            </div>
+                            <div class="timeline-item">
+                                <strong>🟩 July 2025 — Hackathon Prototype ("Rock-Star Hit"):</strong> Built fully functional prototype in 72 hours; became standout hit at hackathon; presented to SVP of AI earning immediate backing; began leading team including two newly hired engineers
+                            </div>
+                            <div class="timeline-item">
+                                <strong>🟩 August 2025 — 56K Dataset + Safe Data Pipeline:</strong> Designed safe, compliant scraping pipeline; ingested and normalized 56,000 products across marketplaces; established 5 training categories; weekly collaboration with Applied AI team
+                            </div>
+                            <div class="timeline-item">
+                                <strong>🟩 September 2025 — LoRA Training + Model Leadership:</strong> Curated datasets and trained five SDXL LoRA models; achieved 58.5 GPU hours, 23% loss reduction, 109MB optimized models; guided new engineers through ML pipeline development; project expanded from 20% to 120% cross-org initiative
+                            </div>
+                            <div class="timeline-item">
+                                <strong>🟩 October 15, 2025 — SVP Demo + Productionization:</strong> Demoed integrated system to SVP and leadership; delivered multiphase agent flows (Meta/Google/TikTok); drove containerization with MLOps for GCS + H200 cluster; implemented MCP multi-agent orchestration
+                    </div>
+                            <div class="timeline-item">
+                                <strong>🟩 November 2025 — GraphRAG + Ads Intelligence:</strong> Built merchant knowledge graph using GraphRAG; defined schema for marketplace history, asset scoring, embeddings; synced weekly with Ads Intelligence team
+                    </div>
+                            <div class="timeline-item">
+                                <strong>🟩 December 2025 — 56K Dataset Batch Validation:</strong> Designed validation system for drift detection, category alignment, image quality scoring; preparing full dataset validation on H200s; working with MLOps on GPU deployment pipeline
+                </div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">iOS Developer/Consultant</h3>
+                                <p class="experience-company">Morgan Stanley</p>
+                    </div>
+                            <span class="experience-date">April 2018 – July 2019</span>
+                </div>
+                        <ul class="experience-list">
+                            <li>Hybrid Banking and Wealth Management apps for iOS</li>
+                            <li>Key features: check-deposit, biometric authentication, certificate-pinning, jailbreak detection</li>
+                            <li>Migrated codebase from 98% Objective-C to 80% Objective-C / 20% Swift</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Personal Projects -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="section-icon">💻</span>
+                        Personal Projects
+                    </h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3 class="project-title">VectorVerse Evolve</h3>
+                            <p class="project-tech">Swift • SwiftUI • MLX • Core ML</p>
+                            <p class="project-description">
+                                Advanced iOS application leveraging on-device ML models for real-time image generation and processing. 
+                                Built custom Swift wrappers around MLX framework for optimized inference on Apple Silicon, achieving 
+                                sub-second generation times for 512×512 images.
+                            </p>
+                </div>
+                        <div class="project-card">
+                            <h3 class="project-title">Smart Search Assistant</h3>
+                            <p class="project-tech">Python • LangChain • RAG • Supabase</p>
+                            <p class="project-description">
+                                Intelligent search system using RAG architecture for context-aware document retrieval. Integrated 
+                                ChromaDB for vector storage and implemented semantic chunking strategies, improving search relevance 
+                                by 40% over traditional keyword matching.
+                            </p>
+                </div>
+                    </div>
+                </section>
+                <!-- Hackathon Achievements -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="section-icon">🏆</span>
+                        Hackathon Achievements & Innovation
+                    </h2>
+                    <p style="margin-bottom: 1rem; color: #64748b;">
+                        <strong>28+ hackathons</strong> attended across <strong>6+ countries</strong> as participant, mentor, and judge. Earned <strong>2 first-place wins</strong> and served as judge at Yale (2×). Recognized globally for innovation and technical excellence.
+                    </p>
+                    <div class="hackathon-list">
+                        <div class="hackathon-item">
+                            <div class="hackathon-icon">🏆</div>
+                            <div class="hackathon-content">
+                                <div class="hackathon-header">
+                                    <span class="hackathon-achievement">1ST PLACE</span>
+                                    <span class="hackathon-event">MLH @ Bloomberg London</span>
+                </div>
+                                <div class="hackathon-details">
+                                    <p>Automated Search & Rescue System</p>
+                                    <p>Won among 500+ participants</p>
+                                    <p>Featured in BBC documentary</p>
+                </div>
+                </div>
+                    </div>
+                        <div class="hackathon-item">
+                            <div class="hackathon-icon">🏆</div>
+                            <div class="hackathon-content">
+                                <div class="hackathon-header">
+                                    <span class="hackathon-achievement">1ST PLACE</span>
+                                    <span class="hackathon-event">Devcamp NYC</span>
+                </div>
+                                <div class="hackathon-details">
+                                    <p>Talent Management App</p>
+                                    <p>Won among 300+ participants</p>
+                                    <p>at Google NYC</p>
+                    </div>
+                </div>
+                    </div>
+                        <div class="hackathon-item">
+                            <div class="hackathon-icon">🎯</div>
+                            <div class="hackathon-content">
+                                <div class="hackathon-header">
+                                    <span class="hackathon-achievement">FINALIST</span>
+                                    <span class="hackathon-event">HackZurich</span>
+                </div>
+                                <div class="hackathon-details">
+                                    <p>AR Car Buying Tool</p>
+                                    <p>Finalist among 400+</p>
+                                    <p>Attended 4× | Credit Suisse feature</p>
+                </div>
+                </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <strong style="color: #38bdf8; display: block; margin-bottom: 0.5rem;">Mentorship & Judging</strong>
+                        <div class="award-grid">
+                            <div class="award-item">
+                                <span class="award-icon" style="font-size: 1.2rem;">🎓</span>
+                                <div class="award-content">
+                                    <div class="award-title" style="font-weight: 600; color: #020817;">Hack Yale – Judge (2×)</div>
+                                    <div class="award-description" style="font-size: 0.85rem; color: #64748b;">Yale University</div>
+                        </div>
+                    </div>
+                            <div class="award-item">
+                                <span class="award-icon" style="font-size: 1.2rem;">🎓</span>
+                                <div class="award-content">
+                                    <div class="award-title" style="font-weight: 600; color: #020817;">PenApps – Mentor</div>
+                                    <div class="award-description" style="font-size: 0.85rem; color: #64748b;">University of Pennsylvania</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </section>
+                <!-- Leadership & Community -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="section-icon">👥</span>
+                        Leadership & Community
+                    </h2>
+                    <ul class="experience-list">
+                        <li>Advisory Board Member for multiple tech startups on iOS architecture and AI/ML implementation</li>
+                        <li>Conducted technical interviews for senior iOS and AI/ML positions</li>
+                        <li>Hosted technical workshops: SwiftUI, State Machines, AI/ML image generation, DataDog automation</li>
+                        <li>Interfaith ERG Chapter Lead (Sikh community): Organized events, secured speakers, created educational content</li>
+                        <li>Represented Venmo at Yale hackathons and high school tech education initiatives</li>
                     </ul>
-                    <div class="resume-card-footer">
-                        <a href="z-ai-resume-final.html" class="btn btn-primary">View Resume</a>
-                    </div>
-                    </div>
-                
-                <div class="resume-card featured">
-                    <div class="resume-card-header">
-                        <div>
-                            <div class="resume-card-title">Gurinder_Singh_Resume-Manus.html</div>
-                        </div>
-                        <span class="resume-card-badge">Manus</span>
-                    </div>
-                    <div class="resume-card-description">
-                        Clean, professional resume with sidebar skills layout and horizontal grid option. Features toggle between sidebar and horizontal skill layouts.
-                            </div>
-                    <ul class="resume-card-features">
-                        <li>Dual layout options</li>
-                        <li>Sidebar skills layout</li>
-                        <li>Print-optimized</li>
-                        <li>Responsive design</li>
-                                </ul>
-                    <div class="resume-card-footer">
-                        <a href="Gurinder_Singh_Resume-Manus.html" class="btn btn-primary">View Resume</a>
-                            </div>
-                        </div>
-
-                <div class="resume-card featured">
-                    <div class="resume-card-header">
-                        <div>
-                            <div class="resume-card-title">index-resume-purple.html</div>
-                            </div>
-                        <span class="resume-card-badge">Purple</span>
-                            </div>
-                    <div class="resume-card-description">
-                        Modern resume with purple gradient theme, animations, and rich visual design. Features comprehensive sections and beautiful styling.
-                        </div>
-                    <ul class="resume-card-features">
-                        <li>Purple gradient theme</li>
-                        <li>Animated backgrounds</li>
-                        <li>Rich visual design</li>
-                        <li>Comprehensive sections</li>
-                            </ul>
-                    <div class="resume-card-footer">
-                        <a href="index-resume-purple.html" class="btn btn-primary">View Resume</a>
-                    </div>
+                </section>
+                <!-- Education -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="section-icon">🎓</span>
+                        Education
+                    </h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">BS in Computer Systems</h3>
+                                <p class="experience-company">New York City College of Technology, Brooklyn</p>
+                </div>
+                            <span class="experience-date">2012 – 2016</span>
                         </div>
                     </div>
+                </section>
+            </main>
                 </div>
-
-        <div class="section">
-            <h2 class="section-title">📄 Other Resume Versions</h2>
-            <div class="resume-grid">
-                <div class="resume-card">
-                    <div class="resume-card-title">Gurinder_Singh_Resume_Beautiful.html</div>
-                    <div class="resume-card-description">Visually rich design with animations and gradients</div>
-                    <div class="resume-card-footer">
-                        <a href="Gurinder_Singh_Resume_Beautiful.html" class="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">Gurinder_Singh_Resume_Modern.html</div>
-                    <div class="resume-card-description">Clean, modern design with LinkedIn profile integration</div>
-                    <div class="resume-card-footer">
-                        <a href="Gurinder_Singh_Resume_Modern.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-
-                <div class="resume-card">
-                    <div class="resume-card-title">Gurinder_Singh_Resume-Claude.html</div>
-                    <div class="resume-card-description">Professional layout with structured sections</div>
-                    <div class="resume-card-footer">
-                        <a href="Gurinder_Singh_Resume-Claude.html" class="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">Gurinder_Singh_Resume-Gemini.html</div>
-                    <div class="resume-card-description">Resume version created with Gemini</div>
-                    <div class="resume-card-footer">
-                        <a href="Gurinder_Singh_Resume-Gemini.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-
-                <div class="resume-card">
-                    <div class="resume-card-title">Gurinder_Singh_Resume-nice-Venmo-Summary.html</div>
-                    <div class="resume-card-description">Resume with enhanced Venmo summary</div>
-                    <div class="resume-card-footer">
-                        <a href="Gurinder_Singh_Resume-nice-Venmo-Summary.html" class="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">Claude-Resume-11-10-25.html</div>
-                    <div class="resume-card-description">Claude-generated resume from November 10, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="Claude-Resume-11-10-25.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-
-                <div class="resume-card">
-                    <div class="resume-card-title">Claude-Resume-11-13-25-Version-1.html</div>
-                    <div class="resume-card-description">Claude resume version 1 from November 13, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="Claude-Resume-11-13-25-Version-1.html" class="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">Gemini-Resume-11-10-25.html</div>
-                    <div class="resume-card-description">Gemini-generated resume from November 10, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="Gemini-Resume-11-10-25.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">Gemini-Resume-11-13-25-version-1.html</div>
-                    <div class="resume-card-description">Gemini resume version 1 from November 13, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="Gemini-Resume-11-13-25-version-1.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">Gemini-Resume-11-13-25-version-2.html</div>
-                    <div class="resume-card-description">Gemini resume version 2 from November 13, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="Gemini-Resume-11-13-25-version-2.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">ChatGPT-Resume-11-10-25.html</div>
-                    <div class="resume-card-description">ChatGPT-generated resume from November 10, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="ChatGPT-Resume-11-10-25.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">z-ai-resume-11-12-25.html</div>
-                    <div class="resume-card-description">Z.ai resume from November 12, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="z-ai-resume-11-12-25.html" class="btn btn-secondary">View</a>
-                </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">z-ai-resume-11-13-25-version-1.html</div>
-                    <div class="resume-card-description">Z.ai resume version 1 from November 13, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="z-ai-resume-11-13-25-version-1.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">z-ai-resume-11-13-25-version-2.html</div>
-                    <div class="resume-card-description">Z.ai resume version 2 from November 13, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="z-ai-resume-11-13-25-version-2.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">z-ai-resume-11-13-25-version-3.html</div>
-                    <div class="resume-card-description">Z.ai resume version 3 from November 13, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="z-ai-resume-11-13-25-version-3.html" class="btn btn-secondary">View</a>
-                    </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">llama3.2-Resume-11-13-25.html</div>
-                    <div class="resume-card-description">Llama 3.2-generated resume from November 13, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="llama3.2-Resume-11-13-25.html" class="btn btn-secondary">View</a>
-                </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-title">manus-11-12-25-resume_v2.html</div>
-                    <div class="resume-card-description">Manus resume version 2 from November 12, 2025</div>
-                    <div class="resume-card-footer">
-                        <a href="manus-11-12-25-resume_v2.html" class="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                    
-                <div class="resume-card">
-                    <div class="resume-card-title">resume-skills-summary.html</div>
-                    <div class="resume-card-description">Skills-focused resume summary</div>
-                    <div class="resume-card-footer">
-                        <a href="resume-skills-summary.html" class="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                    
-                <div class="resume-card">
-                    <div class="resume-card-title">portfolio.html</div>
-                    <div class="resume-card-description">Portfolio page</div>
-                    <div class="resume-card-footer">
-                        <a href="portfolio.html" class="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                
-        <div class="section">
-            <h2 class="section-title">🚀 Active Projects</h2>
-            <div class="resume-grid">
-                <div class="resume-card">
-                    <div class="resume-card-header">
-                        <div>
-                            <div class="resume-card-title">Cursor-Resume</div>
-                </div>
-                        <span class="resume-card-badge">Next.js</span>
-                </div>
-                    <div class="resume-card-description">
-                        Active Next.js resume project with modern React components, TypeScript, and Tailwind CSS. Features comprehensive skills catalog with icons.
-                </div>
-                    <ul class="resume-card-features">
-                        <li>Next.js 14 + React 19</li>
-                        <li>TypeScript</li>
-                        <li>100+ skills with icons</li>
-                        <li>Responsive design</li>
-                    </ul>
-                    <div class="resume-card-footer">
-                        <a href="Cursor-Resume/" class="btn btn-primary">View Project</a>
-                        <a href="KiloCode-Resume/index.html" class="btn btn-secondary">KiloCode</a>
-                </div>
-                </div>
-                
-                <div class="resume-card">
-                    <div class="resume-card-header">
-                        <div>
-                            <div class="resume-card-title">KiloCode-Resume</div>
-                        </div>
-                        <span class="resume-card-badge">Static</span>
-                    </div>
-                    <div class="resume-card-description">
-                        Static HTML resume with skills grid. Minimal design wired for future React/SkillsGrid.tsx usage.
-                </div>
-                    <ul class="resume-card-features">
-                        <li>Static HTML</li>
-                        <li>Skills catalog</li>
-                        <li>Clean design</li>
-                        <li>Print-friendly</li>
-                    </ul>
-                    <div class="resume-card-footer">
-                        <a href="KiloCode-Resume/index.html" class="btn btn-primary">View Resume</a>
-                        <a href="KiloCode-Resume/skills-catalog.html" class="btn btn-secondary">Catalog</a>
-                    </div>
+        <!-- Page 2: Detailed Skills -->
+        <div class="resume-page page-2">
+            <div class="page-2-content">
+                <h2 class="page-2-title">Comprehensive Technical Skills Reference</h2>
+                <p class="page-2-subtitle">Detailed technology stack for ATS optimization and recruiter reference</p>
+                <div class="skills-grid skills-grid--detailed">
+                    <p style="text-align: center; color: #64748b; padding: 2rem;">
+                        <strong>Note:</strong> This is a simplified static version. For the complete skills catalog with 100+ technologies organized into 5 categories with icons, 
+                        please visit the <a href="Cursor-Resume/" style="color: #38bdf8;">Cursor-Resume project</a> or view the full Next.js application.
+                    </p>
+                    <p style="text-align: center; color: #64748b; margin-top: 1rem;">
+                        Key skills include: Swift, SwiftUI, Python, LangChain, LlamaIndex, RAG Pipelines, PyTorch, TensorFlow, AWS, GCP, Docker, Kubernetes, 
+                        PostgreSQL, MongoDB, React, Next.js, TypeScript, and many more. See sidebar for abbreviated list.
+                    </p>
                 </div>
             </div>
         </div>
-        
-        <div class="section">
-            <h2 class="section-title">📚 Resources</h2>
-            <div class="info-box">
-                <h3>Documentation & Content</h3>
-                <p><strong>resume-content.md</strong> - Single source of truth for all resume content</p>
-                <p><strong>README.md</strong> - Project documentation and overview</p>
-                <p><strong>TODO.md</strong> - Design experiments and future enhancements</p>
-                <p><strong>CHANGELOG.md</strong> - Project changelog and history</p>
-                </div>
-        </div>
-
-        <footer>
-            <p>Built with ❤️ by Gurinder Singh</p>
-            <p style="margin-top: 0.5rem; font-size: 0.75rem;">
-                <a href="https://guriboy-6fupko.manus.space" style="color: var(--primary-color); text-decoration: none;">Portfolio</a> • 
-                <a href="https://linkedin.com/in/gurindersingh" style="color: var(--primary-color); text-decoration: none;">LinkedIn</a> • 
-                <a href="mailto:gsingh622@yahoo.com" style="color: var(--primary-color); text-decoration: none;">Email</a>
-            </p>
-        </footer>
     </div>
 </body>
 </html>
