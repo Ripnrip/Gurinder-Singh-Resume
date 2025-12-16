@@ -1,0 +1,487 @@
+{
+  "timestamp": "2025-12-16T17-58-47-853Z",
+  "catalog": {
+    "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/icon-catalog-test.html",
+    "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/icon-catalog-2025-12-16T17-58-47-853Z.png",
+    "description": "Full icon catalog showing all 58 technology logos"
+  },
+  "resumes": [
+    {
+      "name": "ChatGPT-Resume-11-10-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/ChatGPT-Resume-11-10-25.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-ChatGPT-Resume-11-10-25-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "ChatGPT-Resume-11-10-25_tmp.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/ChatGPT-Resume-11-10-25_tmp.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-ChatGPT-Resume-11-10-25_tmp-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Claude-10-16-25-Gurinder_Singh_Resume (1).html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Claude-10-16-25-Gurinder_Singh_Resume (1).html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Claude-10-16-25-Gurinder_Singh_Resume (1)-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Claude-Resume-11-10-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Claude-Resume-11-10-25.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Claude-Resume-11-10-25-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Claude-Resume-11-13-25-Version-1.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Claude-Resume-11-13-25-Version-1.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Claude-Resume-11-13-25-Version-1-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gemini-Resume-11-10-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gemini-Resume-11-10-25.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gemini-Resume-11-10-25-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gemini-Resume-11-13-25-version-1.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gemini-Resume-11-13-25-version-1.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gemini-Resume-11-13-25-version-1-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gemini-Resume-11-13-25-version-2.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gemini-Resume-11-13-25-version-2.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gemini-Resume-11-13-25-version-2-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gurinder_Singh_Resume-Claude.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-Claude.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gurinder_Singh_Resume-Claude-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gurinder_Singh_Resume-Gemini.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-Gemini.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gurinder_Singh_Resume-Gemini-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gurinder_Singh_Resume-Manus.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-Manus.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gurinder_Singh_Resume-Manus-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gurinder_Singh_Resume-nice-Venmo-Summary.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-nice-Venmo-Summary.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gurinder_Singh_Resume-nice-Venmo-Summary-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gurinder_Singh_Resume_Beautiful.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume_Beautiful.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gurinder_Singh_Resume_Beautiful-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "Gurinder_Singh_Resume_Modern.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume_Modern.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-Gurinder_Singh_Resume_Modern-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "index-resume-collection-backup.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/index-resume-collection-backup.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-index-resume-collection-backup-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "index-resume-purple.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/index-resume-purple.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-index-resume-purple-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "index.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/index.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-index-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "llama3.2-Resume-11-13-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/llama3.2-Resume-11-13-25.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-llama3.2-Resume-11-13-25-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "manus-11-12-25-resume_v2.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/manus-11-12-25-resume_v2.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-manus-11-12-25-resume_v2-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "portfolio.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/portfolio.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-portfolio-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "resume-skills-summary.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/resume-skills-summary.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-resume-skills-summary-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "z-ai-resume-11-12-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-12-25.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-z-ai-resume-11-12-25-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "z-ai-resume-11-13-25-version-1.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-13-25-version-1.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-z-ai-resume-11-13-25-version-1-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "z-ai-resume-11-13-25-version-2.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-13-25-version-2.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-z-ai-resume-11-13-25-version-2-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "z-ai-resume-11-13-25-version-3.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-13-25-version-3.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-z-ai-resume-11-13-25-version-3-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    },
+    {
+      "name": "z-ai-resume-final.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-final.html",
+      "screenshotPath": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/resume-z-ai-resume-final-2025-12-16T17-58-47-853Z.png",
+      "iconSections": [
+        "Skills section",
+        "Technology icons",
+        "Cloud/DevOps icons",
+        "AI/ML icons"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "action": "Navigate to catalog",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/icon-catalog-test.html",
+      "screenshot": "icon-catalog-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll through entire page to capture all icons"
+    },
+    {
+      "step": 2,
+      "action": "Test resume: ChatGPT-Resume-11-10-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/ChatGPT-Resume-11-10-25.html",
+      "screenshot": "resume-ChatGPT-Resume-11-10-25-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 3,
+      "action": "Test resume: ChatGPT-Resume-11-10-25_tmp.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/ChatGPT-Resume-11-10-25_tmp.html",
+      "screenshot": "resume-ChatGPT-Resume-11-10-25_tmp-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 4,
+      "action": "Test resume: Claude-10-16-25-Gurinder_Singh_Resume (1).html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Claude-10-16-25-Gurinder_Singh_Resume (1).html",
+      "screenshot": "resume-Claude-10-16-25-Gurinder_Singh_Resume (1)-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 5,
+      "action": "Test resume: Claude-Resume-11-10-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Claude-Resume-11-10-25.html",
+      "screenshot": "resume-Claude-Resume-11-10-25-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 6,
+      "action": "Test resume: Claude-Resume-11-13-25-Version-1.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Claude-Resume-11-13-25-Version-1.html",
+      "screenshot": "resume-Claude-Resume-11-13-25-Version-1-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 7,
+      "action": "Test resume: Gemini-Resume-11-10-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gemini-Resume-11-10-25.html",
+      "screenshot": "resume-Gemini-Resume-11-10-25-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 8,
+      "action": "Test resume: Gemini-Resume-11-13-25-version-1.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gemini-Resume-11-13-25-version-1.html",
+      "screenshot": "resume-Gemini-Resume-11-13-25-version-1-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 9,
+      "action": "Test resume: Gemini-Resume-11-13-25-version-2.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gemini-Resume-11-13-25-version-2.html",
+      "screenshot": "resume-Gemini-Resume-11-13-25-version-2-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 10,
+      "action": "Test resume: Gurinder_Singh_Resume-Claude.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-Claude.html",
+      "screenshot": "resume-Gurinder_Singh_Resume-Claude-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 11,
+      "action": "Test resume: Gurinder_Singh_Resume-Gemini.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-Gemini.html",
+      "screenshot": "resume-Gurinder_Singh_Resume-Gemini-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 12,
+      "action": "Test resume: Gurinder_Singh_Resume-Manus.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-Manus.html",
+      "screenshot": "resume-Gurinder_Singh_Resume-Manus-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 13,
+      "action": "Test resume: Gurinder_Singh_Resume-nice-Venmo-Summary.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume-nice-Venmo-Summary.html",
+      "screenshot": "resume-Gurinder_Singh_Resume-nice-Venmo-Summary-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 14,
+      "action": "Test resume: Gurinder_Singh_Resume_Beautiful.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume_Beautiful.html",
+      "screenshot": "resume-Gurinder_Singh_Resume_Beautiful-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 15,
+      "action": "Test resume: Gurinder_Singh_Resume_Modern.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/Gurinder_Singh_Resume_Modern.html",
+      "screenshot": "resume-Gurinder_Singh_Resume_Modern-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 16,
+      "action": "Test resume: index-resume-collection-backup.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/index-resume-collection-backup.html",
+      "screenshot": "resume-index-resume-collection-backup-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 17,
+      "action": "Test resume: index-resume-purple.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/index-resume-purple.html",
+      "screenshot": "resume-index-resume-purple-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 18,
+      "action": "Test resume: index.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/index.html",
+      "screenshot": "resume-index-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 19,
+      "action": "Test resume: llama3.2-Resume-11-13-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/llama3.2-Resume-11-13-25.html",
+      "screenshot": "resume-llama3.2-Resume-11-13-25-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 20,
+      "action": "Test resume: manus-11-12-25-resume_v2.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/manus-11-12-25-resume_v2.html",
+      "screenshot": "resume-manus-11-12-25-resume_v2-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 21,
+      "action": "Test resume: portfolio.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/portfolio.html",
+      "screenshot": "resume-portfolio-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 22,
+      "action": "Test resume: resume-skills-summary.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/resume-skills-summary.html",
+      "screenshot": "resume-resume-skills-summary-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 23,
+      "action": "Test resume: z-ai-resume-11-12-25.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-12-25.html",
+      "screenshot": "resume-z-ai-resume-11-12-25-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 24,
+      "action": "Test resume: z-ai-resume-11-13-25-version-1.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-13-25-version-1.html",
+      "screenshot": "resume-z-ai-resume-11-13-25-version-1-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 25,
+      "action": "Test resume: z-ai-resume-11-13-25-version-2.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-13-25-version-2.html",
+      "screenshot": "resume-z-ai-resume-11-13-25-version-2-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 26,
+      "action": "Test resume: z-ai-resume-11-13-25-version-3.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-11-13-25-version-3.html",
+      "screenshot": "resume-z-ai-resume-11-13-25-version-3-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    },
+    {
+      "step": 27,
+      "action": "Test resume: z-ai-resume-final.html",
+      "url": "file:///Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/z-ai-resume-final.html",
+      "screenshot": "resume-z-ai-resume-final-2025-12-16T17-58-47-853Z.png",
+      "notes": "Scroll to skills/technology sections and capture icon displays"
+    }
+  ]
+}

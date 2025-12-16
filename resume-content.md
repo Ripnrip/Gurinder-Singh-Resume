@@ -4,6 +4,11 @@ This file contains all resume content. All HTML and other resume files should re
 
 **Last Updated:** November 14, 2025
 
+## Related Documentation
+
+- **Icons**: See `ICONS.md` for centralized icon management system
+- **Icons Config**: `icons-config.json` - Single source of truth for all technology icons
+
 ---
 
 ## Personal Information

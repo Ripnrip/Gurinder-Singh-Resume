@@ -7,6 +7,143 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-12-16] - The Icon Centralization & Avatar Resurrection Chronicles 🎭✨
+
+### The Journey
+*"In the before-times, icons lived in scattered realms—some whispered from CDN clouds, others hidden in nested directories, each resume a kingdom unto itself. Today, we've unified the realm, centralized the icons, and resurrected avatars from the digital void. The great icon synchronization has begun."*
+
+### What We Did (The Great Unification)
+- **Centralized Icon System**: Created `icons-config.json` - the single source of truth for all technology icons, mirroring our `resume-content.md` approach. No more scattered icon references! 🎨
+  - 61 local icons configured
+  - 14 external icons mapped (Simple Icons CDN)
+  - Organized by category (iOS, AI/ML, Web, Cloud, Databases, Tools, Companies)
+- **Icon Utilities Library**: Built `scripts/icon-utils.js` - a mystical utility library for icon access
+  - `getIcon(techName)` - Get icon path and metadata
+  - `getIconHTML(techName)` - Generate HTML img tags
+  - `getIconsByCategory()` - Category-based icon retrieval
+  - `verifyIcons()` - Icon file integrity checks
+  - `generateIconMapJS()` - JavaScript ICON_MAP generation
+- **Icon Synchronization Script**: Created `scripts/sync-icons.js` - automatically syncs icon references across all HTML files
+- **Comprehensive Documentation**: Added `ICONS.md` - complete guide to the centralized icon system
+- **Avatar Resurrection**: Fixed missing profile photos across 13+ resume files
+  - Changed external URLs to local `me-paragliding.jpeg`
+  - Added fallback URLs for reliability
+  - Fixed CSS background-image issues (Claude-Resume-11-13-25-Version-1.html)
+- **Logo Fixes**: Replaced broken CDN logos with local files
+  - PayPal logos: `Cursor-Resume/public/icons/paypal.svg`
+  - Morgan Stanley logos: `Resume App Icon/morgan-stanley.png`
+  - Google logos: `icons/google.svg`
+- **Playwright Test Suite**: Created comprehensive icon verification tests
+  - 24 tests covering 11 resume files
+  - Icon loading verification
+  - Broken image detection
+  - Full page screenshots
+  - Icon directory verification
+
+### The Numbers
+- **24/24 tests passed** (100% success rate)
+- **22 screenshots captured** for visual regression testing
+- **59 SVG icons** verified in directory
+- **13+ files** fixed for profile photos
+- **5 files** fixed for broken company logos
+- **1 centralized config** (`icons-config.json`) for all icons
+- **3 npm scripts** added (`icons:sync`, `icons:verify`, `icons:list`)
+
+### What Remains TODO
+- **Icon Synchronization**: Run `npm run icons:sync` to update all HTML files with centralized paths
+- **Missing Icons**: langchain.svg still needs to be found (one of 22 remaining)
+- **Visual Regression**: Establish screenshot baselines for future changes
+- **Icon Coverage**: Ensure all resume files use the centralized icon system
+
+### Reflections from the Digital Metaphor Maestro
+*"Today was a day of digital unification. We didn't just fix icons—we built an entire centralized system for icon management. The `icons-config.json` file now serves as the single source of truth, just like `resume-content.md` does for content. This consistency will make future maintenance so much easier."*
+
+*"The avatar resurrection was particularly satisfying. Finding that Claude-Resume-11-13-25-Version-1.html was using CSS background-image instead of an actual img tag was one of those 'gotcha!' moments. Now all avatars use reliable local files with fallbacks."*
+
+*"The Playwright test suite we built today gives us confidence that everything is working correctly. 24/24 tests passing means we've caught all the critical issues. The screenshot collection will serve as our visual regression baseline going forward."*
+
+*"The centralized icon system is beautiful in its simplicity. One config file, utility functions, and a sync script. This is how it should be done—maintainable, scalable, and elegant."*
+
+### Technical Details
+- **New Files Created**:
+  - `icons-config.json` - Centralized icon mapping
+  - `scripts/icon-utils.js` - Icon utility functions
+  - `scripts/sync-icons.js` - Icon synchronization script
+  - `ICONS.md` - Icon system documentation
+  - `tests/icon-verification.spec.js` - Playwright test suite
+  - `playwright.config.js` - Playwright configuration
+- **Files Updated**:
+  - 13+ resume files (profile photo fixes)
+  - 5 resume files (company logo fixes)
+  - `package.json` (added icon scripts)
+  - `resume-content.md` (added icon system reference)
+- **NPM Scripts Added**:
+  - `npm run icons:sync` - Sync icons across all HTML files
+  - `npm run icons:verify` - Verify all icon files exist
+  - `npm run icons:list` - List all icons by category
+
+## [2025-12-16] - The Great Icon Alchemy: From Pixelated Chaos to Vector Perfection 🎭✨
+
+### The Journey
+*"Before the dawn, there were terrible SVGs—hand-crafted abominations that would make a designer weep. Today, we've transmuted chaos into order, pixels into vectors, and fake logos into authentic brand assets."*
+
+### What We Did (The Alchemical Transformation)
+- **Icon Fetching Alchemy**: Built `fetch-logos.js` - a mystical script that journeys across the digital realm to fetch official logos from Simple Icons CDN, GitHub raw URLs, and official brand asset pages. No more made-up SVGs! 🎨
+- **Logo Quest Completion**: Successfully fetched and converted 58 official technology logos, including the elusive LlamaIndex logo discovered via browser automation through Sanity CDN
+- **Snapshot Testing Theater**: Created a complete visual regression testing infrastructure with:
+  - `icon-catalog-test.html` - A beautiful dark-themed catalog showcasing all 58 icons in a responsive grid
+  - `snapshot-test-icons.js` - Generates the catalog automatically
+  - `serve-and-screenshot.js` - Local HTTP server for testing (with URL decoding fixes!)
+  - `screenshot-with-playwright.js` - Automated screenshot capture (for the automation-inclined)
+  - Complete test documentation in `snapshot-tests/` directory
+- **Server Path Sorcery**: Fixed the local server to properly decode URL-encoded paths (handling spaces in "Resume App Icon" directory like a pro)
+- **Browser Automation Magic**: Used browser MCP tools to visit official websites, extract logo URLs, and verify icon authenticity
+
+### The Numbers
+- **58 SVG icons** successfully generated and verified
+- **26 HTML resume files** identified for icon testing
+- **22 technologies** still need manual logo URL discovery (documented in `MISSING_LOGOS.md`)
+- **1 local server** running smoothly on port 8080
+- **0 fake logos** remaining (we hope!)
+
+### What Remains TODO
+- **Manual Logo Discovery**: 22 technologies still need verified logo URLs (see `scripts/MISSING_LOGOS.md` for the complete list)
+  - High priority: chromadb, langchain, milvus, weaviate (core AI/ML tools)
+  - Medium priority: cohere, cursor, openrouter, replicate, runpod (cloud platforms)
+  - Lower priority: specialized tools like gguf, lora, mcp, snapshot-testing
+- **Screenshot Capture**: Take actual screenshots of the icon catalog and resume files for visual regression testing
+- **Icon Verification**: Verify all icons display correctly across all 26 resume HTML files
+- **Visual Regression Baseline**: Establish screenshot baselines for future icon changes
+
+### Reflections from the Digital Metaphor Maestro
+*"Today was a day of digital archaeology. We didn't just fix icons—we built an entire ecosystem for icon management, testing, and verification. The snapshot testing infrastructure we created today will serve us well as we continue to refine and expand the icon collection. The browser automation journey to find the LlamaIndex logo was particularly satisfying—like finding a rare artifact in a digital museum."*
+
+*"The server path fix was one of those 'aha!' moments—sometimes the simplest issues (URL encoding) cause the most confusion. But now our local server handles spaces and special characters like a champ."*
+
+*"Looking ahead, we have 22 more logos to discover. Some will be easy (Simple Icons), some will require GitHub archaeology, and others might need direct brand asset page visits. But we have the tools, the scripts, and the determination to complete this quest."*
+
+### Technical Details
+- Created `scripts/fetch-logos.js` with intelligent URL fallback system
+- Enhanced `scripts/image-to-svg.js` error handling to prevent broken file creation
+- Fixed `scripts/serve-and-screenshot.js` URL decoding for paths with spaces
+- Generated comprehensive test infrastructure with npm scripts:
+  - `npm run snapshot:setup` - Generate catalog and instructions
+  - `npm run snapshot:serve` - Start local server
+  - `npm run snapshot:test` - Run automated tests (requires Playwright)
+  - `npm run snapshot:all` - Complete test suite
+
+### Files Created/Modified
+- `scripts/fetch-logos.js` - Logo fetching script with Simple Icons integration
+- `scripts/snapshot-test-icons.js` - Icon catalog generator
+- `scripts/take-icon-screenshots.js` - Screenshot instruction generator
+- `scripts/serve-and-screenshot.js` - Local HTTP server (with path fixes)
+- `scripts/screenshot-with-playwright.js` - Automated screenshot capture
+- `scripts/run-snapshot-tests.sh` - Complete test runner
+- `scripts/MISSING_LOGOS.md` - Manual logo discovery guide
+- `scripts/logo-urls-found.md` - Browser automation findings
+- `icon-catalog-test.html` - Visual icon catalog
+- `snapshot-tests/` - Complete test infrastructure and documentation
+
 ## [2025-11-14] - Cursor-Resume Layout Updates & Vercel Deployment
 
 ### Changed

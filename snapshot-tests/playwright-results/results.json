@@ -1,0 +1,1168 @@
+{
+  "config": {
+    "configFile": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/playwright.config.js",
+    "rootDir": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "./snapshot-tests/playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./snapshot-tests/playwright-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "icon-verification.spec.js",
+      "file": "icon-verification.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Server is running",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2100,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:26:18.040Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-d932f11e5df018673f2a",
+          "file": "icon-verification.spec.js",
+          "line": 150,
+          "column": 1
+        },
+        {
+          "title": "Icon Catalog - All icons load correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3106,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Complete icon catalog test page\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/icon-catalog-test.html\n"
+                    },
+                    {
+                      "text": "   Found 59 icon images\n"
+                    },
+                    {
+                      "text": "   ✅ No broken images detected\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/icon-catalog-full-1765913183968.png\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "(node:45141) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:26:21.142Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-89d96582600422801827",
+          "file": "icon-verification.spec.js",
+          "line": 161,
+          "column": 1
+        },
+        {
+          "title": "z-ai-resume-final - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6652,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Main comprehensive resume with full skills section\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/z-ai-resume-final.html\n"
+                    },
+                    {
+                      "text": "   Found 126 icon elements\n"
+                    },
+                    {
+                      "text": "   ⚠️  Found 3/126 broken icons (showing first 5):\n"
+                    },
+                    {
+                      "text": "      - 000000\n"
+                    },
+                    {
+                      "text": "      - 4E9BCD\n"
+                    },
+                    {
+                      "text": "      - 4053D6\n"
+                    },
+                    {
+                      "text": "   ✅ 123/126 icons loaded (3 broken)\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-final-icons-1765913190665.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:26:24.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-668b7cb8084b10fffaef",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "index-resume-purple - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9087,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Purple theme resume variant\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/index-resume-purple.html\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found with selectors: img[src*=\"Resume App Icon\"], img[src*=\"icon\"], .skill img, .tech img\n"
+                    },
+                    {
+                      "text": "   Found 0 icon elements\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found - taking full page screenshot for review\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:26:30.916Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-8cebdb423c647204d461",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "skills-catalog - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6405,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Skills catalog showcase page\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/KiloCode-Resume/skills-catalog.html\n"
+                    },
+                    {
+                      "text": "   Found 58 icon elements\n"
+                    },
+                    {
+                      "text": "   ✅ All 58 icons loaded successfully\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/skills-catalog-icons-1765913205906.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:26:40.009Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-6864d1cdcca612895070",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "claude-resume - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8669,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Claude-generated resume format\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/Claude-Resume-11-10-25.html\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found with selectors: img[src*=\"icon\"], .skill img, img[src*=\"Resume App Icon\"]\n"
+                    },
+                    {
+                      "text": "   Found 0 icon elements\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found - taking full page screenshot for review\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:26:46.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-8113697c1b43921b0530",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "claude-resume-v2 - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6938,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Claude resume version 2\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/Claude-Resume-11-13-25-Version-1.html\n"
+                    },
+                    {
+                      "text": "   Found 10 icon elements\n"
+                    },
+                    {
+                      "text": "   ⚠️  Found 1/10 broken icons (showing first 5):\n"
+                    },
+                    {
+                      "text": "      - amazonwebservices-original.svg\n"
+                    },
+                    {
+                      "text": "   ✅ 9/10 icons loaded (1 broken)\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-v2-icons-1765913221828.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:26:55.097Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-48b50b31cce1538a2816",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "gemini-resume - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8723,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Gemini-generated resume format\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/Gemini-Resume-11-10-25.html\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found with selectors: img[src*=\"icon\"], .skill img, img[src*=\"Resume App Icon\"]\n"
+                    },
+                    {
+                      "text": "   Found 0 icon elements\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found - taking full page screenshot for review\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:02.041Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-42e57b406a3ef788eeb8",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "gemini-resume-v1 - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6652,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Gemini resume version 1\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/Gemini-Resume-11-13-25-version-1.html\n"
+                    },
+                    {
+                      "text": "   Found 3 icon elements\n"
+                    },
+                    {
+                      "text": "   ✅ All 3 icons loaded successfully\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-v1-icons-1765913237099.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:10.775Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-2f73f732addc54b74726",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "z-ai-resume-v1 - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6652,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Z-AI resume version 1\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/z-ai-resume-11-13-25-version-1.html\n"
+                    },
+                    {
+                      "text": "   Found 3 icon elements\n"
+                    },
+                    {
+                      "text": "   ✅ All 3 icons loaded successfully\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v1-icons-1765913243779.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:17.434Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-6fd0e5dab83eb8a0faa6",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "z-ai-resume-v2 - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6529,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Z-AI resume version 2\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/z-ai-resume-11-13-25-version-2.html\n"
+                    },
+                    {
+                      "text": "   Found 3 icon elements\n"
+                    },
+                    {
+                      "text": "   ✅ All 3 icons loaded successfully\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v2-icons-1765913250412.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:24.093Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-283f5886623bd323adf8",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "gurinder-resume-manus - Icons load and display correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8411,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🎪 📦 Testing: Manus-themed resume\n"
+                    },
+                    {
+                      "text": "   URL: http://localhost:8080/Gurinder_Singh_Resume-Manus.html\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found with selectors: img[src*=\"Resume App Icon\"], img[src*=\"icon\"], .skill img, .tech img\n"
+                    },
+                    {
+                      "text": "   Found 0 icon elements\n"
+                    },
+                    {
+                      "text": "   ⚠️  No icons found - taking full page screenshot for review\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:30.629Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-7ffc3046dbb78fea3858",
+          "file": "icon-verification.spec.js",
+          "line": 201,
+          "column": 3
+        },
+        {
+          "title": "z-ai-resume-final - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6045,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-final-fullpage-1765913264448.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:39.045Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-67689130bf64229ccdab",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "index-resume-purple - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5948,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/index-resume-purple-fullpage-1765913270457.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:45.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-402f91c08516c123a7b7",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "skills-catalog - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5217,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/skills-catalog-fullpage-1765913275880.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:51.095Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-56d3e86d2ff9892af64f",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "claude-resume - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5686,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-fullpage-1765913281638.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:27:56.321Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-4b52b38ea8f162673f97",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "claude-resume-v2 - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6123,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-v2-fullpage-1765913287798.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:02.021Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-7668bf0d165f8e4dc907",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "gemini-resume - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5722,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-fullpage-1765913293663.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:08.159Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-d4d5b7c8f84e805cba55",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "gemini-resume-v1 - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5680,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-v1-fullpage-1765913299228.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:13.892Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-b5615edbd85523a91c47",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "z-ai-resume-v1 - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5754,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v1-fullpage-1765913304906.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:19.577Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-816663b831758a53ae02",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "z-ai-resume-v2 - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5834,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v2-fullpage-1765913310666.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:25.339Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-71410dd06756d2ee9e70",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "gurinder-resume-manus - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5436,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gurinder-resume-manus-fullpage-1765913316062.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:31.178Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-2b19b705bbdb22f3e1cb",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "icon-catalog - Full page screenshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5151,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/icon-catalog-fullpage-1765913321428.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:36.619Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-114107df272e29e09e9e",
+          "file": "icon-verification.spec.js",
+          "line": 302,
+          "column": 3
+        },
+        {
+          "title": "Icon files exist in Resume App Icon directory",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n📊 Icon Directory Check:\n"
+                    },
+                    {
+                      "text": "   Total SVG files: 59\n"
+                    },
+                    {
+                      "text": "   ✅ aws.svg exists\n"
+                    },
+                    {
+                      "text": "   ✅ azure.svg exists\n"
+                    },
+                    {
+                      "text": "   ✅ llamaindex.svg exists\n"
+                    },
+                    {
+                      "text": "   ✅ graphql.svg exists\n"
+                    },
+                    {
+                      "text": "   ✅ vapor.svg exists\n"
+                    },
+                    {
+                      "text": "   ⚠️  langchain.svg MISSING (one of 22 logos we need to find)\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-16T19:28:41.806Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "202c8f0507db3ef4a360-e4991d217dbeb2c8aa1e",
+          "file": "icon-verification.spec.js",
+          "line": 335,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-16T19:26:17.664Z",
+    "duration": 144275.99899999998,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

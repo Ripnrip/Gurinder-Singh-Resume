@@ -1,0 +1,437 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "🎭 Centralized Icon Mapping - Single Source of Truth for all technology icons",
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-16",
+  "iconBasePath": "Resume App Icon",
+  "icons": {
+    "iOS & Mobile Engineering": {
+      "Swift": {
+        "file": "swift.svg",
+        "alt": "Swift",
+        "category": "iOS & Mobile Engineering"
+      },
+      "SwiftUI": {
+        "file": "swiftui.svg",
+        "alt": "SwiftUI",
+        "category": "iOS & Mobile Engineering"
+      },
+      "UIKit": {
+        "file": "uikit.svg",
+        "alt": "UIKit",
+        "category": "iOS & Mobile Engineering"
+      },
+      "Core ML": {
+        "file": "coreml.svg",
+        "alt": "Core ML",
+        "category": "iOS & Mobile Engineering"
+      },
+      "Realm": {
+        "file": "realm.svg",
+        "alt": "Realm",
+        "category": "iOS & Mobile Engineering"
+      },
+      "ARKit": {
+        "file": "arkit.svg",
+        "alt": "ARKit",
+        "category": "iOS & Mobile Engineering"
+      },
+      "ActivityKit": {
+        "file": "activitykit.svg",
+        "alt": "ActivityKit",
+        "category": "iOS & Mobile Engineering"
+      },
+      "WidgetKit": {
+        "file": "widgetkit.svg",
+        "alt": "WidgetKit",
+        "category": "iOS & Mobile Engineering"
+      },
+      "MapKit": {
+        "file": "mapkit.svg",
+        "alt": "MapKit",
+        "category": "iOS & Mobile Engineering"
+      },
+      "BLE": {
+        "file": "ble.svg",
+        "alt": "Bluetooth LE",
+        "category": "iOS & Mobile Engineering"
+      },
+      "Vapor": {
+        "file": "vapor.svg",
+        "alt": "Vapor",
+        "category": "iOS & Mobile Engineering"
+      },
+      "Serverless Swift": {
+        "file": "serverless-swift.svg",
+        "alt": "Serverless Swift",
+        "category": "iOS & Mobile Engineering"
+      }
+    },
+    "AI/ML & Agentic Systems": {
+      "Python": {
+        "file": "python.svg",
+        "alt": "Python",
+        "category": "AI/ML & Agentic Systems"
+      },
+      "PyTorch": {
+        "file": "pytorch.svg",
+        "alt": "PyTorch",
+        "category": "AI/ML & Agentic Systems"
+      },
+      "TensorFlow": {
+        "file": "tensorflow.svg",
+        "alt": "TensorFlow",
+        "category": "AI/ML & Agentic Systems"
+      },
+      "NumPy": {
+        "file": "numpy.svg",
+        "alt": "NumPy",
+        "category": "AI/ML & Agentic Systems"
+      },
+      "LlamaIndex": {
+        "file": "llamaindex.svg",
+        "alt": "LlamaIndex",
+        "category": "AI/ML & Agentic Systems"
+      }
+    },
+    "Web & Backend": {
+      "JavaScript": {
+        "file": "javascript.svg",
+        "alt": "JavaScript",
+        "category": "Web & Backend"
+      },
+      "TypeScript": {
+        "file": "typescript.svg",
+        "alt": "TypeScript",
+        "category": "Web & Backend"
+      },
+      "Node.js": {
+        "file": "nodejs.svg",
+        "alt": "Node.js",
+        "category": "Web & Backend"
+      },
+      "Next.js": {
+        "file": "nextjs.svg",
+        "alt": "Next.js",
+        "category": "Web & Backend"
+      },
+      "GraphQL": {
+        "file": "graphql.svg",
+        "alt": "GraphQL",
+        "category": "Web & Backend"
+      }
+    },
+    "Cloud, DevOps & Reliability": {
+      "AWS": {
+        "file": "aws.svg",
+        "alt": "AWS",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "AWS Lambda": {
+        "file": "aws-lambda.svg",
+        "alt": "AWS Lambda",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "EC2": {
+        "file": "ec2.svg",
+        "alt": "EC2",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "IAM": {
+        "file": "iam.svg",
+        "alt": "IAM",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "Azure": {
+        "file": "azure.svg",
+        "alt": "Azure",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "GCP": {
+        "file": "gcp.svg",
+        "alt": "Google Cloud Platform",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "Docker": {
+        "file": "docker.svg",
+        "alt": "Docker",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "Serverless": {
+        "file": "serverless.svg",
+        "alt": "Serverless",
+        "category": "Cloud, DevOps & Reliability"
+      },
+      "Containerization": {
+        "file": "containerization.svg",
+        "alt": "Containerization",
+        "category": "Cloud, DevOps & Reliability"
+      }
+    },
+    "Databases": {
+      "PostgreSQL": {
+        "file": "postgresql.svg",
+        "alt": "PostgreSQL",
+        "category": "Databases"
+      },
+      "MongoDB": {
+        "file": "mongodb.svg",
+        "alt": "MongoDB",
+        "category": "Databases"
+      },
+      "Redis": {
+        "file": "redis.svg",
+        "alt": "Redis",
+        "category": "Databases"
+      },
+      "DynamoDB": {
+        "file": "dynamodb.svg",
+        "alt": "DynamoDB",
+        "category": "Databases"
+      },
+      "Firestore": {
+        "file": "firestore.svg",
+        "alt": "Firestore",
+        "category": "Databases"
+      },
+      "Neo4j": {
+        "file": "neo4j.svg",
+        "alt": "Neo4j",
+        "category": "Databases"
+      },
+      "SQL": {
+        "file": "sql.svg",
+        "alt": "SQL",
+        "category": "Databases"
+      },
+      "NoSQL": {
+        "file": "nosql.svg",
+        "alt": "NoSQL",
+        "category": "Databases"
+      },
+      "Supabase": {
+        "file": "supabase.svg",
+        "alt": "Supabase",
+        "category": "Databases"
+      },
+      "Milvus": {
+        "file": "milvus.svg",
+        "alt": "Milvus",
+        "category": "Databases"
+      },
+      "FAISS": {
+        "file": "faiss.svg",
+        "alt": "FAISS",
+        "category": "Databases"
+      },
+      "ChromaDB": {
+        "file": "chromadb.svg",
+        "alt": "ChromaDB",
+        "category": "Databases"
+      }
+    },
+    "Tools & Services": {
+      "GitHub": {
+        "file": "github.svg",
+        "alt": "GitHub",
+        "category": "Tools & Services"
+      },
+      "Figma": {
+        "file": "figma.svg",
+        "alt": "Figma",
+        "category": "Tools & Services"
+      },
+      "Vercel": {
+        "file": "vercel.svg",
+        "alt": "Vercel",
+        "category": "Tools & Services"
+      },
+      "Firebase": {
+        "file": "firebase.svg",
+        "alt": "Firebase",
+        "category": "Tools & Services"
+      },
+      "Jenkins": {
+        "file": "jenkins.svg",
+        "alt": "Jenkins",
+        "category": "Tools & Services"
+      },
+      "SonarQube": {
+        "file": "sonarcube.svg",
+        "alt": "SonarQube",
+        "category": "Tools & Services"
+      },
+      "BrowserStack": {
+        "file": "browserstack.svg",
+        "alt": "BrowserStack",
+        "category": "Tools & Services"
+      },
+      "Miro": {
+        "file": "miro.svg",
+        "alt": "Miro",
+        "category": "Tools & Services"
+      },
+      "Optimizely": {
+        "file": "optimizely.svg",
+        "alt": "Optimizely",
+        "category": "Tools & Services"
+      },
+      "n8n": {
+        "file": "n8n.svg",
+        "alt": "n8n",
+        "category": "Tools & Services"
+      },
+      "Observability": {
+        "file": "observability.svg",
+        "alt": "Observability",
+        "category": "Tools & Services"
+      },
+      "DigitalOcean": {
+        "file": "digitalocean.svg",
+        "alt": "DigitalOcean",
+        "category": "Tools & Services"
+      },
+      "AI Cloud Foundry": {
+        "file": "ai-cloud-foundry.svg",
+        "alt": "AI Cloud Foundry",
+        "category": "Tools & Services"
+      },
+      "Gemini CLI": {
+        "file": "gemini-cli.svg",
+        "alt": "Gemini CLI",
+        "category": "Tools & Services"
+      },
+      "OpenCV": {
+        "file": "opencv.svg",
+        "alt": "OpenCV",
+        "category": "Tools & Services"
+      },
+      "Pydantic": {
+        "file": "pydantic.svg",
+        "alt": "Pydantic",
+        "category": "Tools & Services"
+      },
+      "Amplitude": {
+        "file": "amplitude.svg",
+        "alt": "Amplitude",
+        "category": "Tools & Services"
+      }
+    },
+    "Companies": {
+      "Morgan Stanley": {
+        "file": "morgan-stanley.png",
+        "alt": "Morgan Stanley",
+        "category": "Companies"
+      }
+    }
+  },
+  "externalIcons": {
+    "Objective-C": {
+      "url": "https://cdn.simpleicons.org/apple/000000",
+      "alt": "Objective-C",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "MLX": {
+      "url": "https://cdn.simpleicons.org/apple/000000",
+      "alt": "MLX",
+      "category": "AI/ML & Agentic Systems",
+      "source": "Simple Icons CDN"
+    },
+    "SwiftData": {
+      "url": "https://cdn.simpleicons.org/apple/000000",
+      "alt": "SwiftData",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "RoomPlan": {
+      "url": "https://cdn.simpleicons.org/apple/000000",
+      "alt": "RoomPlan",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "Combine": {
+      "url": "https://cdn.simpleicons.org/apple/000000",
+      "alt": "Combine",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "RxSwift": {
+      "url": "https://cdn.simpleicons.org/reactivex/000000",
+      "alt": "RxSwift",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "Flutter": {
+      "url": "https://cdn.simpleicons.org/flutter/02569B",
+      "alt": "Flutter",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "Dart": {
+      "url": "https://cdn.simpleicons.org/dart/0175C2",
+      "alt": "Dart",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "React Native": {
+      "url": "https://cdn.simpleicons.org/react/61DAFB",
+      "alt": "React Native",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    },
+    "React": {
+      "url": "https://cdn.simpleicons.org/react/61DAFB",
+      "alt": "React",
+      "category": "Web & Backend",
+      "source": "Simple Icons CDN"
+    },
+    "scikit-learn": {
+      "url": "https://cdn.simpleicons.org/scikitlearn/F7931E",
+      "alt": "scikit-learn",
+      "category": "AI/ML & Agentic Systems",
+      "source": "Simple Icons CDN"
+    },
+    "Pandas": {
+      "url": "https://cdn.simpleicons.org/pandas/150458",
+      "alt": "Pandas",
+      "category": "AI/ML & Agentic Systems",
+      "source": "Simple Icons CDN"
+    },
+    "AngularJS": {
+      "url": "https://cdn.simpleicons.org/angular/DD0031",
+      "alt": "AngularJS",
+      "category": "Web & Backend",
+      "source": "Simple Icons CDN"
+    },
+    "Cordova/Ionic": {
+      "url": "https://cdn.simpleicons.org/ionic/3880FF",
+      "alt": "Cordova/Ionic",
+      "category": "iOS & Mobile Engineering",
+      "source": "Simple Icons CDN"
+    }
+  },
+  "missingIcons": [
+    "LangChain",
+    "ChromaDB",
+    "Pinecone",
+    "Weaviate",
+    "Vector Databases",
+    "Stable Diffusion",
+    "LORA",
+    "GGUF",
+    "LM Studio",
+    "OpenRouter",
+    "Replicate",
+    "RunPod",
+    "Snapshot Testing",
+    "Cohere",
+    "Claude CLI",
+    "Cursor",
+    "KiloCode",
+    "MCP",
+    "GraphQL",
+    "LangChain"
+  ]
+}
+

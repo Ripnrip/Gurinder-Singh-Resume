@@ -4,7 +4,18 @@
   "description": "A comprehensive collection of professional resume formats showcasing my experience as a Staff iOS & AI/ML Engineer.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:icon-verification": "playwright test tests/icon-verification.spec.js",
+    "snapshot:setup": "node scripts/snapshot-test-icons.js && node scripts/take-icon-screenshots.js",
+    "snapshot:serve": "node scripts/serve-and-screenshot.js",
+    "snapshot:test": "node scripts/screenshot-with-playwright.js",
+    "snapshot:all": "./scripts/run-snapshot-tests.sh",
+    "icons:sync": "node scripts/sync-icons.js",
+    "icons:verify": "node -e \"const { verifyIcons } = require('./scripts/icon-utils'); const r = verifyIcons(); console.log('✅ Found:', r.found, '❌ Missing:', r.missing);\"",
+    "icons:list": "node -e \"const { listAllIcons } = require('./scripts/icon-utils'); const all = listAllIcons(); Object.keys(all).forEach(cat => console.log(cat + ':', all[cat].local.length + all[cat].external.length, 'icons'));\""
   },
   "keywords": [],
   "author": "",
@@ -13,5 +24,8 @@
     "axios": "^1.13.2",
     "potrace": "^2.1.8",
     "svgo": "^4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
   }
 }

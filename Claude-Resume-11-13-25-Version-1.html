@@ -84,9 +84,14 @@
             backdrop-filter: blur(10px);
             border: 3px solid rgba(255, 255, 255, 0.5);
             flex-shrink: 0;
-            background-image: url('https://guriboy-6fupko.manus.space/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.56a6f274.jpg&w=640&q=75');
-            background-size: cover;
-            background-position: center;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .header-info h1 {
@@ -348,7 +353,9 @@
     <div class="resume-container">
         <header class="header">
             <div class="header-content">
-                <div class="profile-photo"></div>
+                <div class="profile-photo">
+                    <img src="me-paragliding.jpeg" alt="Gurinder Singh" onerror="this.src='https://guriboy-6fupko.manus.space/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.56a6f274.jpg&w=640&q=75'">
+                </div>
                 <div class="header-info">
                     <h1>Gurinder Singh</h1>
                     <div class="title">Staff iOS & AI/ML Engineer</div>
@@ -370,6 +377,10 @@
                             <span>Portfolio QR Code</span>
                         </div>
                     </div>
+                </div>
+                <div class="qr-code-wrapper" style="display: flex; flex-direction: column; align-items: center; gap: 8px; margin-left: 20px;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://guriboy-6fupko.manus.space/" alt="Portfolio QR Code" style="width: 100px; height: 100px; border-radius: 8px; background: white; padding: 5px;">
+                    <span style="font-size: 0.75rem; opacity: 0.9;">SCAN</span>
                 </div>
             </div>
         </header>
