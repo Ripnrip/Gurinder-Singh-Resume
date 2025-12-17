@@ -248,12 +248,12 @@
         }
         
         .company-logo {
-            width: 28px;
-            height: 28px;
-            min-width: 28px;
-            min-height: 28px;
-            max-width: 28px;
-            max-height: 28px;
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+            max-width: 40px;
+            max-height: 40px;
             object-fit: contain;
             object-position: center;
             flex-shrink: 0;
@@ -1097,7 +1097,7 @@
                 <div class="experience-item">
                     <div class="item-header">
                         <div class="item-title">
-                            <img src="icons/google.svg" alt="Google" class="company-logo">
+                            <img src="Resume App Icon/stadia.png" alt="Google Stadia" class="company-logo">
                             iOS Developer/Consultant
                         </div>
                         <div class="item-date">July 2019 – 2020</div>
@@ -1118,7 +1118,7 @@
                 <div class="experience-item">
                     <div class="item-header">
                         <div class="item-title">
-                            <img src="Resume App Icon/morgan-stanley.png" alt="Morgan Stanley" class="company-logo">
+                            <img src="Resume App Icon/morgan-stanley.jpg" alt="Morgan Stanley" class="company-logo">
                             iOS Developer/Consultant
                         </div>
                         <div class="item-date">April 2018 – July 2019</div>
@@ -1221,82 +1221,136 @@
         // 🎭 The Icon Mapping System - Maps skill names to their icon sources
         // Uses Simple Icons CDN for standard icons and local paths for custom icons
         
-                        const ICON_MAP = {
-            'Swift': 'Resume App Icon/swift.svg',
-            'SwiftUI': 'Resume App Icon/swiftui.svg',
-            'UIKit': 'Resume App Icon/uikit.svg',
-            'Core ML': 'Resume App Icon/coreml.svg',
-            'Realm': 'Resume App Icon/realm.svg',
-            'ARKit': 'Resume App Icon/arkit.svg',
+                                                                                                                                                                                                                                                                                                        const ICON_MAP = {
             'ActivityKit': 'Resume App Icon/activitykit.svg',
-            'WidgetKit': 'Resume App Icon/widgetkit.svg',
-            'MapKit': 'Resume App Icon/mapkit.svg',
-            'BLE': 'Resume App Icon/ble.svg',
-            'Vapor': 'Resume App Icon/vapor.svg',
-            'Serverless Swift': 'Resume App Icon/serverless-swift.svg',
-            'Python': 'Resume App Icon/python.svg',
-            'PyTorch': 'Resume App Icon/pytorch.svg',
-            'TensorFlow': 'Resume App Icon/tensorflow.svg',
-            'NumPy': 'Resume App Icon/numpy.svg',
-            'LlamaIndex': 'Resume App Icon/llamaindex.svg',
-            'JavaScript': 'Resume App Icon/javascript.svg',
-            'TypeScript': 'Resume App Icon/typescript.svg',
-            'Node.js': 'Resume App Icon/nodejs.svg',
-            'Next.js': 'Resume App Icon/nextjs.svg',
-            'GraphQL': 'Resume App Icon/graphql.svg',
+            'Agile/Scrum': 'Resume App Icon/agile-scrum.svg',
+            'AI Cloud Foundry': 'Resume App Icon/ai-cloud-foundry.svg',
+            'Amplitude': 'Resume App Icon/amplitude.svg',
+            'AngularJS': 'Resume App Icon/angularjs.svg',
+            'ARKit': 'Resume App Icon/arkit.svg',
             'AWS': 'Resume App Icon/aws.svg',
             'AWS Lambda': 'Resume App Icon/aws-lambda.svg',
-            'EC2': 'Resume App Icon/ec2.svg',
-            'IAM': 'Resume App Icon/iam.svg',
             'Azure': 'Resume App Icon/azure.svg',
-            'GCP': 'Resume App Icon/gcp.svg',
-            'Docker': 'Resume App Icon/docker.svg',
-            'Serverless': 'Resume App Icon/serverless.svg',
-            'Containerization': 'Resume App Icon/containerization.svg',
-            'PostgreSQL': 'Resume App Icon/postgresql.svg',
-            'MongoDB': 'Resume App Icon/mongodb.svg',
-            'Redis': 'Resume App Icon/redis.svg',
-            'DynamoDB': 'Resume App Icon/dynamodb.svg',
-            'Firestore': 'Resume App Icon/firestore.svg',
-            'Neo4j': 'Resume App Icon/neo4j.svg',
-            'SQL': 'Resume App Icon/sql.svg',
-            'NoSQL': 'Resume App Icon/nosql.svg',
-            'Supabase': 'Resume App Icon/supabase.svg',
-            'Milvus': 'Resume App Icon/milvus.svg',
-            'FAISS': 'Resume App Icon/faiss.svg',
-            'ChromaDB': 'Resume App Icon/chromadb.svg',
-            'GitHub': 'Resume App Icon/github.svg',
-            'Figma': 'Resume App Icon/figma.svg',
-            'Vercel': 'Resume App Icon/vercel.svg',
-            'Firebase': 'Resume App Icon/firebase.svg',
-            'Jenkins': 'Resume App Icon/jenkins.svg',
-            'SonarQube': 'Resume App Icon/sonarcube.svg',
+            'BLE': 'Resume App Icon/ble.svg',
             'BrowserStack': 'Resume App Icon/browserstack.svg',
-            'Miro': 'Resume App Icon/miro.svg',
-            'Optimizely': 'Resume App Icon/optimizely.svg',
-            'n8n': 'Resume App Icon/n8n.svg',
-            'Observability': 'Resume App Icon/observability.svg',
+            'ChromaDB': 'Resume App Icon/chromadb.svg',
+            'CI/CD': 'Resume App Icon/ci-cd.svg',
+            'Claude': 'Resume App Icon/claude.svg',
+            'Claude CLI': 'Resume App Icon/claude-cli.svg',
+            'Cohere': 'Resume App Icon/cohere.svg',
+            'Combine': 'Resume App Icon/swift.svg',
+            'ComfyUI': 'Resume App Icon/comfyui.svg',
+            'Computer Vision': 'Resume App Icon/computer-vision.svg',
+            'Containerization': 'Resume App Icon/containerization.svg',
+            'Cordova/Ionic': 'Resume App Icon/cordova-ionic.svg',
+            'Core ML': 'Resume App Icon/core-ml.svg',
+            'CrewAI': 'Resume App Icon/crewai.svg',
+            'Cursor': 'Resume App Icon/cursor.svg',
+            'Dart': 'Resume App Icon/dart.svg',
+            'Datadog': 'Resume App Icon/datadog.svg',
+            'DeepLake': 'Resume App Icon/deeplake.svg',
             'DigitalOcean': 'Resume App Icon/digitalocean.svg',
-            'AI Cloud Foundry': 'Resume App Icon/ai-cloud-foundry.svg',
-            'Gemini CLI': 'Resume App Icon/gemini-cli.svg',
+            'Docker': 'Resume App Icon/docker.svg',
+            'DynamoDB': 'Resume App Icon/dynamodb.svg',
+            'EC2': 'Resume App Icon/ec2.svg',
+            'ElevenLabs': 'Resume App Icon/elevenlabs.svg',
+            'FAISS': 'Resume App Icon/faiss.svg',
+            'Fastlane': 'Resume App Icon/fastlane.svg',
+            'Figma': 'Resume App Icon/figma.svg',
+            'Firebase': 'Resume App Icon/firebase.svg',
+            'Firestore': 'Resume App Icon/firestore.svg',
+            'Flutter': 'Resume App Icon/flutter.svg',
+            'GCP': 'Resume App Icon/gcp.svg',
+            'GCP / Vertex AI': 'Resume App Icon/vertex-ai.svg',
+            'GCP/Vertex AI': 'Resume App Icon/vertex-ai.svg',
+            'Gemini CLI': 'Resume App Icon/gemini-icon.png',
+            'GGUF': 'Resume App Icon/gguf.svg',
+            'Git': 'Resume App Icon/git.svg',
+            'GitHub': 'Resume App Icon/github.svg',
+            'GitHub Actions': 'Resume App Icon/github-actions.svg',
+            'GraphQL': 'Resume App Icon/graphql.svg',
+            'Hugging Face': 'Resume App Icon/hugging-face.svg',
+            'IAM': 'Resume App Icon/iam.svg',
+            'JavaScript': 'Resume App Icon/javascript.svg',
+            'Jenkins': 'Resume App Icon/jenkins.svg',
+            'Jira': 'Resume App Icon/jira.svg',
+            'Kilo Code': 'Resume App Icon/kilo-code.jpeg',
+            'LangChain': 'Resume App Icon/langchain.svg',
+            'LangFlow': 'Resume App Icon/langflow.svg',
+            'LangGraph': 'Resume App Icon/langgraph.svg',
+            'LlamaIndex': 'Resume App Icon/llamaindex.svg',
+            'LlamaParse': 'Resume App Icon/llamaindex.svg',
+            'LLMs': 'Resume App Icon/llms.svg',
+            'LMStudio': 'Resume App Icon/lmstudio.jpeg',
+            'LoRA': 'Resume App Icon/lora.svg',
+            'Manus Platform': 'Resume App Icon/manus.png',
+            'MapKit': 'Resume App Icon/mapkit.svg',
+            'MCP Clients': 'Resume App Icon/mcp-clients.svg',
+            'MCP Servers': 'Resume App Icon/mcp-servers.svg',
+            'Milvus': 'Resume App Icon/milvus.svg',
+            'Miro': 'Resume App Icon/miro.svg',
+            'MLX': 'Resume App Icon/coreml.svg',
+            'MongoDB': 'Resume App Icon/mongodb.svg',
+            'Morgan Stanley': 'Resume App Icon/morgan-stanley.jpg',
+            'Multi-cloud': 'Resume App Icon/multi-cloud.svg',
+            'n8n': 'Resume App Icon/n8n.svg',
+            'N8N': 'Resume App Icon/n8n.svg',
+            'Neo4j': 'Resume App Icon/neo4j.svg',
+            'Next.js': 'Resume App Icon/next-js.svg',
+            'Node.js': 'Resume App Icon/node-js.svg',
+            'NoSQL': 'Resume App Icon/nosql.svg',
+            'NumPy': 'Resume App Icon/numpy.svg',
+            'Objective-C': 'Resume App Icon/objective-c.svg',
+            'Observability': 'Resume App Icon/observability.svg',
+            'Ollama': 'Resume App Icon/ollama.svg',
+            'OpenAI': 'Resume App Icon/openai.svg',
             'OpenCV': 'Resume App Icon/opencv.svg',
+            'OpenRouter': 'Resume App Icon/openrouter.svg',
+            'Optimizely': 'Resume App Icon/optimizely.svg',
+            'Pandas': 'Resume App Icon/pandas.svg',
+            'Pinecone': 'Resume App Icon/pinecone.svg',
+            'PostgreSQL': 'Resume App Icon/postgresql.svg',
             'Pydantic': 'Resume App Icon/pydantic.svg',
-            'Amplitude': 'Resume App Icon/amplitude.svg',
-            'Morgan Stanley': 'Resume App Icon/morgan-stanley.png',
-            'Objective-C': 'https://cdn.simpleicons.org/apple/000000',
-            'MLX': 'https://cdn.simpleicons.org/apple/000000',
-            'SwiftData': 'https://cdn.simpleicons.org/apple/000000',
-            'RoomPlan': 'https://cdn.simpleicons.org/apple/000000',
-            'Combine': 'https://cdn.simpleicons.org/apple/000000',
-            'RxSwift': 'https://cdn.simpleicons.org/reactivex/000000',
-            'Flutter': 'https://cdn.simpleicons.org/flutter/02569B',
-            'Dart': 'https://cdn.simpleicons.org/dart/0175C2',
-            'React Native': 'https://cdn.simpleicons.org/react/61DAFB',
-            'React': 'https://cdn.simpleicons.org/react/61DAFB',
-            'scikit-learn': 'https://cdn.simpleicons.org/scikitlearn/F7931E',
-            'Pandas': 'https://cdn.simpleicons.org/pandas/150458',
-            'AngularJS': 'https://cdn.simpleicons.org/angular/DD0031',
-            'Cordova/Ionic': 'https://cdn.simpleicons.org/ionic/3880FF'
+            'Pydantic AI': 'Resume App Icon/pydantic-ai.svg',
+            'Python': 'Resume App Icon/python.svg',
+            'PyTorch': 'Resume App Icon/pytorch.svg',
+            'Qdrant': 'Resume App Icon/qdrant.svg',
+            'RAG Pipelines': 'Resume App Icon/rag-pipelines.svg',
+            'React': 'Resume App Icon/react.svg',
+            'React Native': 'Resume App Icon/react-native.svg',
+            'Realm': 'Resume App Icon/realm.svg',
+            'Redis': 'Resume App Icon/redis.svg',
+            'Replicate': 'Resume App Icon/replicate.svg',
+            'RoomPlan': 'Resume App Icon/arkit.svg',
+            'RunPod': 'Resume App Icon/runpod.svg',
+            'RxSwift': 'Resume App Icon/rxswift.svg',
+            'scikit-learn': 'Resume App Icon/scikit-learn.svg',
+            'Serverless': 'Resume App Icon/serverless.svg',
+            'Serverless Swift': 'Resume App Icon/serverless-swift.svg',
+            'Sketch': 'Resume App Icon/sketch.svg',
+            'Snapshot Testing': 'Resume App Icon/snapshot-testing.svg',
+            'SonarQube': 'Resume App Icon/sonarqube.svg',
+            'SQL': 'Resume App Icon/sql.svg',
+            'Stable Diffusion': 'Resume App Icon/stable-diffusion.svg',
+            'Stadia': 'Resume App Icon/stadia.png',
+            'Supabase': 'Resume App Icon/supabase.svg',
+            'Swift': 'Resume App Icon/swift.svg',
+            'SwiftData': 'Resume App Icon/coreml.svg',
+            'SwiftUI': 'Resume App Icon/swiftui.svg',
+            'TDD': 'Resume App Icon/tdd.svg',
+            'TensorFlow': 'Resume App Icon/tensorflow.svg',
+            'TTS/STT': 'Resume App Icon/tts-stt.svg',
+            'TypeScript': 'Resume App Icon/typescript.svg',
+            'UI Testing': 'Resume App Icon/computer-vision.svg',
+            'UIKit': 'Resume App Icon/uikit.svg',
+            'Vapor': 'Resume App Icon/vapor.svg',
+            'Vector Databases': 'Resume App Icon/vector-databases.svg',
+            'Vercel': 'Resume App Icon/vercel.svg',
+            'Vertex AI': 'Resume App Icon/vertex-ai.svg',
+            'Weaviate': 'Resume App Icon/weaviate.svg',
+            'WidgetKit': 'Resume App Icon/widgetkit.svg',
+            'XCode': 'Resume App Icon/xcode.svg',
+            'YOLO': 'Resume App Icon/yolo.svg'
         };
         
         // 🌟 Inject icons into all skill tags
