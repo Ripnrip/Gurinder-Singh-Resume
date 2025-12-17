@@ -86,12 +86,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2100,
+                  "duration": 2162,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:26:18.040Z",
+                  "startTime": "2025-12-16T21:00:25.268Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -120,7 +120,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3106,
+                  "duration": 3147,
                   "errors": [],
                   "stdout": [
                     {
@@ -136,16 +136,12 @@
                       "text": "   ✅ No broken images detected\n"
                     },
                     {
-                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/icon-catalog-full-1765913183968.png\n"
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/icon-catalog-full-1765918831353.png\n"
                     }
                   ],
-                  "stderr": [
-                    {
-                      "text": "(node:45141) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
-                    }
-                  ],
+                  "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:26:21.142Z",
+                  "startTime": "2025-12-16T21:00:28.487Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -174,7 +170,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6652,
+                  "duration": 6901,
                   "errors": [],
                   "stdout": [
                     {
@@ -184,30 +180,24 @@
                       "text": "   URL: http://localhost:8080/z-ai-resume-final.html\n"
                     },
                     {
-                      "text": "   Found 126 icon elements\n"
+                      "text": "   Found 75 icon elements\n"
                     },
                     {
-                      "text": "   ⚠️  Found 3/126 broken icons (showing first 5):\n"
+                      "text": "   ⚠️  Found 1/75 broken icons (showing first 5):\n"
                     },
                     {
-                      "text": "      - 000000\n"
+                      "text": "      - chromadb.svg\n"
                     },
                     {
-                      "text": "      - 4E9BCD\n"
+                      "text": "   ✅ 74/75 icons loaded (1 broken)\n"
                     },
                     {
-                      "text": "      - 4053D6\n"
-                    },
-                    {
-                      "text": "   ✅ 123/126 icons loaded (3 broken)\n"
-                    },
-                    {
-                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-final-icons-1765913190665.png\n"
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-final-icons-1765918838217.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:26:24.257Z",
+                  "startTime": "2025-12-16T21:00:31.644Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -236,7 +226,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9087,
+                  "duration": 9201,
                   "errors": [],
                   "stdout": [
                     {
@@ -257,7 +247,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:26:30.916Z",
+                  "startTime": "2025-12-16T21:00:38.560Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -286,7 +276,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6405,
+                  "duration": 6481,
                   "errors": [],
                   "stdout": [
                     {
@@ -302,12 +292,12 @@
                       "text": "   ✅ All 58 icons loaded successfully\n"
                     },
                     {
-                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/skills-catalog-icons-1765913205906.png\n"
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/skills-catalog-icons-1765918853739.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:26:40.009Z",
+                  "startTime": "2025-12-16T21:00:47.770Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -336,7 +326,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8669,
+                  "duration": 8936,
                   "errors": [],
                   "stdout": [
                     {
@@ -357,7 +347,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:26:46.421Z",
+                  "startTime": "2025-12-16T21:00:54.267Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -386,7 +376,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6938,
+                  "duration": 6899,
                   "errors": [],
                   "stdout": [
                     {
@@ -399,21 +389,24 @@
                       "text": "   Found 10 icon elements\n"
                     },
                     {
-                      "text": "   ⚠️  Found 1/10 broken icons (showing first 5):\n"
+                      "text": "   ⚠️  Found 2/10 broken icons (showing first 5):\n"
                     },
                     {
-                      "text": "      - amazonwebservices-original.svg\n"
+                      "text": "      - react.svg\n"
                     },
                     {
-                      "text": "   ✅ 9/10 icons loaded (1 broken)\n"
+                      "text": "      - flutter.svg\n"
                     },
                     {
-                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-v2-icons-1765913221828.png\n"
+                      "text": "   ⚠️  Warning: 20.0% icons failed to load\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-v2-icons-1765918869898.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:26:55.097Z",
+                  "startTime": "2025-12-16T21:01:03.211Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -442,7 +435,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8723,
+                  "duration": 8836,
                   "errors": [],
                   "stdout": [
                     {
@@ -463,7 +456,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:02.041Z",
+                  "startTime": "2025-12-16T21:01:10.124Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -492,7 +485,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6652,
+                  "duration": 6965,
                   "errors": [],
                   "stdout": [
                     {
@@ -502,18 +495,24 @@
                       "text": "   URL: http://localhost:8080/Gemini-Resume-11-13-25-version-1.html\n"
                     },
                     {
-                      "text": "   Found 3 icon elements\n"
+                      "text": "   Found 31 icon elements\n"
                     },
                     {
-                      "text": "   ✅ All 3 icons loaded successfully\n"
+                      "text": "   ⚠️  Found 1/31 broken icons (showing first 5):\n"
                     },
                     {
-                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-v1-icons-1765913237099.png\n"
+                      "text": "      - chromadb.svg\n"
+                    },
+                    {
+                      "text": "   ✅ 30/31 icons loaded (1 broken)\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-v1-icons-1765918885559.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:10.775Z",
+                  "startTime": "2025-12-16T21:01:18.967Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -542,7 +541,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6652,
+                  "duration": 6771,
                   "errors": [],
                   "stdout": [
                     {
@@ -552,18 +551,24 @@
                       "text": "   URL: http://localhost:8080/z-ai-resume-11-13-25-version-1.html\n"
                     },
                     {
-                      "text": "   Found 3 icon elements\n"
+                      "text": "   Found 48 icon elements\n"
                     },
                     {
-                      "text": "   ✅ All 3 icons loaded successfully\n"
+                      "text": "   ⚠️  Found 1/48 broken icons (showing first 5):\n"
                     },
                     {
-                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v1-icons-1765913243779.png\n"
+                      "text": "      - chromadb.svg\n"
+                    },
+                    {
+                      "text": "   ✅ 47/48 icons loaded (1 broken)\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v1-icons-1765918892423.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:17.434Z",
+                  "startTime": "2025-12-16T21:01:25.944Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -592,7 +597,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6529,
+                  "duration": 6896,
                   "errors": [],
                   "stdout": [
                     {
@@ -602,18 +607,24 @@
                       "text": "   URL: http://localhost:8080/z-ai-resume-11-13-25-version-2.html\n"
                     },
                     {
-                      "text": "   Found 3 icon elements\n"
+                      "text": "   Found 44 icon elements\n"
                     },
                     {
-                      "text": "   ✅ All 3 icons loaded successfully\n"
+                      "text": "   ⚠️  Found 1/44 broken icons (showing first 5):\n"
                     },
                     {
-                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v2-icons-1765913250412.png\n"
+                      "text": "      - chromadb.svg\n"
+                    },
+                    {
+                      "text": "   ✅ 43/44 icons loaded (1 broken)\n"
+                    },
+                    {
+                      "text": "   📸 Screenshot saved: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v2-icons-1765918899365.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:24.093Z",
+                  "startTime": "2025-12-16T21:01:32.726Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -642,7 +653,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8411,
+                  "duration": 9746,
                   "errors": [],
                   "stdout": [
                     {
@@ -663,7 +674,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:30.629Z",
+                  "startTime": "2025-12-16T21:01:39.628Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -692,16 +703,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6045,
+                  "duration": 7329,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-final-fullpage-1765913264448.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-final-fullpage-1765918915422.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:39.045Z",
+                  "startTime": "2025-12-16T21:01:49.396Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -730,16 +741,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5948,
+                  "duration": 7252,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/index-resume-purple-fullpage-1765913270457.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/index-resume-purple-fullpage-1765918922620.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:45.126Z",
+                  "startTime": "2025-12-16T21:01:56.741Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -768,16 +779,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5217,
+                  "duration": 5751,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/skills-catalog-fullpage-1765913275880.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/skills-catalog-fullpage-1765918929058.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:51.095Z",
+                  "startTime": "2025-12-16T21:02:04.004Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -806,16 +817,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5686,
+                  "duration": 6565,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-fullpage-1765913281638.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-fullpage-1765918935725.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:27:56.321Z",
+                  "startTime": "2025-12-16T21:02:09.770Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -844,16 +855,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6123,
+                  "duration": 7026,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-v2-fullpage-1765913287798.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/claude-resume-v2-fullpage-1765918942685.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:02.021Z",
+                  "startTime": "2025-12-16T21:02:16.344Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -882,16 +893,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5722,
+                  "duration": 6541,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-fullpage-1765913293663.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-fullpage-1765918949331.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:08.159Z",
+                  "startTime": "2025-12-16T21:02:23.381Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -920,16 +931,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5680,
+                  "duration": 6581,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-v1-fullpage-1765913299228.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gemini-resume-v1-fullpage-1765918956118.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:13.892Z",
+                  "startTime": "2025-12-16T21:02:29.935Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -958,16 +969,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5754,
+                  "duration": 6012,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v1-fullpage-1765913304906.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v1-fullpage-1765918962020.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:19.577Z",
+                  "startTime": "2025-12-16T21:02:36.530Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -996,16 +1007,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5834,
+                  "duration": 7556,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v2-fullpage-1765913310666.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/z-ai-resume-v2-fullpage-1765918968201.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:25.339Z",
+                  "startTime": "2025-12-16T21:02:42.547Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1034,16 +1045,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5436,
+                  "duration": 6005,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gurinder-resume-manus-fullpage-1765913316062.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/gurinder-resume-manus-fullpage-1765918975568.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:31.178Z",
+                  "startTime": "2025-12-16T21:02:50.135Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1072,16 +1083,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5151,
+                  "duration": 5508,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/icon-catalog-fullpage-1765913321428.png\n"
+                      "text": "📸 Full page screenshot: /Users/gurindersingh/Documents/Developer/Gurinder-Singh-Resume/snapshot-tests/playwright-screenshots/icon-catalog-fullpage-1765918981406.png\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:36.619Z",
+                  "startTime": "2025-12-16T21:02:56.153Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1140,7 +1151,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-16T19:28:41.806Z",
+                  "startTime": "2025-12-16T21:03:01.668Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1158,8 +1169,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-16T19:26:17.664Z",
-    "duration": 144275.99899999998,
+    "startTime": "2025-12-16T21:00:24.890Z",
+    "duration": 157109.623,
     "expected": 24,
     "skipped": 0,
     "unexpected": 0,

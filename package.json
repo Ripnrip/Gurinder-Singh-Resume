@@ -15,7 +15,9 @@
     "snapshot:all": "./scripts/run-snapshot-tests.sh",
     "icons:sync": "node scripts/sync-icons.js",
     "icons:verify": "node -e \"const { verifyIcons } = require('./scripts/icon-utils'); const r = verifyIcons(); console.log('✅ Found:', r.found, '❌ Missing:', r.missing);\"",
-    "icons:list": "node -e \"const { listAllIcons } = require('./scripts/icon-utils'); const all = listAllIcons(); Object.keys(all).forEach(cat => console.log(cat + ':', all[cat].local.length + all[cat].external.length, 'icons'));\""
+    "icons:list": "node -e \"const { listAllIcons } = require('./scripts/icon-utils'); const all = listAllIcons(); Object.keys(all).forEach(cat => console.log(cat + ':', all[cat].local.length + all[cat].external.length, 'icons'));\"",
+    "icons:check-usage": "node scripts/verify-icon-usage.js",
+    "icons:fix-fa": "node scripts/fix-fontawesome-icons.js"
   },
   "keywords": [],
   "author": "",
