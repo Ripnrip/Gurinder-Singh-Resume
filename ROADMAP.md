@@ -14,7 +14,8 @@
 - **Icon synchronization script** (`sync-icons.js`)
 - **Comprehensive Playwright test suite** (24 tests, 100% pass rate)
 - **Avatar/profile photo fixes** across all resume files
-- **Company logo fixes** (PayPal, Morgan Stanley, Google)
+- **Company logo fixes** (PayPal, Morgan Stanley, Google, Stadia)
+- **Colored icon renaissance** (RunPod, Optimizely, TDD, Agile, Testing)
 
 ### 🚧 In Progress
 - Manual logo discovery for 22 remaining technologies

@@ -258,7 +258,7 @@ A collection of ideas and experiments to try for making the resume even more vis
 
 ---
 
-**Last Updated:** November 14, 2025
+**Last Updated:** December 17, 2025
 
 **Note:** This TODO list is meant to inspire experimentation and iteration. Not all items need to be implemented - pick and choose based on what resonates with your personal brand and the roles you're targeting!
 

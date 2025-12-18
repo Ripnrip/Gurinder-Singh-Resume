@@ -88,7 +88,7 @@ function updateIconReferences(htmlContent, filePath) {
     (match, prefix, iconFile) => {
       // Try to find the tech name from the icon file
       const techName = iconFile.replace(/\.(svg|png|jpg)$/i, '').replace(/-/g, ' ');
-      const icon = getIcon(techName, basePath);
+      const icon = getIcon(techName, basePath, true);
       
       if (icon) {
         return `src="${icon.path}"`;

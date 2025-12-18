@@ -1,24 +1,26 @@
 #!/usr/bin/env node
 const fs = require('fs/promises');
+const path = require('path');
 const axios = require('axios');
 const { Potrace } = require('potrace');
 const { optimize } = require('svgo');
 
 /**
  * 🎭 The Image-to-SVG Alchemist - A Tool for Digital Transmutation
- *
- * "From pixels coarse, a vector's grace,
- * This script bestows a timeless face.
- * With algorithms sharp and logic keen,
- * A tiny, perfect SVG is seen."
- *
- * - The Digital Metaphor Maestro
  */
 async function convertImageToTinySvg(imageUrl, outputPath) {
   try {
-    console.log(`🌐 ✨ IMAGE QUEST AWAKENS! Fetching from: ${imageUrl}`);
-    const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
-    const imageBuffer = Buffer.from(response.data, 'binary');
+    let imageBuffer;
+    
+    if (imageUrl.startsWith('http')) {
+      console.log(`🌐 ✨ IMAGE QUEST AWAKENS! Fetching from: ${imageUrl}`);
+      const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+      imageBuffer = Buffer.from(response.data, 'binary');
+    } else {
+      console.log(`🏠 ✨ LOCAL IMAGE QUEST AWAKENS! Reading from: ${imageUrl}`);
+      const absolutePath = path.isAbsolute(imageUrl) ? imageUrl : path.resolve(process.cwd(), imageUrl);
+      imageBuffer = await fs.readFile(absolutePath);
+    }
 
     console.log('🎨 Tracing the artistic soul of the image...');
     const svg = await new Promise((resolve, reject) => {
@@ -53,8 +55,8 @@ async function convertImageToTinySvg(imageUrl, outputPath) {
   const outputPath = process.argv[3];
 
   if (!imageUrl || !outputPath) {
-    console.log('🌙 ⚠️ Gentle reminder: Please provide an image URL and an output path.');
-    console.log('Usage: node scripts/image-to-svg.js <imageUrl> <outputPath>');
+    console.log('🌙 ⚠️ Gentle reminder: Please provide an image URL (or local path) and an output path.');
+    console.log('Usage: node scripts/image-to-svg.js <imageUrl|path> <outputPath>');
     process.exit(1);
   }
 

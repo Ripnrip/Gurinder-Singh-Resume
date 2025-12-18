@@ -20,6 +20,17 @@ const SCREENSHOT_DIR = path.join(__dirname, '..', 'snapshot-tests', 'playwright-
 // 🌟 Test Configuration - 10 Key Resume Files
 const TEST_RESUMES = [
   {
+    name: 'conceptual-1',
+    file: 'conceptual-1.html',
+    description: 'Conceptual resume design v1 with modern visual hierarchy',
+    iconSelectors: [
+      'img[src*="icons"]',
+      'img[src*="company-logo"]',
+      '.skill-tag img',
+      '.skill-icon'
+    ]
+  },
+  {
     name: 'z-ai-resume-final',
     file: 'z-ai-resume-final.html',
     description: 'Main comprehensive resume with full skills section',

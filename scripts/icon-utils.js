@@ -19,15 +19,61 @@ function loadIconConfig() {
  * 🔍 Get icon path for a technology name
  * @param {string} techName - Name of the technology (e.g., "Swift", "Python")
  * @param {string} basePath - Base path prefix (default: "Resume App Icon")
+ * @param {boolean} preferBrandfetch - Whether to prefer Brandfetch for external logos (default: false)
  * @returns {object|null} Icon object with path, alt, and source info
  */
-function getIcon(techName, basePath = 'Resume App Icon') {
+function getIcon(techName, basePath = 'Resume App Icon', preferBrandfetch = false) {
   const config = loadIconConfig();
+  const BRANDFETCH_CLIENT_ID = '1idK8XmVyip_uEzPH_4';
+  const FORCE_LOCAL = true; // 🌟 Toggle for digital independence
   
-  // Check local icons first
+  // 🌟 Check icons configuration
   for (const category of Object.values(config.icons)) {
     if (category[techName]) {
       const icon = category[techName];
+      
+      // 🌟 PRIORITY:
+      // 1. Local file (if 'file' exists and we force local OR it's the only option)
+      // 2. Explicit URL (custom override)
+      // 3. Brandfetch (if domain exists and preferred)
+
+      if (icon.file) {
+        return {
+          path: `${basePath}/${icon.file}`,
+          alt: icon.alt || techName,
+          category: icon.category,
+          source: 'local',
+          isExternal: false
+        };
+      }
+      
+      if (!FORCE_LOCAL && icon.url) {
+        return {
+          path: icon.url,
+          alt: icon.alt || techName,
+          category: icon.category,
+          source: icon.source || 'external',
+          isExternal: true
+        };
+      }
+
+      if (!FORCE_LOCAL && preferBrandfetch && icon.domain) {
+        return {
+          path: `https://cdn.brandfetch.io/${icon.domain}/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_CLIENT_ID}`,
+          alt: icon.alt || techName,
+          category: icon.category,
+          source: 'brandfetch',
+          isExternal: true
+        };
+      }
+    }
+  }
+  
+  // 🌟 Check external icons (fallbacks)
+  if (config.externalIcons[techName]) {
+    const icon = config.externalIcons[techName];
+    
+    if (icon.file) {
       return {
         path: `${basePath}/${icon.file}`,
         alt: icon.alt || techName,
@@ -36,18 +82,16 @@ function getIcon(techName, basePath = 'Resume App Icon') {
         isExternal: false
       };
     }
-  }
-  
-  // Check external icons
-  if (config.externalIcons[techName]) {
-    const icon = config.externalIcons[techName];
-    return {
-      path: icon.url,
-      alt: icon.alt || techName,
-      category: icon.category,
-      source: icon.source || 'external',
-      isExternal: true
-    };
+
+    if (!FORCE_LOCAL) {
+      return {
+        path: icon.url,
+        alt: icon.alt || techName,
+        category: icon.category,
+        source: icon.source || 'external',
+        isExternal: true
+      };
+    }
   }
   
   return null;
@@ -122,26 +166,37 @@ function getIconHTML(techName, options = {}) {
 /**
  * 📊 Generate JavaScript ICON_MAP object for use in HTML files
  * @param {string} basePath - Base path prefix
+ * @param {boolean} preferBrandfetch - Whether to prefer Brandfetch (default: true)
  * @returns {string} JavaScript code string
  */
-function generateIconMapJS(basePath = 'Resume App Icon') {
+function generateIconMapJS(basePath = 'Resume App Icon', preferBrandfetch = true) {
   const config = loadIconConfig();
   const map = {};
   
-  // Add local icons
+  // 🌟 Process all icons through getIcon to ensure consistent selection logic
+  // (preferBrandfetch, url fallback, etc.)
+  
+  // 1. Main icons
   Object.values(config.icons).forEach(category => {
-    Object.entries(category).forEach(([name, icon]) => {
-      map[name] = `${basePath}/${icon.file}`;
+    Object.keys(category).forEach(techName => {
+      const icon = getIcon(techName, basePath, preferBrandfetch);
+      if (icon) {
+        map[techName] = icon.path;
+      }
     });
   });
   
-  // Add external icons
-  Object.entries(config.externalIcons).forEach(([name, icon]) => {
-    map[name] = icon.url;
+  // 2. External icons
+  Object.keys(config.externalIcons).forEach(techName => {
+    const icon = getIcon(techName, basePath, preferBrandfetch);
+    if (icon) {
+      map[techName] = icon.path;
+    }
   });
   
   // Format as JavaScript object
   const entries = Object.entries(map)
+    .sort((a, b) => a[0].localeCompare(b[0])) // Sort for consistency
     .map(([key, value]) => `            '${key}': '${value}'`)
     .join(',\n');
   

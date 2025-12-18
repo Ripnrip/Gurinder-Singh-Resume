@@ -3,6 +3,659 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurinder Singh - Resume Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #14b8a6;
+            --primary-dark: #0d9488;
+            --text-color: #334155;
+            --text-light: #64748b;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+        
+        header .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        header .description {
+            font-size: 1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            border-radius: 12px;
+            color: var(--white);
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+        
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .resume-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resume-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+        
+        .resume-card.featured {
+            border-color: var(--primary-color);
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%);
+        }
+        
+        .resume-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .resume-card-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .resume-card-badge {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .resume-card-description {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+        
+        .resume-card-features {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+        
+        .resume-card-features li {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .resume-card-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        .resume-card-footer {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .info-box {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .info-box h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.75rem;
+        }
+        
+        .info-box p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-box a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+                        <h1>Gurinder Singh</h1>
+            <div class="subtitle">Resume Collection</div>
+            <div class="description">
+                Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users.
+                Explore different resume formats and designs below.
+            </div>
+        </header>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value">31</div>
+                <div class="stat-label">Resume Versions</div>
+                    </div>
+            <div class="stat-item">
+                <div class="stat-value">90M+</div>
+                <div class="stat-label">Users Impacted</div>
+                    </div>
+            <div class="stat-item">
+                <div class="stat-value">28+</div>
+                <div class="stat-label">Hackathons</div>
+                    </div>
+            <div class="stat-item">
+                <div class="stat-value">🏆</div>
+                <div class="stat-label">Patent Holder</div>
+                    </div>
+                </div>
+        
+        <div class="info-box">
+            <h3>📝 Content Management</h3>
+            <p><strong>Single Source of Truth:</strong> All resume content is managed in <code>resume-content.md</code></p>
+            <p>When updating content, edit <code>resume-content.md</code> first, then sync to other formats.</p>
+            <p><a href="resume-content.md">View resume-content.md →</a></p>
+                    </div>
+        
+        <div class="section">
+            <h2 class="section-title">⭐ Featured & Active Resumes</h2>
+            <div class="resume-grid">
+                <div class="resume-card featured">
+                    <div class="resume-card-header">
+                        <div>
+                            <div class="resume-card-title">z-ai-resume-final.html</div>
+                    </div>
+                        <span class="resume-card-badge">Latest</span>
+                    </div>
+                    <div class="resume-card-description">
+                        The definitive resume combining best elements from all iterations. Features comprehensive Project Mercury timeline, beautiful hackathon section, and complete icon system.
+                    </div>
+                    <ul class="resume-card-features">
+                        <li>Complete Project Mercury timeline</li>
+                        <li>Print-friendly styles</li>
+                        <li>Full icon system</li>
+                        <li>Modern gradient design</li>
+                    </ul>
+                    <div class="resume-card-footer">
+                        <a href="z-ai-resume-final.html" class="btn btn-primary">View Resume</a>
+                    </div>
+                    </div>
+                
+                <div class="resume-card featured">
+                    <div class="resume-card-header">
+                        <div>
+                            <div class="resume-card-title">alternative-index.html</div>
+                        </div>
+                        <span class="resume-card-badge">Alternative Main</span>
+                    </div>
+                    <div class="resume-card-description">
+                        Two-page, ATS-optimized resume layout that previously lived at the main index. Keep this bookmarked if you prefer the full narrative format.
+                    </div>
+                    <ul class="resume-card-features">
+                        <li>Two-page layout</li>
+                        <li>ATS-friendly structure</li>
+                        <li>Detailed experience sections</li>
+                        <li>Linked skills overview</li>
+                    </ul>
+                    <div class="resume-card-footer">
+                        <a href="alternative-index.html" class="btn btn-primary">View Resume</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card featured">
+                    <div class="resume-card-header">
+                        <div>
+                            <div class="resume-card-title">Gurinder_Singh_Resume-Manus.html</div>
+                        </div>
+                        <span class="resume-card-badge">Manus</span>
+                    </div>
+                    <div class="resume-card-description">
+                        Clean, professional resume with sidebar skills layout and horizontal grid option. Features toggle between sidebar and horizontal skill layouts.
+                            </div>
+                    <ul class="resume-card-features">
+                        <li>Dual layout options</li>
+                        <li>Sidebar skills layout</li>
+                        <li>Print-optimized</li>
+                        <li>Responsive design</li>
+                                </ul>
+                    <div class="resume-card-footer">
+                        <a href="Gurinder_Singh_Resume-Manus.html" class="btn btn-primary">View Resume</a>
+                            </div>
+                        </div>
+
+                <div class="resume-card featured">
+                    <div class="resume-card-header">
+                        <div>
+                            <div class="resume-card-title">index-resume-purple.html</div>
+                            </div>
+                        <span class="resume-card-badge">Purple</span>
+                            </div>
+                    <div class="resume-card-description">
+                        Modern resume with purple gradient theme, animations, and rich visual design. Features comprehensive sections and beautiful styling.
+                        </div>
+                    <ul class="resume-card-features">
+                        <li>Purple gradient theme</li>
+                        <li>Animated backgrounds</li>
+                        <li>Rich visual design</li>
+                        <li>Comprehensive sections</li>
+                            </ul>
+                    <div class="resume-card-footer">
+                        <a href="index-resume-purple.html" class="btn btn-primary">View Resume</a>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+
+        <div class="section">
+            <h2 class="section-title">📄 Other Resume Versions</h2>
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <div class="resume-card-title">Gurinder_Singh_Resume_Beautiful.html</div>
+                    <div class="resume-card-description">Visually rich design with animations and gradients</div>
+                    <div class="resume-card-footer">
+                        <a href="Gurinder_Singh_Resume_Beautiful.html" class="btn btn-secondary">View</a>
+                        </div>
+                    </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">Gurinder_Singh_Resume_Modern.html</div>
+                    <div class="resume-card-description">Clean, modern design with LinkedIn profile integration</div>
+                    <div class="resume-card-footer">
+                        <a href="Gurinder_Singh_Resume_Modern.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+
+                <div class="resume-card">
+                    <div class="resume-card-title">Gurinder_Singh_Resume-Claude.html</div>
+                    <div class="resume-card-description">Professional layout with structured sections</div>
+                    <div class="resume-card-footer">
+                        <a href="Gurinder_Singh_Resume-Claude.html" class="btn btn-secondary">View</a>
+                        </div>
+                    </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">Gurinder_Singh_Resume-Gemini.html</div>
+                    <div class="resume-card-description">Resume version created with Gemini</div>
+                    <div class="resume-card-footer">
+                        <a href="Gurinder_Singh_Resume-Gemini.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+
+                <div class="resume-card">
+                    <div class="resume-card-title">Gurinder_Singh_Resume-nice-Venmo-Summary.html</div>
+                    <div class="resume-card-description">Resume with enhanced Venmo summary</div>
+                    <div class="resume-card-footer">
+                        <a href="Gurinder_Singh_Resume-nice-Venmo-Summary.html" class="btn btn-secondary">View</a>
+                        </div>
+                    </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">Claude-Resume-11-10-25.html</div>
+                    <div class="resume-card-description">Claude-generated resume from November 10, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="Claude-Resume-11-10-25.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+
+                <div class="resume-card">
+                    <div class="resume-card-title">Claude-Resume-11-13-25-Version-1.html</div>
+                    <div class="resume-card-description">Claude resume version 1 from November 13, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="Claude-Resume-11-13-25-Version-1.html" class="btn btn-secondary">View</a>
+                        </div>
+                    </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">Gemini-Resume-11-10-25.html</div>
+                    <div class="resume-card-description">Gemini-generated resume from November 10, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="Gemini-Resume-11-10-25.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">Gemini-Resume-11-13-25-version-1.html</div>
+                    <div class="resume-card-description">Gemini resume version 1 from November 13, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="Gemini-Resume-11-13-25-version-1.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">Gemini-Resume-11-13-25-version-2.html</div>
+                    <div class="resume-card-description">Gemini resume version 2 from November 13, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="Gemini-Resume-11-13-25-version-2.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">ChatGPT-Resume-11-10-25.html</div>
+                    <div class="resume-card-description">ChatGPT-generated resume from November 10, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="ChatGPT-Resume-11-10-25.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">z-ai-resume-11-12-25.html</div>
+                    <div class="resume-card-description">Z.ai resume from November 12, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="z-ai-resume-11-12-25.html" class="btn btn-secondary">View</a>
+                </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">z-ai-resume-11-13-25-version-1.html</div>
+                    <div class="resume-card-description">Z.ai resume version 1 from November 13, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="z-ai-resume-11-13-25-version-1.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">z-ai-resume-11-13-25-version-2.html</div>
+                    <div class="resume-card-description">Z.ai resume version 2 from November 13, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="z-ai-resume-11-13-25-version-2.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">z-ai-resume-11-13-25-version-3.html</div>
+                    <div class="resume-card-description">Z.ai resume version 3 from November 13, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="z-ai-resume-11-13-25-version-3.html" class="btn btn-secondary">View</a>
+                    </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">llama3.2-Resume-11-13-25.html</div>
+                    <div class="resume-card-description">Llama 3.2-generated resume from November 13, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="llama3.2-Resume-11-13-25.html" class="btn btn-secondary">View</a>
+                </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-title">manus-11-12-25-resume_v2.html</div>
+                    <div class="resume-card-description">Manus resume version 2 from November 12, 2025</div>
+                    <div class="resume-card-footer">
+                        <a href="manus-11-12-25-resume_v2.html" class="btn btn-secondary">View</a>
+                        </div>
+                    </div>
+                    
+                <div class="resume-card">
+                    <div class="resume-card-title">resume-skills-summary.html</div>
+                    <div class="resume-card-description">Skills-focused resume summary</div>
+                    <div class="resume-card-footer">
+                        <a href="resume-skills-summary.html" class="btn btn-secondary">View</a>
+                        </div>
+                    </div>
+                    
+                <div class="resume-card">
+                    <div class="resume-card-title">portfolio.html</div>
+                    <div class="resume-card-description">Portfolio page</div>
+                    <div class="resume-card-footer">
+                        <a href="portfolio.html" class="btn btn-secondary">View</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+        <div class="section">
+            <h2 class="section-title">🚀 Active Projects</h2>
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <div class="resume-card-header">
+                        <div>
+                            <div class="resume-card-title">Cursor-Resume</div>
+                </div>
+                        <span class="resume-card-badge">Next.js</span>
+                </div>
+                    <div class="resume-card-description">
+                        Active Next.js resume project with modern React components, TypeScript, and Tailwind CSS. Features comprehensive skills catalog with icons.
+                </div>
+                    <ul class="resume-card-features">
+                        <li>Next.js 14 + React 19</li>
+                        <li>TypeScript</li>
+                        <li>100+ skills with icons</li>
+                        <li>Responsive design</li>
+                    </ul>
+                    <div class="resume-card-footer">
+                        <a href="Cursor-Resume/" class="btn btn-primary">View Project</a>
+                        <a href="KiloCode-Resume/index.html" class="btn btn-secondary">KiloCode</a>
+                </div>
+                </div>
+                
+                <div class="resume-card">
+                    <div class="resume-card-header">
+                        <div>
+                            <div class="resume-card-title">KiloCode-Resume</div>
+                        </div>
+                        <span class="resume-card-badge">Static</span>
+                    </div>
+                    <div class="resume-card-description">
+                        Static HTML resume with skills grid. Minimal design wired for future React/SkillsGrid.tsx usage.
+                </div>
+                    <ul class="resume-card-features">
+                        <li>Static HTML</li>
+                        <li>Skills catalog</li>
+                        <li>Clean design</li>
+                        <li>Print-friendly</li>
+                    </ul>
+                    <div class="resume-card-footer">
+                        <a href="KiloCode-Resume/index.html" class="btn btn-primary">View Resume</a>
+                        <a href="KiloCode-Resume/skills-catalog.html" class="btn btn-secondary">Catalog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">📚 Resources</h2>
+            <div class="info-box">
+                <h3>Documentation & Content</h3>
+                <p><strong>resume-content.md</strong> - Single source of truth for all resume content</p>
+                <p><strong>README.md</strong> - Project documentation and overview</p>
+                <p><strong>TODO.md</strong> - Design experiments and future enhancements</p>
+                <p><strong>CHANGELOG.md</strong> - Project changelog and history</p>
+                </div>
+        </div>
+
+        <footer>
+            <p>Built with ❤️ by Gurinder Singh</p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+                <a href="https://guriboy-6fupko.manus.space" style="color: var(--primary-color); text-decoration: none;">Portfolio</a> • 
+                <a href="https://linkedin.com/in/gurindersingh" style="color: var(--primary-color); text-decoration: none;">LinkedIn</a> • 
+                <a href="mailto:gsingh622@yahoo.com" style="color: var(--primary-color); text-decoration: none;">Email</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurinder Singh - Staff iOS & AI/ML Engineer</title>
     <meta name="description" content="Staff iOS & AI/ML Engineer with over a decade of experience scaling applications for millions of users. Patent holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions.">
     <script src="https://cdn.tailwindcss.com"></script>
