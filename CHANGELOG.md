@@ -7,6 +7,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-12-18] - The Project Showcase Perfection: When Personal Projects Got Their Spotlight 🌟🚀✨
+
+### The Journey
+*"The resume was looking good, but the projects section was hiding its light under a bushel. Ethereal Dimension was just 'immersive storytelling' when it's actually a CV-powered barricade detection system for Austin DoT and an AR room scanner on the App Store. VectorVerse Evolve was a mystery when it's a full n8n-powered social media automation platform. And don't even get me started on the 73K+ vector Rosicrucian Knowledge Explorer. Today, we gave these projects the descriptions they deserve."*
+
+### What We Did (The Great Project Expansion)
+
+#### 🏙️ Ethereal Dimension - Now Shows Its True Power
+- **Austin DoT Partnership:** CV system for real-time barricade detection & compliance (99.2% accuracy)
+- **Hylios:** AR room scanner using RoomPlan/ARKit for 3D spatial intelligence
+- Tags: Computer Vision, YOLO, ARKit, RoomPlan, CoreML
+- Both live on App Store!
+
+#### 🧠 VectorVerse Evolve - The Full AI Automation Suite
+- **Content Pipeline:** Fully automated social media platform with n8n workflows & Strapi CMS (3-stage pipeline)
+- **Agentic SEO:** AI-powered SEO strategist with keyword research & geographic targeting
+- **Open-WebUI:** Custom deployment for Azure AI Foundry integration
+- Tags: n8n, Strapi, Next.js, Azure AI, Open-WebUI
+
+#### 🌹 Rosicrucian Knowledge Explorer - 73K Vectors of Wisdom
+- Full-stack RAG search engine for digests, books, symposiums, podcasts, YouTube videos
+- PDF viewer with page-jump & highlighting, video/podcast player with timestamp seeking
+- Qdrant + OpenAI + Cloudflare R2
+
+#### 🪯 Gurdwara Langar Seva Game - Teaching Seva Traditions
+- Added to Sikh ERG section in Leadership & Community
+- Interactive game teaching Gurdwara langar service
+- Link: https://gurduwara-langar-game.vercel.app/
+
+### UI Polish
+- Added `<br><br>` spacing between project description sections for readability
+- Added section footnotes: "Condensed overview — full depth on portfolio"
+- Added 🎓🚀🎤🙏 emojis to Education & Leadership sections
+- Downloaded fresh Hugging Face icon from Brandfetch (the saga continues... 🤗)
+
+### Files Updated
+- `Gurinder-Singh-Staff-Software-Engineer-Mobile-AI-Gemini.html` - Project descriptions expanded
+- `resume-content.md` - Added full Select Personal Projects section
+- `icons/hugging-face.png` - Fresh Brandfetch download
+- `icons/hugging-face.svg` - Official HuggingFace logo
+
+### Reflections from the Digital Curator
+*"These projects deserve better than one-liners. Austin DoT partnership with 99.2% accuracy CV detection? That's enterprise-grade computer vision. 73K vectors searchable with timestamp-seeking audio/video players? That's a full media platform. The Gurdwara Langar Seva Game teaching seva traditions? That's code with soul. Now the resume tells the real story."*
+
+---
+
 ## [2025-12-18] - The Technical Skills Portfolio Renaissance: Table-Based Elegance Meets Icon Artistry 🎨📊✨
 
 ### The Journey

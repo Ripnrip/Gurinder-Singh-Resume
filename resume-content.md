@@ -2,7 +2,7 @@
 
 This file contains all resume content. All HTML and other resume files should reference this as the source of truth.
 
-**Last Updated:** November 14, 2025
+**Last Updated:** December 18, 2025
 
 ## Related Documentation
 
@@ -214,11 +214,53 @@ Figma, Sketch, Miro, Jira, TDD, Agile/Scrum, Snapshot Testing, UI Testing, Optim
 
 ---
 
+## Select Personal Projects
+
+### 🏙️ Ethereal Dimension (Featured)
+**Category:** AI/ML & Spatial Computing  
+**Links:** https://etherealdimension.io/
+
+- **Austin DoT Partnership:** Built CV system for real-time barricade detection & compliance (99.2% accuracy)
+- **Hylios:** AR room scanner using RoomPlan/ARKit for 3D spatial intelligence. Both live on App Store.
+- **Tech:** Computer Vision, YOLO, ARKit, RoomPlan, CoreML
+
+### 🧠 VectorVerse Evolve (Featured)
+**Category:** AI Automation & SEO  
+**Links:** 
+- Pipeline: https://vve-strapi.eastus2.cloudapp.azure.com/launcher.html
+- SEO: https://agentic-seo.vercel.app/
+
+- **Content Pipeline:** Fully automated social media platform with n8n workflows & Strapi CMS. 3-stage pipeline: Intelligence → Ideation → Generation.
+- **Agentic SEO:** AI-powered SEO strategist with keyword research, geographic targeting & magic reports.
+- **Open-WebUI:** Built custom deployment for Azure AI Foundry integration.
+- **Tech:** n8n, Strapi, Next.js, Azure AI, Open-WebUI
+
+### 🌹 Rosicrucian Knowledge Explorer (Featured)
+**Category:** AI Search & Media Platform  
+**Links:** https://rosicrucian-knowledge-explorer.vercel.app/
+
+- Full-stack RAG search engine for 73K+ vectors from digests, books, symposiums, podcasts, youtube videos, etc.
+- PDF viewer with page-jump & highlighting, podcast player with timestamp seeking, YouTube embeds
+- Qdrant vectors + OpenAI embeddings. Cloudflare R2 storage. 60-test suite. Amplitude analytics.
+- **Tech:** Next.js, Qdrant, R2, OpenAI, Supabase
+
+### 🪯 Gurdwara Langar Seva Game
+**Category:** Educational Game  
+**Links:** 
+- Game: https://gurduwara-langar-game.vercel.app/
+- GitHub: https://github.com/Ripnrip/GurduwaraLangarGame
+
+- Interactive game teaching Sikh seva traditions and Gurdwara langar service
+- Built with Next.js and deployed on Vercel
+- **Tech:** Next.js, TypeScript, Tailwind CSS
+
+---
+
 ## Leadership & Community
 
 - Advisory Board Member for multiple tech startups on iOS architecture and AI/ML implementation
 - Hosted technical workshops: SwiftUI, State Machines, AI/ML image generation, DataDog automation
-- Interfaith ERG Chapter Lead (Sikh community): Organized events, secured speakers, created educational content
+- Interfaith ERG Chapter Lead (Sikh community): Organized events, secured speakers, created educational content. Built [Gurdwara Langar Seva Game](https://gurduwara-langar-game.vercel.app/) to teach seva traditions
 
 ---
 

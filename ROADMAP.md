@@ -22,6 +22,10 @@
 - **Table-based skills layout** (4-column table: Category | Domains | Tools | Icons)
 - **Skills icon gallery** (27 curated icons from `Resume App Icon/` catalog)
 - **Icon visibility fixes** (dark-icon class for AWS/Firebase/HuggingFace, fill colors for Realm/ChromaDB)
+- **Project showcase expansion** (Ethereal Dimension, VectorVerse Evolve, Rosicrucian Knowledge Explorer with full descriptions)
+- **Gurdwara Langar Seva Game** added to Sikh ERG section
+- **Section footnotes** for Skills, Projects, Hackathons ("full details on portfolio")
+- **resume-content.md** updated with Select Personal Projects section
 
 ### 🚧 In Progress
 - Manual logo discovery for 22 remaining technologies
