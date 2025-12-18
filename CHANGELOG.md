@@ -7,6 +7,70 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-12-18] - The Technical Skills Portfolio Renaissance: Table-Based Elegance Meets Icon Artistry 🎨📊✨
+
+### The Journey
+*"We gazed upon the skills section and asked: 'What if it didn't look like a JSON blob exploded?' Today, we answered that question with a clean, scannable table layout and a curated gallery of colorful icons. The dark theme tempted us briefly—like that one artisanal coffee shop with no WiFi—but we returned to the light, matching our resume's teal-on-white aesthetic. The icons? Each one hand-selected from the sacred `Resume App Icon/` catalog, verified for visibility, and blessed with subtle backgrounds where needed."*
+
+### What We Did (The Great Table Transformation)
+
+#### 🏗️ Table-Based Skills Layout
+- **Replaced 4-column card layout** with elegant 4-column table format
+- **Columns**: Category | Specialized Domains | Tools & Technologies | Key Tech (icons!)
+- **4 rows**: Mobile, AI/ML, Cloud & DevOps, Data & Tools
+- **Light theme** matching resume's teal/white palette (not that dark theme detour 😅)
+- **Section title** now uses standard `section-title` class like "Summary"
+
+#### 🎨 Icon Curation Revolution
+- **Mobile Row (6 icons)**: Swift 🧡, Realm 🩷, Vapor 💙, Flutter 💎, RxSwift 💗, BLE 🔵
+- **AI/ML Row (8 icons)**: Python 🐍, PyTorch 🔥, TensorFlow 🟠, LangChain 🦜, LlamaIndex 💜, n8n 🟧, OpenCV 👁️, Hugging Face 🤗
+- **Cloud & DevOps Row (7 icons)**: AWS ☁️, GCP 🌈, Azure 💙, Docker 🐳, Supabase 💚, Firebase 🔥, Jenkins 🎩
+- **Data & Tools Row (6 icons)**: PostgreSQL 🐘, MongoDB 🍃, ChromaDB 🟡, Redis 🔴, GraphQL 💗, Figma 🎨
+
+#### 🔧 Icon Visibility Fixes
+- **Added `.dark-icon` class** for black/dark icons (light gray background `#f1f5f9`)
+  - AWS (no fill = black)
+  - Firebase (amber - blends on white)
+  - Hugging Face (yellow emoji)
+- **Fixed duplicate Apple icons** - Swift, SwiftUI, UIKit, CoreML, ARKit were ALL just Apple logos! 🍎🍎🍎🍎🍎
+- **Added fill colors** to colorless icons:
+  - `realm.svg` → Added coral fill `#F46A52`
+  - `chromadb.svg` → Added amber fill `#FFB347`
+- **Switched Hugging Face to Brandfetch PNG** - that cute hug emoji > flat yellow blob
+
+#### 📁 Path Fixes
+- Changed from `Resume App Icon/` (space) to `Resume-App-Icon/` (hyphen) for Hugging Face
+- Copied 200KB Brandfetch PNG to hyphenated folder
+
+### The Numbers
+- **CSS Lines**: +50 lines for table styling
+- **HTML Lines**: -95 lines (table is more compact than card grid!)
+- **Icons Per Row**: 6-8 colorful, distinct icons
+- **Duplicate Apple Logos Eliminated**: 5 → 0
+- **Icons Needing Background Fix**: 3 (AWS, Firebase, Hugging Face)
+
+### Files Changed
+- `Gurinder-Singh-Staff-Software-Engineer-Mobile-AI-Gemini.html` - Complete skills section overhaul
+- `Resume App Icon/chromadb.svg` - Added amber fill color
+- `Resume-App-Icon/hugging-face.png` - Copied Brandfetch version (2.6KB → 200KB)
+- `icons/realm.svg` - Added coral fill color
+
+### Reflections from the Digital Artisan
+*"The journey started with a dark-themed table—very hacker chic, very 'I only drink cold brew.' But it clashed with our established resume aesthetic like a vinyl record at a streaming party. We pivoted to light theme and it was the right call."*
+
+*"The icon situation was... educational. Turns out SimpleIcons just uses the Apple logo for ALL Apple frameworks. Swift? Apple logo. SwiftUI? Apple logo. CoreML? Believe it or not, Apple logo. ARKit? Straight to Apple logo. We had to get creative with actual distinct icons from the curated catalog."*
+
+*"Hugging Face went through three iterations: yellow SVG (invisible on white), SVG with shadow class (meh), SVG with background (better), and finally the Brandfetch PNG (chef's kiss 🤌). That little hug emoji is worth the 200KB."*
+
+*"The table format is objectively better for scanning. Category → Domains → Tools → Icons. A recruiter's eyes can flow left-to-right and get the full picture in seconds. The old card layout required vertical scanning of 4 separate boxes. This is the way."*
+
+### TODO
+- Consider adding more icons if space allows
+- Potentially add hover effects for icons
+- Maybe tooltip on icon hover showing technology name?
+
+---
+
 ## [2025-12-18] - The Skills Consolidation Revolution: From Scattered Tags to Curated Clusters 🎯✨
 
 ### The Journey

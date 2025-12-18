@@ -19,6 +19,9 @@
 - **Logo localization** (PayPal, Morgan Stanley now use local assets)
 - **Chronological achievement organization** (newest first in PayPal section)
 - **Skills consolidation** (Mobile: 19→9 clusters, AI/ML: 38→15 clusters, semantic grouping with skill-group class)
+- **Table-based skills layout** (4-column table: Category | Domains | Tools | Icons)
+- **Skills icon gallery** (27 curated icons from `Resume App Icon/` catalog)
+- **Icon visibility fixes** (dark-icon class for AWS/Firebase/HuggingFace, fill colors for Realm/ChromaDB)
 
 ### 🚧 In Progress
 - Manual logo discovery for 22 remaining technologies

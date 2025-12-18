@@ -46,6 +46,31 @@
 - Visual comparison tools
 - Automated test runners
 
+## 📊 Table-Based Skills Portfolio
+
+### Technical Skills Table Layout
+- **4-Column Table Format**: Category | Specialized Domains | Tools & Technologies | Key Tech Icons
+- **Light Theme**: Matches resume's teal-on-white aesthetic
+- **Section Header**: Uses standard `section-title` styling
+- **Compact Design**: Table layout is more scannable than card grid
+
+### Skills Icon Gallery
+- **27 Curated Icons**: Hand-selected from `Resume App Icon/` catalog
+- **Category Distribution**:
+  - Mobile: Swift, Realm, Vapor, Flutter, RxSwift, BLE
+  - AI/ML: Python, PyTorch, TensorFlow, LangChain, LlamaIndex, n8n, OpenCV, Hugging Face
+  - Cloud & DevOps: AWS, GCP, Azure, Docker, Supabase, Firebase, Jenkins
+  - Data & Tools: PostgreSQL, MongoDB, ChromaDB, Redis, GraphQL, Figma
+
+### Icon Visibility System
+- **`.dark-icon` class**: Light gray background (#f1f5f9) for dark/black icons
+  - AWS (no fill = defaults to black)
+  - Firebase (amber blends on white)
+  - Hugging Face (yellow emoji)
+- **Fill Color Additions**:
+  - `realm.svg` → Coral fill (#F46A52)
+  - `chromadb.svg` → Amber fill (#FFB347)
+
 ## 🎨 Resume Collection
 
 ### Multiple Resume Formats
