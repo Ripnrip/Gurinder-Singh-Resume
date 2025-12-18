@@ -51,6 +51,12 @@
 ### Multiple Resume Formats
 - **26+ HTML Resume Files**: Various formats and styles
 - **Icon Integration**: Technology icons displayed throughout
+- **Local Asset Management**: Company logos stored locally for reliability (PayPal, Morgan Stanley)
+- **Chronological Organization**: Achievements sorted by year (newest first) for clear progression narrative
+- **Curated Skills Presentation**: Skills consolidated into meaningful clusters (57 tags → 24 curated groups)
+  - Semantic grouping with `skill-group` class for category headers
+  - Related technologies grouped logically (Swift & Objective-C, LangChain | LlamaIndex)
+  - Tells a story of interconnected expertise rather than just listing technologies
 - **Responsive Design**: Works across devices and print
 - **Modern Styling**: Dark themes, gradients, and professional layouts
 

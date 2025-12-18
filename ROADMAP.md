@@ -16,6 +16,9 @@
 - **Avatar/profile photo fixes** across all resume files
 - **Company logo fixes** (PayPal, Morgan Stanley, Google, Stadia)
 - **Colored icon renaissance** (RunPod, Optimizely, TDD, Agile, Testing)
+- **Logo localization** (PayPal, Morgan Stanley now use local assets)
+- **Chronological achievement organization** (newest first in PayPal section)
+- **Skills consolidation** (Mobile: 19→9 clusters, AI/ML: 38→15 clusters, semantic grouping with skill-group class)
 
 ### 🚧 In Progress
 - Manual logo discovery for 22 remaining technologies

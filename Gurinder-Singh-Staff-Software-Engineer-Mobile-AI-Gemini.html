@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<!--
+    📝 CONTENT SOURCE: This file's content should be synced from resume-content.md
+    Single Source of Truth: resume-content.md
+    Last Updated: November 14, 2025
+    When updating content, edit resume-content.md first, then sync to this HTML file.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurinder Singh - Staff Software Engineer (Mobile & AI)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #14b8a6;
+            --primary-dark: #0d9488;
+            --primary-light: #5eead4;
+            --secondary-color: #f0fdfa;
+            --text-color: #334155;
+            --text-light: #64748b;
+            --text-dark: #111827;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --light-gray: #f9fafb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.5;
+            background-color: var(--light-gray);
+            font-size: 10.5pt;
+        }
+        
+        .resume {
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: 1rem auto;
+            padding: 0;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--white);
+        }
+        
+        .profile-section {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+            flex: 1;
+        }
+        
+        .profile-image-wrapper {
+            flex-shrink: 0;
+        }
+        
+        .profile-image {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+        
+        .header-content h1 {
+            font-size: 22pt;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content .title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.98);
+            margin: 0;
+        }
+        
+        .header-content .linkedin-header {
+            font-size: 9.5pt;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+        }
+        
+        .contact-bar {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            margin-top: 0.2rem;
+        }
+        
+        .contact-bar a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 9pt;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: all 0.3s ease;
+        }
+        
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2rem;
+        }
+        
+        .qr-code {
+            background: var(--white);
+            padding: 0.3rem;
+            border-radius: 6px;
+        }
+        
+        .qr-code img {
+            width: 70px;
+            height: 70px;
+        }
+        
+        .qr-label {
+            font-size: 6.5pt;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Stats Bar Styles */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            padding: 0.75rem 2rem;
+            background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+            border-bottom: 2px solid #99f6e4;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 16pt;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 0.1rem;
+        }
+        
+        .stat-label {
+            font-size: 7.5pt;
+            color: #0f766e;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .main-content {
+            padding: 1rem 2rem;
+        }
+        
+        .section {
+            margin-bottom: 1.25rem;
+        }
+        
+        .section-title {
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .summary {
+            background-color: var(--secondary-color);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            line-height: 1.5;
+            font-size: 10pt;
+        }
+
+        .experience-item {
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+        
+        .item-title {
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .company-logo {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        
+        .item-date {
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 9pt;
+        }
+        
+        .item-subtitle {
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-size: 10pt;
+        }
+        
+        .item-details {
+            margin-left: 15px;
+        }
+        
+        .item-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .item-details li {
+            margin-bottom: 0.25rem;
+            position: relative;
+            padding-left: 1.1rem;
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+        
+        .item-details li:before {
+            content: "▸";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .experience-subsection {
+            margin-bottom: 1rem;
+        }
+        
+        .subsection-title {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.4rem;
+        }
+        
+        .subsection-subtitle {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-top: 0.4rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .mercury-timeline {
+            margin-top: 0.6rem;
+        }
+        
+        .timeline-header {
+            margin-bottom: 0.6rem;
+        }
+        
+        .timeline-header .project-title {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.15rem;
+        }
+        
+        .timeline-header .timeline-meta, .timeline-header .team-info {
+            font-size: 8.5pt;
+            color: var(--text-light);
+            margin-bottom: 0.2rem;
+        }
+        
+        .timeline-month {
+            margin-bottom: 0.75rem;
+            padding-left: 0.75rem;
+            border-left: 2px solid var(--primary-color);
+        }
+        
+        .timeline-month-header {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        
+        .timeline-month-header .month-indicator {
+            width: 8px;
+            height: 8px;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+        
+        .timeline-month li {
+            margin-bottom: 0.2rem;
+            font-size: 9pt;
+        }
+        
+        .timeline-divider {
+            margin: 0.6rem 0;
+            border: none;
+            border-top: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        /* Hackathon Section */
+        .hackathon-summary {
+            margin-bottom: 0.6rem;
+            color: var(--text-light);
+            font-size: 9.5pt;
+        }
+        
+        .hackathon-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-top: 0.6rem;
+        }
+        
+        .hackathon-card {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white);
+            padding: 0.75rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .hackathon-card.finalist {
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+        }
+        
+        .hackathon-badge {
+            font-size: 8.5pt;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 0.15rem 0.4rem;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 0.4rem;
+        }
+        
+        .hackathon-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+        
+        .hackathon-desc {
+            font-size: 8.5pt;
+            opacity: 0.95;
+            line-height: 1.3;
+        }
+        
+        .mentorship-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-top: 0.6rem;
+        }
+        
+        .hackathon-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.6rem;
+            background: var(--light-gray);
+            border-radius: 6px;
+        }
+        
+        .hackathon-item-icon {
+            font-size: 16pt;
+        }
+        
+        .hackathon-item-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+        }
+        
+        .hackathon-item-desc {
+            font-size: 8.5pt;
+            color: var(--text-light);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        
+        .project-card {
+            background: #0a0f1e;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #1e293b;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), #3b82f6);
+        }
+        
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        
+        .project-icon {
+            width: 28px;
+            height: 28px;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #60a5fa;
+            font-size: 12pt;
+        }
+        
+        .project-title-wrapper {
+            flex: 1;
+        }
+        
+        .project-card-title {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #f8fafc;
+        }
+        
+        .project-featured-badge {
+            font-size: 6.5pt;
+            font-weight: 700;
+            background: #1e3a8a;
+            color: #bfdbfe;
+            padding: 0.1rem 0.3rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        
+        .project-category {
+            font-size: 7.5pt;
+            font-weight: 600;
+            color: #60a5fa;
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .project-description {
+            font-size: 8.5pt;
+            line-height: 1.4;
+            color: #94a3b8;
+            flex: 1;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+        
+        .project-tag {
+            font-size: 7.5pt;
+            background: #1e293b;
+            color: #cbd5e1;
+            padding: 0.1rem 0.3rem;
+            border-radius: 4px;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.4rem;
+        }
+        
+        .project-link {
+            font-size: 8pt;
+            color: #60a5fa;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        /* Skills Section - 4 Columns */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.6rem;
+        }
+        
+        .skill-category {
+            background-color: var(--white);
+            border-radius: 6px;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+        }
+        
+        .skill-category h3 {
+            color: var(--text-dark);
+            margin-bottom: 0.4rem;
+            font-size: 7.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 0.4rem;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem;
+        }
+        
+        .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2rem;
+            padding: 0.15rem 0.35rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            background: var(--light-gray);
+            color: var(--text-dark);
+            font-size: 8pt;
+            font-weight: 500;
+        }
+        
+        .skill-icon {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+        }
+        
+        .skill-fallback {
+            width: 14px;
+            height: 14px;
+            font-size: 6pt;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #e2e8f0;
+            border-radius: 2px;
+        }
+
+        @media print {
+            @page {
+                size: letter;
+                margin: 0.3in 0.4in;
+            }
+            
+            body {
+                background: white !important;
+                font-size: 10pt;
+            }
+            
+            .resume {
+                box-shadow: none !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+            }
+            
+            .header, .stats-bar, .summary, .experience-item, .skill-tag, .hackathon-card, .project-card {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .experience-item {
+                page-break-inside: avoid;
+            }
+            
+            .project-card {
+                page-break-inside: avoid;
+                background: #0a0f1e !important;
+                color: #e2e8f0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <div class="profile-section">
+                <div class="profile-image-wrapper">
+                    <img src="me-paragliding.jpeg" alt="Gurinder Singh" class="profile-image">
+                </div>
+                <div class="header-content">
+                    <h1>Gurinder Singh</h1>
+                    <div class="title">Staff Software Engineer (Mobile & AI)</div>
+                    <div class="linkedin-header">LLM Agents · RAG Pipelines · Mobile · Automation</div>
+                    <div class="contact-bar">
+                        <a href="https://guriboy-6fupko.manus.space"><span>🌐</span> Portfolio</a>
+                        <a href="https://linkedin.com/in/gurindersingh"><span>🔗</span> LinkedIn</a>
+                        <a href="mailto:gsingh622@yahoo.com"><span>✉️</span> gsingh622@yahoo.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="qr-section">
+                <div class="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://guriboy-6fupko.manus.space/" alt="Portfolio QR Code">
+                </div>
+                <div class="qr-label">SCAN FOR PORTFOLIO</div>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value">90M+</div>
+                <div class="stat-label">Users Impacted</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">28+</div>
+                <div class="stat-label">Hackathons</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">2×</div>
+                <div class="stat-label">1st Place Wins</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">🏆</div>
+                <div class="stat-label">Patent Holder</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Summary</h2>
+                <div class="summary">
+                    Staff Software Engineer with over a decade of experience scaling applications for millions of users. Patent holder and technical leader specializing in bridging cutting-edge AI/ML with practical mobile solutions. Proven track record of building legendary apps at global scale, from startup innovation to enterprise solutions serving 90M+ users at PayPal/Venmo. Passionate about mentoring engineers, conducting technical interviews, and fostering inclusive tech communities while driving innovation at the intersection of iOS/Mobile and artificial intelligence.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Core Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>📱 Mobile</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Swift & Objective-C</span>
+                            <span class="skill-tag">SwiftUI & UIKit</span>
+                            <span class="skill-tag">Core ML | MLX | Create ML</span>
+                            <span class="skill-tag">SwiftData | Core Data | Realm</span>
+                            <span class="skill-tag">ARKit | ActivityKit | WidgetKit | MapKit | RoomPlan</span>
+                            <span class="skill-tag">Reactive Programming with RxSwift & Combine</span>
+                            <span class="skill-tag">BLE | NFC | QR Code Scanning</span>
+                            <span class="skill-tag">Vapor | Serverless Swift</span>
+                            <span class="skill-tag">Flutter & Dart</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>🤖 AI/ML</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Python & Pydantic AI</span>
+                            <span class="skill-tag">PyTorch | TensorFlow | Create ML</span>
+                            <span class="skill-group">LLMs | SLMs | VLMs </span>
+                            <span class="skill-tag">Open AI | Anthropic | Gemini | Manus | Grok & many more</span>
+                            <span class="skill-group">RAG Pipelines & Workflow Automation/Orchestration </span>
+                            <span class="skill-tag">LangChain | LlamaIndex & LlamaParse </span>
+                            <span class="skill-tag">CrewAI | N8N | LangFlow </span>
+                            <span class="skill-tag">Vector Databases </span>
+                            <span class="skill-tag">ChromaDB | Pinecone | Qdrant | Cohere | FAISS | PgVector</span>
+                            <span class="skill-tag">MCP Servers & Clients | HTTP | STDIO | SSL</span>
+                            <span class="skill-group">Image & Video Generation/Analysis </span>
+                            <span class="skill-tag">ComfyUI | Stable Diffusion | Midjourney | LoRA | CLIP | SORA & many more</span>
+                            <span class="skill-tag">Computer Vision | YOLO | OpenCV | OCR </span>
+                            <span class="skill-group">Audio Processing | TTS/STT/STS</span>
+                            <span class="skill-tag">ElevenLabs | Suno | Google Cloud Speech-to-Text | OpenAI Whisper | AssemblyAI</span>
+                            <span class="skill-tag">Local LLMs | LMStudio | Ollama | GGUF </span>
+                            <span class="skill-tag">Gemini CLI | Codex CLI | Claude CLI | Kilo Code CLI</span>
+                            <span class="skill-group">AI Providers</span>
+                            <span class="skill-tag">Replicate | RunPod | OpenRouter | Hugging Face & many more</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>☁️ Cloud & DevOps</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">AWS Lambda</span>
+                            <span class="skill-tag">EC2</span>
+                            <span class="skill-tag">IAM</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Vertex AI</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">AI Cloud Foundry</span>
+                            <span class="skill-tag">DigitalOcean</span>
+                            <span class="skill-tag">Supabase</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Containerization</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Fastlane</span>
+                            <span class="skill-tag">SonarQube</span>
+                            <span class="skill-tag">BrowserStack</span>
+                            <span class="skill-tag">Datadog</span>
+                            <span class="skill-tag">Observability</span>
+                            <span class="skill-tag">Multi-cloud</span>
+                            <span class="skill-tag">Serverless</span>
+                            <span class="skill-tag">RunPod</span>
+                            <span class="skill-tag">Replicate</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>💾 Data & Tools</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">NoSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">Firestore</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Vector Databases</span>
+                            <span class="skill-tag">FAISS</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Sketch</span>
+                            <span class="skill-tag">Miro</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">TDD</span>
+                            <span class="skill-tag">Agile/Scrum</span>
+                            <span class="skill-tag">Snapshot Testing</span>
+                            <span class="skill-tag">UI Testing</span>
+                            <span class="skill-tag">Optimizely</span>
+                            <span class="skill-tag">Amplitude</span>
+                            <span class="skill-tag">Cursor</span>
+                            <span class="skill-tag">Kilo Code</span>
+                            <span class="skill-tag">Gemini CLI</span>
+                            <span class="skill-tag">OpenRouter</span>
+                            <span class="skill-tag">Manus Platform</span>
+                            <span class="skill-tag">ElevenLabs</span>
+                            <span class="skill-tag">LMStudio</span>
+                            <span class="skill-tag">XCode</span>
+                            <span class="skill-tag">Claude CLI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <img src="icons/paypal.svg" alt="PayPal" class="company-logo">
+                            Staff iOS Engineer → Applied AI/ML Engineer
+                        </div>
+                        <div class="item-date">2020 – Present</div>
+                    </div>
+                    <div class="item-subtitle">PayPal / Venmo</div>
+                    <div class="item-details">
+                        <div class="experience-subsection">
+                            <h4 class="subsection-title">🤖 AI/ML Evolution & Technical Innovation (2023–Present)</h4>
+                            <div class="mercury-timeline">
+                                <div class="timeline-header">
+                                    <div class="project-title">✅ Project Mercury — AI-Powered Agentic E-Commerce Platform</div>
+                                    <div class="timeline-meta"><strong>Timeline:</strong> June 2025 → Present</div>
+                                </div>
+                                
+                                <div class="timeline-month">
+                                    <div class="timeline-month-header">
+                                        <span class="month-indicator"></span>
+                                        <span>July 2025 — Hackathon Prototype ("Rock-Star Hit")</span>
+                                    </div>
+                                    <ul>
+                                        <li>Built a fully functional prototype in 72 hours; gained momentum across org</li>
+                                        <li>Presented to the SVP of AI, earning immediate backing and leading a high-velocity team</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="timeline-month">
+                                    <div class="timeline-month-header">
+                                        <span class="month-indicator"></span>
+                                        <span>Oct-Dec 2025 — Model Leadership & Scaling</span>
+                                    </div>
+                                    <ul>
+                                        <li>Trained five SDXL LoRA models; achieved 23% loss reduction and 109MB optimized models</li>
+                                        <li>Implemented MCP multi-agent orchestration and GraphRAG for merchant intelligence</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5 class="subsection-subtitle">AI/ML Implementation & Automation (2024)</h5>
+                            <ul>
+                                <li>Developed AI-powered crash detection system using LangChain + DeepLake with automated DataDog monitors — now adopted org-wide</li>
+                                <li>Created 10%+ productivity improvements via AI-powered automation tools</li>
+                                <li>Championed AI coding assistants across teams, training colleagues on leveraging AI</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-subsection">
+                            <h4 class="subsection-title">iOS Engineering Excellence & Business Impact</h4>
+                            <h5 class="subsection-subtitle">Major Product Launches & Partnerships</h5>
+                            <ul>
+                                <li><strong>Venmo × Amazon (2023):</strong> Built sandbox/integration app in two days for partnership launch</li>
+                                <li><strong>Gift Cards (2023):</strong> Led successful delivery of mission-critical feature set for majority iOS user base</li>
+                                <li><strong>QRC Touch-Free Payments (2021):</strong> Led moonshot initiative winning $60M CVS contract</li>
+                                <li><strong>Amex Partnership (2020):</strong> Built payment-splitting integration for $400M partnership deal</li>
+                            </ul>
+                            <h5 class="subsection-subtitle">iOS Innovation & Patents</h5>
+                            <ul>
+                                <li><strong>QRC Widget Patent (2022):</strong> Filed "Interface Widget Tool for Automatic QR Code Generation" (PayPal Ref. OCP.D2021.103924.US1). First team to use SwiftUI for iOS widgets at Venmo. Reduced user friction by 66%</li>
+                                <li><strong>Dynamic Island / Live Activities / App Clip:</strong> Built end-to-end infrastructure including architecting HLDs, LLDs, and Supabase-powered notification systems reaching millions of users</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-subsection">
+                            <h4 class="subsection-title">👥 Technical Leadership & Impact</h4>
+                            <ul>
+                                <li>Mentored cross-functional engineers on concurrency, accessibility, and feature-flag driven development</li>
+                                <li>Partnered with Design Systems to create modern SwiftUI component library that cut feature development time by 30%</li>
+                                <li>Built internal AI observability tooling using DataDog to trace inference latency and prompt performance across services</li>
+                                <li>Prototype-to-production lead for Team Mercury (2025 AI Hackathon Winner)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <img src="Resume-App-Icon/stadia.png" alt="Google Stadia" class="company-logo">
+                            iOS Developer/Consultant
+                        </div>
+                        <div class="item-date">2019 – 2020</div>
+                    </div>
+                    <div class="item-subtitle">Google Stadia</div>
+                    <div class="item-details">
+                        <ul>
+                            <li>Worked on Google Stadia for mobile platforms using Flutter/Dart and native iOS plugins</li>
+                            <li>Implemented Core Bluetooth integration for Stadia controller connectivity and low-latency communication</li>
+                            <li>Utilized Xcode Instruments for performance profiling and CPU/GPU optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <img src="Resume App Icon/morgan-stanley.jpg" alt="Morgan Stanley" class="company-logo">
+                            iOS Developer/Consultant
+                        </div>
+                        <div class="item-date">2018 – 2019</div>
+                    </div>
+                    <div class="item-subtitle">Morgan Stanley</div>
+                    <div class="item-details">
+                        <ul>
+                            <li>Worked on Hybrid (Cordova + Native) Banking and Wealth Management apps for iOS</li>
+                            <li>Developed key features: check-deposit, biometric authentication, certificate-pinning, jailbreak detection, push authentication</li>
+                            <li>Migrated codebase from 98% Objective-C to 80% Objective-C / 20% Swift</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Hackathon Achievements & Innovation</h2>
+                <p class="hackathon-summary">
+                    <strong>28+ hackathons</strong> attended across <strong>6+ countries</strong> as participant, mentor, and judge. Earned <strong>2 first-place wins</strong> and served as judge at Yale (2×). Recognized globally for innovation and technical excellence.
+                </p>
+                <div class="hackathon-grid">
+                    <div class="hackathon-card">
+                        <div class="hackathon-badge">🏆 1ST PLACE</div>
+                        <div class="hackathon-title">🇬🇧 MLH @ Bloomberg London (2017)</div>
+                        <div class="hackathon-desc">Automated Search & Rescue System. Featured in BBC documentary.</div>
+                    </div>
+                    <div class="hackathon-card">
+                        <div class="hackathon-badge">🏆 1ST PLACE</div>
+                        <div class="hackathon-title">🇺🇸 Devcamp NYC (2016)</div>
+                        <div class="hackathon-desc">Talent Management App. Won among 300+ participants at Google NYC.</div>
+                    </div>
+                    <div class="hackathon-card finalist">
+                        <div class="hackathon-badge">🎯 FINALIST</div>
+                        <div class="hackathon-title">🇨🇭 HackZurich (2018)</div>
+                        <div class="hackathon-desc">AR Car Buying Tool. Finalist among 400+ participants.</div>
+                    </div>
+                </div>
+                
+                <div class="experience-subsection" style="margin-top: 1rem;">
+                    <h5 class="subsection-subtitle">Mentorship & Judging</h5>
+                    <div class="mentorship-grid">
+                        <div class="hackathon-item">
+                            <span class="hackathon-item-icon">🎓</span>
+                            <div class="hackathon-item-content">
+                                <div class="hackathon-item-title">Hack Yale – Judge (2×)</div>
+                                <div class="hackathon-item-desc">Yale University</div>
+                            </div>
+                        </div>
+                        <div class="hackathon-item">
+                            <span class="hackathon-item-icon">🎓</span>
+                            <div class="hackathon-item-content">
+                                <div class="hackathon-item-title">PenApps – Mentor</div>
+                                <div class="hackathon-item-desc">University of Pennsylvania</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Select Personal Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">▶️</div>
+                            <div class="project-title-wrapper">
+                                <div class="project-card-title">Ethereal Dimension</div>
+                                <span class="project-featured-badge">Featured</span>
+                            </div>
+                        </div>
+                        <div class="project-category">Creative</div>
+                        <p class="project-description">Immersive storytelling platform featuring Texas Barricades and Hylios narratives.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">Three.js</span>
+                            <span class="project-tag">+2 more</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><span>↗️</span> View</a>
+                            <a href="#" class="project-link"><span>📂</span> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🧠</div>
+                            <div class="project-title-wrapper">
+                                <div class="project-card-title">VectorVerse Evolve</div>
+                                <span class="project-featured-badge">Featured</span>
+                            </div>
+                        </div>
+                        <div class="project-category">AI/ML</div>
+                        <p class="project-description">Agentic SEO platform powered by AI for content optimization.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">AI/ML</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">+2 more</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><span>↗️</span> View</a>
+                            <a href="#" class="project-link"><span>📂</span> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🔍</div>
+                            <div class="project-title-wrapper">
+                                <div class="project-card-title">Rosicrucian Knowledge Explorer</div>
+                            </div>
+                        </div>
+                        <div class="project-category">AI/ML</div>
+                        <p class="project-description">AI RAG search engine for exploring esoteric knowledge.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">RAG</span>
+                            <span class="project-tag">ChromaDB</span>
+                            <span class="project-tag">+2 more</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><span>↗️</span> View</a>
+                            <a href="#" class="project-link"><span>📂</span> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">BS in Computer Systems</div>
+                        <div class="item-date">2012 – 2016</div>
+                    </div>
+                    <div class="item-subtitle">New York City College of Technology, Brooklyn</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Leadership & Community</h2>
+                <div class="item-details">
+                    <ul>
+                        <li>Advisory Board Member for multiple tech startups on iOS architecture and AI/ML implementation</li>
+                        <li>Hosted technical workshops: SwiftUI, State Machines, AI/ML image generation, DataDog automation</li>
+                        <li>Interfaith ERG Chapter Lead (Sikh community): Organized events, secured speakers, created educational content</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const BRANDFETCH_ID = '1idK8XmVyip_uEzPH_4';
+        const ICON_MAP = {
+            'Swift': `https://cdn.brandfetch.io/swift.org/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'SwiftUI': `https://cdn.brandfetch.io/apple.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Objective-C': 'Resume-App-Icon/objective-c.svg',
+            'UIKit': 'Resume-App-Icon/uikit.svg',
+            'Core ML': 'Resume-App-Icon/core-ml.svg',
+            'MLX': 'Resume-App-Icon/coreml.svg',
+            'SwiftData': 'Resume-App-Icon/coreml.svg',
+            'ARKit': `https://cdn.brandfetch.io/apple.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Combine': `https://cdn.brandfetch.io/swift.org/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'RxSwift': 'Resume-App-Icon/rxswift.svg',
+            'Flutter': 'Resume-App-Icon/flutter.svg',
+            'React Native': 'Resume-App-Icon/react-native.svg',
+            'Python': `https://cdn.brandfetch.io/python.org/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'PyTorch': `https://cdn.brandfetch.io/pytorch.org/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'TensorFlow': `https://cdn.brandfetch.io/tensorflow.org/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'LLMs': 'Resume-App-Icon/llms.svg',
+            'RAG Pipelines': 'Resume-App-Icon/rag-pipelines.svg',
+            'LangChain': 'Resume-App-Icon/langchain.svg',
+            'LlamaIndex': 'Resume-App-Icon/llamaindex.svg',
+            'MCP Servers': 'Resume-App-Icon/mcp-servers.svg',
+            'CrewAI': 'Resume-App-Icon/crewai.svg',
+            'OpenAI': `https://cdn.brandfetch.io/openai.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Claude': `https://cdn.brandfetch.io/anthropic.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Hugging Face': `https://cdn.brandfetch.io/huggingface.co/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'ChromaDB': 'Resume-App-Icon/chromadb.svg',
+            'Pinecone': 'Resume-App-Icon/pinecone.svg',
+            'AWS': `https://cdn.brandfetch.io/aws.amazon.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'GCP': `https://cdn.brandfetch.io/cloud.google.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Azure': `https://cdn.brandfetch.io/azure.microsoft.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Firebase': `https://cdn.brandfetch.io/firebase.google.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Supabase': `https://cdn.brandfetch.io/supabase.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'Docker': `https://cdn.brandfetch.io/docker.com/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`,
+            'CI/CD': 'Resume-App-Icon/ci-cd.svg',
+            'GitHub Actions': 'Resume-App-Icon/github-actions.svg',
+            'Jenkins': 'Resume-App-Icon/jenkins.svg',
+            'Fastlane': 'Resume-App-Icon/fastlane.svg',
+            'Datadog': 'Resume-App-Icon/datadog.svg',
+            'PostgreSQL': 'Resume-App-Icon/postgresql.svg',
+            'MongoDB': 'Resume-App-Icon/mongodb.svg',
+            'Redis': 'Resume-App-Icon/redis.svg',
+            'GraphQL': 'Resume-App-Icon/graphql.svg',
+            'Figma': 'Resume-App-Icon/figma.svg',
+            'Jira': 'Resume-App-Icon/jira.svg',
+            'TDD': 'Resume-App-Icon/tdd.svg',
+            'Agile/Scrum': 'Resume-App-Icon/agile-scrum.svg',
+            'Cursor': 'Resume-App-Icon/cursor.svg',
+            'XCode': 'Resume-App-Icon/xcode.svg',
+            'Realm': `https://cdn.brandfetch.io/realm.io/w/400/h/400/theme/light/fallback/lettermark/type/icon?c=${BRANDFETCH_ID}`
+        };
+        
+        function injectIcons() {
+            const skillTags = document.querySelectorAll('.skill-tag');
+            skillTags.forEach(tag => {
+                const skillName = tag.textContent.trim();
+                const iconSrc = ICON_MAP[skillName];
+                
+                if (iconSrc) {
+                    const icon = document.createElement('img');
+                    icon.src = iconSrc;
+                    icon.alt = skillName;
+                    icon.className = 'skill-icon';
+                    icon.onerror = function() {
+                        console.error('Failed to load icon:', iconSrc, 'for skill:', skillName);
+                        this.style.display = 'none';
+                        const fallback = createFallback(skillName);
+                        tag.insertBefore(fallback, tag.firstChild);
+                    };
+                    tag.insertBefore(icon, tag.firstChild);
+                } else {
+                    const fallback = createFallback(skillName);
+                    tag.insertBefore(fallback, tag.firstChild);
+                }
+            });
+        }
+        
+        function createFallback(name) {
+            const fallback = document.createElement('div');
+            fallback.className = 'skill-fallback';
+            const initials = name.split(' ').map(w => w[0]).join('').slice(0, 3).toUpperCase();
+            fallback.textContent = initials;
+            return fallback;
+        }
+        
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', injectIcons);
+        } else {
+            injectIcons();
+        }
+    </script>
+</body>
+</html>
